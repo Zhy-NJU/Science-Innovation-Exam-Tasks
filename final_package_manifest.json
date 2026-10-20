@@ -1,0 +1,1031 @@
+{
+  "scope": "Final task-directory bytes independently hashed before and after 99 tests; all files unchanged. Paths are relative to submission_bundle.",
+  "contract_revision": "2026-09-17",
+  "official_repository_commit": "e07dfbc595cadc42274788c8e8b69bb79eab2d64",
+  "tasks": [
+    "crystal_stability",
+    "mof_adsorption",
+    "thermal_conductivity"
+  ],
+  "file_count": 203,
+  "total_bytes": 1403908064,
+  "source_files_unchanged": true,
+  "independent_tests_report_sha256": "c669747fc2d016046f0b736556fef6741dd8a9d90183ab54fe094f03a9af5dd8",
+  "files": [
+    {
+      "path": "tasks/crystal_stability/environment/Containerfile",
+      "size": 765,
+      "sha256": "eea2763604d3cdf156537f1df42d1727af468d6c92c8031b2959a8f48bf7a59d"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/README.md",
+      "size": 4496,
+      "sha256": "f660aa781ae76e8258431e2bbe7caee32440f04cb95b39b84c96840c8c4b2ce8"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/assemble_wheels.py",
+      "size": 3063,
+      "sha256": "17bbc66041ab261f98e3a3743be79fd43e9cf6e93a27b32602c239f879bb635a"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/dependency_validation.json",
+      "size": 59040,
+      "sha256": "398936dcc48a4d2ded06746a9c4cbffab5274c1830df7fc3e5b970820df7e6a8"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/environment.json",
+      "size": 80,
+      "sha256": "a17b6bdc8bba0401cab826d6a59601ff9fcc6cdab22bf7da97155b4ad6b2b0c2"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/install_research_environment.py",
+      "size": 4219,
+      "sha256": "864447b93e0ed9ec30c2875a13a8013f73f809fc9cb6376ce2422e0939b1cd55"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/native_library_validation.json",
+      "size": 139522,
+      "sha256": "faff87d20f81a7e1bebbe3b154bb75bc92c28e1b5cca3a348f70615c71f8ecfa"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/offline_resolution_validation.json",
+      "size": 12611,
+      "sha256": "ded8ed607003984ce6c33abb0f6c649b764a8ae6d0e461011c31a4f40f28cc7b"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/provenance/LICENSE-nvidia-ml-py3.txt",
+      "size": 1586,
+      "sha256": "cecbe108d3216e8095b3502c5171314776f4ac60b5dd35cc168deb3121e9e8e2"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/provenance/nvidia-ml-py3-7.352.0.tar.gz",
+      "size": 19494,
+      "sha256": "390f02919ee9d73fe63a98c73101061a6b37fa694a793abf56673320f1f51277"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/provenance/nvidia-ml-py3-source.json",
+      "size": 378,
+      "sha256": "17a4e209dace712deb156e815f00ac95a4289cb6c372350304a536bfa2f2ab22"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/provenance/torch-source.json",
+      "size": 402,
+      "sha256": "f3e16719f9b0a59723d2e12e7234425170d5419c3c67c316abd721760111393d"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/requirements-bootstrap.lock",
+      "size": 170,
+      "sha256": "04b1d8acfdc52e05bf47bb1b8a32380e90d4dc2d7cddffe4b3634d6b43d7e055"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/requirements-research.lock",
+      "size": 5235,
+      "sha256": "8862673216b9beca2156ef341ff20f9e1f2d7fe635c2f83bc835178397eeb04c"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheel_manifest.json",
+      "size": 300303,
+      "sha256": "9a027a9c567844fb2a147ef3e9c066eeb9a4ce53c73258670e97f161b9ee12c5"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/Cython-3.0.11-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 3595065,
+      "sha256": "3999fb52d3328a6a5e8c63122b0a8bd110dfcdb98dda585a3def1426b991cba7"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/MarkupSafe-3.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 23120,
+      "sha256": "a123e330ef0853c6e822384873bef7507557d8e4a082961e1defa947aa59ba84"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/PyYAML-6.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 762952,
+      "sha256": "3ad2a3decf9aaba3d29c8f537ac4b243e36bef957511b4766cb0057d32b0be85"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/ase-3.23.0-py3-none-any.whl",
+      "size": 2877073,
+      "sha256": "52060410e720b6c701ea1ebecfdeb5ec6f9c1c63edc7cee68c15bd66d226dd43"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/certifi-2025.1.31-py3-none-any.whl",
+      "size": 166393,
+      "sha256": "ca78db4565a652026a4db2bcdf68f2fb589ea80d0be70e03929ed730746b84fe"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/charset_normalizer-3.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 140273,
+      "sha256": "753f10e867343b4511128c6ed8c82f7bec3bd026875576dfd88483c5c73b2fd8"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/chgnet-0.3.8-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 9250402,
+      "sha256": "7202a98ce65df5dae0b9663032c7e372ee0f6c4dced78cdeb36583b9adca17ef"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/contourpy-1.3.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 326184,
+      "sha256": "3a04ecd68acbd77fa2d39723ceca4c3197cb2969633836ced1bea14e219d077c"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/cycler-0.11.0-py3-none-any.whl",
+      "size": 6389,
+      "sha256": "3a27e95f763a428a739d2add979fa7494c912a32c17c4c38c4d5f082cad165a3"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/filelock-3.29.0-py3-none-any.whl",
+      "size": 39812,
+      "sha256": "96f5f6344709aa1572bbf631c640e4ebeeb519e08da902c39a001882f30ac258"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/fonttools-4.55.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 4906304,
+      "sha256": "da9da6d65cd7aa6b0f806556f4985bcbf603bf0c5c590e61b43aa3e5a0f822d0"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/fsspec-2024.12.0-py3-none-any.whl",
+      "size": 183862,
+      "sha256": "b520aed47ad9804237ff878b504267a3b0b441e97508bd6d2d8774e3db85cee2"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/h5py-3.11.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 5420165,
+      "sha256": "52c416f8eb0daae39dabe71415cb531f95dce2d81e1f61a74537a50c63b28ab3"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/idna-3.7-py3-none-any.whl",
+      "size": 66836,
+      "sha256": "82fee1fc78add43492d3a1898bfa6d8a904cc97d8427f683ed8e798d07761aa0"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/jinja2-3.1.5-py3-none-any.whl",
+      "size": 134596,
+      "sha256": "aba0f4dc9ed8013c424088f68a5c226f7d6097ed89b246d7749c2ec4175c6adb"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/joblib-1.4.2-py3-none-any.whl",
+      "size": 301817,
+      "sha256": "06d478d5674cbc267e7496a410ee875abd68e4340feff4490bcb7afb88060ae6"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/kiwisolver-1.4.8-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 1435109,
+      "sha256": "3a96c0e790ee875d65e340ab383700e2b4891677b7fcd30a699146f9384a2bb0"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/latexcodec-3.0.1-py3-none-any.whl",
+      "size": 18532,
+      "sha256": "a9eb8200bff693f0437a69581f7579eb6bca25c4193515c09900ce76451e452e"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/matplotlib-3.10.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 8599369,
+      "sha256": "5439f4c5a3e2e8eab18e2f8c3ef929772fd5641876db71f08127eed95ab64683"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/monty-2024.5.24-py3-none-any.whl",
+      "size": 67943,
+      "sha256": "0627fe55beb84e2ded247adcb5785933b7e123852eaa7c2da16ff96d96c0819c"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/mpmath-1.3.0-py3-none-any.whl",
+      "size": 536198,
+      "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/networkx-3.4.2-py3-none-any.whl",
+      "size": 1723263,
+      "sha256": "df5d4365b724cf81b8c6a7312509d0c22386097011ad1abe274afd5e9d3bbc5f"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 18252005,
+      "sha256": "666dbfb6ec68962c033a450943ded891bed2d54e6755e35e5835d63f4f6931d5"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/nvidia_ml_py3-7.352.0-py3-none-any.whl",
+      "size": 19173,
+      "sha256": "9427f3a5a9406f33138c7975b2ac45aa8eeff362268b9dcec504eae6dd57243b"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/packaging-24.2-py3-none-any.whl",
+      "size": 65451,
+      "sha256": "09abb1bccd265c01f4a3aa3f7a7db064b36514d2cba19a2f694fe6150451a759"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/palettable-3.3.3-py2.py3-none-any.whl",
+      "size": 332251,
+      "sha256": "74e9e7d7fe5a9be065e02397558ed1777b2df0b793a6f4ce1a5ee74f74fb0caa"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/pandas-2.2.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 13058505,
+      "sha256": "c124333816c3a9b03fbeef3a9f230ba9a737e9e5bb4060aa2107a86cc0a497fc"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/phono3py-3.30.0-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+      "size": 639674,
+      "sha256": "21d846b3d6b94105280bcdd17fa8b38f0a5ad97393cc2a1f3eb77ee1f325ecb5"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/phonopy-3.5.0-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+      "size": 664260,
+      "sha256": "53bae6a094a403b175e2ba3e458c3251958ad4412a6705c67920111c9d9cf033"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/pillow-11.1.0-cp311-cp311-manylinux_2_28_x86_64.whl",
+      "size": 4484021,
+      "sha256": "837060a8599b8f5d402e97197d4924f05a2e0d68756998345c829c33186217b1"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/pip-24.0-py3-none-any.whl",
+      "size": 2110226,
+      "sha256": "ba0d021a166865d2265246961bec0152ff124de910c5cc39f1156ce3fa7c69dc"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/plotly-5.24.1-py3-none-any.whl",
+      "size": 19054220,
+      "sha256": "f67073a1e637eb0dc3e46324d9d51e2fe76e9727c892dde64ddf1e1b51f29089"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/pybtex-0.26.1-py3-none-any.whl",
+      "size": 126134,
+      "sha256": "e26c0412cc54f5f21b2a6d9d175762a2d2af9ccf3a8f651cdb89ec035db77aa1"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/pymatgen-2024.5.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 4941164,
+      "sha256": "d77cc72459b54f1f6aaeca9b95fe536adb7b8d12b0d72c2f81a159a61b09fdda"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/pyparsing-3.2.0-py3-none-any.whl",
+      "size": 106921,
+      "sha256": "93d9577b88da0bbea8cc8334ee8b918ed014968fd2ec383e868fb8afb1ccef84"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "size": 229892,
+      "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/pytz-2024.1-py2.py3-none-any.whl",
+      "size": 505474,
+      "sha256": "328171f4e3623139da4983451950b28e95ac706e13f3f2630a879749e7a8b319"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/requests-2.32.3-py3-none-any.whl",
+      "size": 64928,
+      "sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/ruamel.yaml-0.18.6-py3-none-any.whl",
+      "size": 117761,
+      "sha256": "57b53ba33def16c4f3d807c0ccbc00f8a6081827e81ba2491691b76882d0c636"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/ruamel.yaml.clib-0.2.8-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl",
+      "size": 544020,
+      "sha256": "25c515e350e5b739842fc3228d662413ef28f295791af5e5110b543cf0b57d9b"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/scipy-1.13.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 38569931,
+      "sha256": "a78b4b3345f1b6f68a763c6e25c0c9a23a9fd0f39f5f3d200efe8feda560a5fa"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/setuptools-75.1.0-py3-none-any.whl",
+      "size": 1248506,
+      "sha256": "35ab7fd3bcd95e6b7fd704e4a1539513edad446c097797f2985e0e4b960772f2"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/six-1.16.0-py2.py3-none-any.whl",
+      "size": 11053,
+      "sha256": "8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/spglib-2.6.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 809047,
+      "sha256": "ff6b2f21226f7ece7758eb1d320907168018aa0a30a57c2b0a24cbf8f6860211"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/symfc-1.6.0-py3-none-any.whl",
+      "size": 88823,
+      "sha256": "c16c3a32bdd9e062ab5065a8ba8cccd657753f12af100ab6b06fe1bccf49a8bc"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/sympy-1.13.3-py3-none-any.whl",
+      "size": 6189483,
+      "sha256": "54612cf55a62755ee71824ce692986f23c88ffa77207b30c1368eda4a7060f73"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/tabulate-0.9.0-py3-none-any.whl",
+      "size": 35252,
+      "sha256": "024ca478df22e9340661486f85298cff5f6dcdba14f3813e8830015b9ed1948f"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/tenacity-9.0.0-py3-none-any.whl",
+      "size": 28169,
+      "sha256": "93de0c98785b27fcf659856aa9f54bfbd399e29969b0621bc7f762bd441b4539"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/torch-2.4.1+cpu-cp311-cp311-linux_x86_64.whl.part-000",
+      "size": 50331648,
+      "sha256": "9cbb3d5bc46ec740c1c96cbb8ecfa9b114aa615ff87caa816eef169caf0da104"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/torch-2.4.1+cpu-cp311-cp311-linux_x86_64.whl.part-001",
+      "size": 50331648,
+      "sha256": "ed1ba69f9728db98c3f18099495176016877a833e7c64b2d9902b8a63d7c34ca"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/torch-2.4.1+cpu-cp311-cp311-linux_x86_64.whl.part-002",
+      "size": 50331648,
+      "sha256": "09018025c6f9268bd9a8fe5fde8a7430144970b00c74dd03fca16599c7fe9e9a"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/torch-2.4.1+cpu-cp311-cp311-linux_x86_64.whl.part-003",
+      "size": 43932040,
+      "sha256": "0b4d0850f2dd15526462ad8388897eb94b5973c021d168a1739951bfbb20c061"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/tqdm-4.67.1-py3-none-any.whl",
+      "size": 78540,
+      "sha256": "26445eca388f82e72884e0d580d5464cd801a3ea01e63e5601bdff9ba6a48de2"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/typing_extensions-4.12.2-py3-none-any.whl",
+      "size": 37438,
+      "sha256": "04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/tzdata-2023.3-py2.py3-none-any.whl",
+      "size": 341835,
+      "sha256": "7e65763eef3120314099b6939b5546db7adce1e7d6f2e179e3df563c70511eda"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/uncertainties-3.2.3-py3-none-any.whl",
+      "size": 60118,
+      "sha256": "313353900d8f88b283c9bad81e7d2b2d3d4bcc330cbace35403faaed7e78890a"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/urllib3-2.3.0-py3-none-any.whl",
+      "size": 128369,
+      "sha256": "1cee9ad369867bfdbbb48b7dd50374c0967a0bb7710050facf0dd6911440e3df"
+    },
+    {
+      "path": "tasks/crystal_stability/environment/wheelhouse/wheel-0.44.0-py3-none-any.whl",
+      "size": 67059,
+      "sha256": "2376a90c98cc337d18623527a97c31797bd02bad0033d41547043a1cbfbe448f"
+    },
+    {
+      "path": "tasks/crystal_stability/input/README.md",
+      "size": 5044,
+      "sha256": "2a9a45902a8faeddd04d348043e20d0afbaa35b8707cda64b160e0b89f295b04"
+    },
+    {
+      "path": "tasks/crystal_stability/input/elemental_reference_energies.json",
+      "size": 9226,
+      "sha256": "7debab6d8b4ed70bc8a7cdc9124db2ab5832b0b8f63a9375de4321f918d5279d"
+    },
+    {
+      "path": "tasks/crystal_stability/input/model_weights/LICENSE-CHGNet.txt",
+      "size": 2519,
+      "sha256": "a06789a2624485a9de5903d3d4cceeec6127a36042dd7364999ff994587a4a41"
+    },
+    {
+      "path": "tasks/crystal_stability/input/model_weights/chgnet_0.3.0_e29f68s314m37.pth.tar",
+      "size": 4863221,
+      "sha256": "d14ab7c0f093efe64b60a7bcd540bca10e74fb7f46c86108a079af60524659d1"
+    },
+    {
+      "path": "tasks/crystal_stability/input/model_weights/model_card.json",
+      "size": 1068,
+      "sha256": "5ae5a36f97637131929053b06ebe742667172006ae1014256fc740a1e3b32d7d"
+    },
+    {
+      "path": "tasks/crystal_stability/input/submission.csv",
+      "size": 3447839,
+      "sha256": "707676d7cde13a8391a16f4c18abc34bddabc968b2a07157b3cf5db847a562bc"
+    },
+    {
+      "path": "tasks/crystal_stability/input/test_structures.jsonl.gz",
+      "size": 21145166,
+      "sha256": "bc3199686ed01f89d66be15adbbde24086c00b3711820d7d06f2d45743097f19"
+    },
+    {
+      "path": "tasks/crystal_stability/input/training_compositions.jsonl.gz",
+      "size": 2391451,
+      "sha256": "d9e0a1b237985b8ea3535ee827a54509b86527e4f110c064934007eda3bc2a3a"
+    },
+    {
+      "path": "tasks/crystal_stability/instruction.json",
+      "size": 18644,
+      "sha256": "2a5c3adab82e4e9e47c9ae6d7303746895c65fd0261471b776f117e135a3a96f"
+    },
+    {
+      "path": "tasks/crystal_stability/meta.json",
+      "size": 1619,
+      "sha256": "e406cf9ba83b02c3f53bced9d356e0b671d161bbf063522bc6d9bc6e6998b7c3"
+    },
+    {
+      "path": "tasks/crystal_stability/verifier/common.py",
+      "size": 10697,
+      "sha256": "e959ff70aa46f7190cab467a44bde6b9d4752e14791334bda8f32560d3a29fe1"
+    },
+    {
+      "path": "tasks/crystal_stability/verifier/protocol.json",
+      "size": 470,
+      "sha256": "796f673cfe1d3dce6ba35d8748ba01079a743684138bbf6038b438b76994dcec"
+    },
+    {
+      "path": "tasks/crystal_stability/verifier/test/data/labels.csv",
+      "size": 10103360,
+      "sha256": "defc68c874f94bee1c1411b73f51c233c31ac9863ea8442e275a1b61609ea77e"
+    },
+    {
+      "path": "tasks/crystal_stability/verifier/test/run/main.py",
+      "size": 172,
+      "sha256": "9e86fd3eeeae3d17c17dd5c20449ae67096d2649bf19ba306466f15efd34da47"
+    },
+    {
+      "path": "tasks/crystal_stability/verifier/validation/run/main.py",
+      "size": 182,
+      "sha256": "7e6c1f4db2edb942f676700fc64fc13598961aff232df67d5349cc280a5a9f44"
+    },
+    {
+      "path": "tasks/mof_adsorption/environment/environment.json",
+      "size": 42,
+      "sha256": "49afd0038a23763b1b98590e8d500882ecedc96fb5af06e0b34c4cb7c3521c4d"
+    },
+    {
+      "path": "tasks/mof_adsorption/input/README.md",
+      "size": 5686,
+      "sha256": "8c2d1170ad73e0b6cc2f0712eb2b1f72a23d34f0e01c6ff374df28f9f9bfc475"
+    },
+    {
+      "path": "tasks/mof_adsorption/input/development.jsonl.gz",
+      "size": 14399815,
+      "sha256": "0f0499ee8f09184944f7b0f4b031bd0de8573e3d2de10ad6b3bb8ceef3cd7514"
+    },
+    {
+      "path": "tasks/mof_adsorption/input/submission.csv",
+      "size": 53071,
+      "sha256": "849877b190e1d790805117d4390565bd6f64a513554570994a3d287f5150edda"
+    },
+    {
+      "path": "tasks/mof_adsorption/input/test.jsonl.gz",
+      "size": 22488506,
+      "sha256": "626fbb84bd8a627172da5c0c40a9b929945cfd0ff0e15d7a61938601aac193f6"
+    },
+    {
+      "path": "tasks/mof_adsorption/input/train/part-0001.jsonl.gz",
+      "size": 41969110,
+      "sha256": "f89a165b0518053348ed5159f5986efe5edda2490cc9fd39f3ccb4edb0cbd0b4"
+    },
+    {
+      "path": "tasks/mof_adsorption/input/train/part-0002.jsonl.gz",
+      "size": 41952967,
+      "sha256": "fe03202395a10e64d68bbab6461dc2525e30f035075fb9c27a87727a08210d92"
+    },
+    {
+      "path": "tasks/mof_adsorption/input/train/part-0003.jsonl.gz",
+      "size": 41978118,
+      "sha256": "cc722f4aaf5799d592e9baf55bdf8495ea0ef3c334bc3c3f93a9173a4042789c"
+    },
+    {
+      "path": "tasks/mof_adsorption/input/train/part-0004.jsonl.gz",
+      "size": 41964735,
+      "sha256": "3da82285d2c3e38876d95e922730f4101cd8995ff3ee2a41a0cb8ea1d09c5a47"
+    },
+    {
+      "path": "tasks/mof_adsorption/input/train/part-0005.jsonl.gz",
+      "size": 41959838,
+      "sha256": "57193e9204a6a8643ffd4b59b5cda8693f16d2b071fd8e0908a5307467b484e8"
+    },
+    {
+      "path": "tasks/mof_adsorption/input/train/part-0006.jsonl.gz",
+      "size": 41972950,
+      "sha256": "703916a0699fd815105a9a4fda62cccc2f949a302804ae72eada283e45f3e621"
+    },
+    {
+      "path": "tasks/mof_adsorption/input/train/part-0007.jsonl.gz",
+      "size": 41973579,
+      "sha256": "74e1ef19dfedf9d0db036e9c53e51971a1d31a2e3d5e0538bcef81fde7988a86"
+    },
+    {
+      "path": "tasks/mof_adsorption/input/train/part-0008.jsonl.gz",
+      "size": 41971881,
+      "sha256": "0ef95c4fc3f2a6b84313054d68c035fc47c79cec41d1862ecbfdc458621138fc"
+    },
+    {
+      "path": "tasks/mof_adsorption/input/train/part-0009.jsonl.gz",
+      "size": 41961369,
+      "sha256": "f07db7c4dcdcbdeae15bac3889a8f91a3d2360953cd64d4763a66486cbd7ebc6"
+    },
+    {
+      "path": "tasks/mof_adsorption/input/train/part-0010.jsonl.gz",
+      "size": 41960043,
+      "sha256": "e7563a0924cb36764bb851ac72c859f0daf5032cabdaab43ef55fd4273deb346"
+    },
+    {
+      "path": "tasks/mof_adsorption/input/train/part-0011.jsonl.gz",
+      "size": 41946893,
+      "sha256": "2b0a5cf056c93df09727e3ea1d63481774b3265c8f556bcfedbadc4bbc534b23"
+    },
+    {
+      "path": "tasks/mof_adsorption/input/train/part-0012.jsonl.gz",
+      "size": 41969879,
+      "sha256": "f66957ae1b8119a2fbb4ad9c8ccab6bae55e4f33837ada31c505efdee5a310bf"
+    },
+    {
+      "path": "tasks/mof_adsorption/input/train/part-0013.jsonl.gz",
+      "size": 41975840,
+      "sha256": "a63612fcbd76c66a6f60f143864386afb0c4ea7b15b0ac9bc2d402a929bfed8a"
+    },
+    {
+      "path": "tasks/mof_adsorption/input/train/part-0014.jsonl.gz",
+      "size": 41972128,
+      "sha256": "8d75aac18167d26d7be50b5ff3aa7d09cfa2c98a2f491148d1d4c0612d25e9c5"
+    },
+    {
+      "path": "tasks/mof_adsorption/input/train/part-0015.jsonl.gz",
+      "size": 34256505,
+      "sha256": "f81499a9cbc1c931a5ffe0e4616357a13ba6536361c6528d478ffb9723b89251"
+    },
+    {
+      "path": "tasks/mof_adsorption/instruction.json",
+      "size": 3616,
+      "sha256": "87785b99f141de09828969d516e267fa10561896e69d02f00ef7b610d60eca67"
+    },
+    {
+      "path": "tasks/mof_adsorption/meta.json",
+      "size": 1411,
+      "sha256": "d07e06200b5455f4317356b9621cdc3a30ad70db3307ed87c2d1d6708004af5f"
+    },
+    {
+      "path": "tasks/mof_adsorption/verifier/common.py",
+      "size": 10697,
+      "sha256": "e959ff70aa46f7190cab467a44bde6b9d4752e14791334bda8f32560d3a29fe1"
+    },
+    {
+      "path": "tasks/mof_adsorption/verifier/protocol.json",
+      "size": 475,
+      "sha256": "6c016cceeffafc4ec0dab695d74507ed4f6e9f02f95dd663d46634ab2734a795"
+    },
+    {
+      "path": "tasks/mof_adsorption/verifier/test/data/labels.csv",
+      "size": 101012,
+      "sha256": "03dbbf0d29c3830f9839320d8361633975569cc4d5b52213c94af3eff528d3e5"
+    },
+    {
+      "path": "tasks/mof_adsorption/verifier/test/run/main.py",
+      "size": 172,
+      "sha256": "9e86fd3eeeae3d17c17dd5c20449ae67096d2649bf19ba306466f15efd34da47"
+    },
+    {
+      "path": "tasks/mof_adsorption/verifier/validation/run/main.py",
+      "size": 182,
+      "sha256": "7e6c1f4db2edb942f676700fc64fc13598961aff232df67d5349cc280a5a9f44"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/Containerfile",
+      "size": 765,
+      "sha256": "eea2763604d3cdf156537f1df42d1727af468d6c92c8031b2959a8f48bf7a59d"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/README.md",
+      "size": 4496,
+      "sha256": "f660aa781ae76e8258431e2bbe7caee32440f04cb95b39b84c96840c8c4b2ce8"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/assemble_wheels.py",
+      "size": 3063,
+      "sha256": "17bbc66041ab261f98e3a3743be79fd43e9cf6e93a27b32602c239f879bb635a"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/dependency_validation.json",
+      "size": 59040,
+      "sha256": "398936dcc48a4d2ded06746a9c4cbffab5274c1830df7fc3e5b970820df7e6a8"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/environment.json",
+      "size": 80,
+      "sha256": "a17b6bdc8bba0401cab826d6a59601ff9fcc6cdab22bf7da97155b4ad6b2b0c2"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/install_research_environment.py",
+      "size": 4219,
+      "sha256": "864447b93e0ed9ec30c2875a13a8013f73f809fc9cb6376ce2422e0939b1cd55"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/native_library_validation.json",
+      "size": 139522,
+      "sha256": "faff87d20f81a7e1bebbe3b154bb75bc92c28e1b5cca3a348f70615c71f8ecfa"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/offline_resolution_validation.json",
+      "size": 12611,
+      "sha256": "ded8ed607003984ce6c33abb0f6c649b764a8ae6d0e461011c31a4f40f28cc7b"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/provenance/LICENSE-nvidia-ml-py3.txt",
+      "size": 1586,
+      "sha256": "cecbe108d3216e8095b3502c5171314776f4ac60b5dd35cc168deb3121e9e8e2"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/provenance/nvidia-ml-py3-7.352.0.tar.gz",
+      "size": 19494,
+      "sha256": "390f02919ee9d73fe63a98c73101061a6b37fa694a793abf56673320f1f51277"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/provenance/nvidia-ml-py3-source.json",
+      "size": 378,
+      "sha256": "17a4e209dace712deb156e815f00ac95a4289cb6c372350304a536bfa2f2ab22"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/provenance/torch-source.json",
+      "size": 402,
+      "sha256": "f3e16719f9b0a59723d2e12e7234425170d5419c3c67c316abd721760111393d"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/requirements-bootstrap.lock",
+      "size": 170,
+      "sha256": "04b1d8acfdc52e05bf47bb1b8a32380e90d4dc2d7cddffe4b3634d6b43d7e055"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/requirements-research.lock",
+      "size": 5235,
+      "sha256": "8862673216b9beca2156ef341ff20f9e1f2d7fe635c2f83bc835178397eeb04c"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheel_manifest.json",
+      "size": 300303,
+      "sha256": "9a027a9c567844fb2a147ef3e9c066eeb9a4ce53c73258670e97f161b9ee12c5"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/Cython-3.0.11-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 3595065,
+      "sha256": "3999fb52d3328a6a5e8c63122b0a8bd110dfcdb98dda585a3def1426b991cba7"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/MarkupSafe-3.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 23120,
+      "sha256": "a123e330ef0853c6e822384873bef7507557d8e4a082961e1defa947aa59ba84"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/PyYAML-6.0.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 762952,
+      "sha256": "3ad2a3decf9aaba3d29c8f537ac4b243e36bef957511b4766cb0057d32b0be85"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/ase-3.23.0-py3-none-any.whl",
+      "size": 2877073,
+      "sha256": "52060410e720b6c701ea1ebecfdeb5ec6f9c1c63edc7cee68c15bd66d226dd43"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/certifi-2025.1.31-py3-none-any.whl",
+      "size": 166393,
+      "sha256": "ca78db4565a652026a4db2bcdf68f2fb589ea80d0be70e03929ed730746b84fe"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/charset_normalizer-3.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 140273,
+      "sha256": "753f10e867343b4511128c6ed8c82f7bec3bd026875576dfd88483c5c73b2fd8"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/chgnet-0.3.8-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 9250402,
+      "sha256": "7202a98ce65df5dae0b9663032c7e372ee0f6c4dced78cdeb36583b9adca17ef"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/contourpy-1.3.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 326184,
+      "sha256": "3a04ecd68acbd77fa2d39723ceca4c3197cb2969633836ced1bea14e219d077c"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/cycler-0.11.0-py3-none-any.whl",
+      "size": 6389,
+      "sha256": "3a27e95f763a428a739d2add979fa7494c912a32c17c4c38c4d5f082cad165a3"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/filelock-3.29.0-py3-none-any.whl",
+      "size": 39812,
+      "sha256": "96f5f6344709aa1572bbf631c640e4ebeeb519e08da902c39a001882f30ac258"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/fonttools-4.55.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 4906304,
+      "sha256": "da9da6d65cd7aa6b0f806556f4985bcbf603bf0c5c590e61b43aa3e5a0f822d0"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/fsspec-2024.12.0-py3-none-any.whl",
+      "size": 183862,
+      "sha256": "b520aed47ad9804237ff878b504267a3b0b441e97508bd6d2d8774e3db85cee2"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/h5py-3.11.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 5420165,
+      "sha256": "52c416f8eb0daae39dabe71415cb531f95dce2d81e1f61a74537a50c63b28ab3"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/idna-3.7-py3-none-any.whl",
+      "size": 66836,
+      "sha256": "82fee1fc78add43492d3a1898bfa6d8a904cc97d8427f683ed8e798d07761aa0"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/jinja2-3.1.5-py3-none-any.whl",
+      "size": 134596,
+      "sha256": "aba0f4dc9ed8013c424088f68a5c226f7d6097ed89b246d7749c2ec4175c6adb"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/joblib-1.4.2-py3-none-any.whl",
+      "size": 301817,
+      "sha256": "06d478d5674cbc267e7496a410ee875abd68e4340feff4490bcb7afb88060ae6"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/kiwisolver-1.4.8-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 1435109,
+      "sha256": "3a96c0e790ee875d65e340ab383700e2b4891677b7fcd30a699146f9384a2bb0"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/latexcodec-3.0.1-py3-none-any.whl",
+      "size": 18532,
+      "sha256": "a9eb8200bff693f0437a69581f7579eb6bca25c4193515c09900ce76451e452e"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/matplotlib-3.10.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 8599369,
+      "sha256": "5439f4c5a3e2e8eab18e2f8c3ef929772fd5641876db71f08127eed95ab64683"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/monty-2024.5.24-py3-none-any.whl",
+      "size": 67943,
+      "sha256": "0627fe55beb84e2ded247adcb5785933b7e123852eaa7c2da16ff96d96c0819c"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/mpmath-1.3.0-py3-none-any.whl",
+      "size": 536198,
+      "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/networkx-3.4.2-py3-none-any.whl",
+      "size": 1723263,
+      "sha256": "df5d4365b724cf81b8c6a7312509d0c22386097011ad1abe274afd5e9d3bbc5f"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/numpy-1.26.4-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 18252005,
+      "sha256": "666dbfb6ec68962c033a450943ded891bed2d54e6755e35e5835d63f4f6931d5"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/nvidia_ml_py3-7.352.0-py3-none-any.whl",
+      "size": 19173,
+      "sha256": "9427f3a5a9406f33138c7975b2ac45aa8eeff362268b9dcec504eae6dd57243b"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/packaging-24.2-py3-none-any.whl",
+      "size": 65451,
+      "sha256": "09abb1bccd265c01f4a3aa3f7a7db064b36514d2cba19a2f694fe6150451a759"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/palettable-3.3.3-py2.py3-none-any.whl",
+      "size": 332251,
+      "sha256": "74e9e7d7fe5a9be065e02397558ed1777b2df0b793a6f4ce1a5ee74f74fb0caa"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/pandas-2.2.3-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 13058505,
+      "sha256": "c124333816c3a9b03fbeef3a9f230ba9a737e9e5bb4060aa2107a86cc0a497fc"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/phono3py-3.30.0-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+      "size": 639674,
+      "sha256": "21d846b3d6b94105280bcdd17fa8b38f0a5ad97393cc2a1f3eb77ee1f325ecb5"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/phonopy-3.5.0-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+      "size": 664260,
+      "sha256": "53bae6a094a403b175e2ba3e458c3251958ad4412a6705c67920111c9d9cf033"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/pillow-11.1.0-cp311-cp311-manylinux_2_28_x86_64.whl",
+      "size": 4484021,
+      "sha256": "837060a8599b8f5d402e97197d4924f05a2e0d68756998345c829c33186217b1"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/pip-24.0-py3-none-any.whl",
+      "size": 2110226,
+      "sha256": "ba0d021a166865d2265246961bec0152ff124de910c5cc39f1156ce3fa7c69dc"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/plotly-5.24.1-py3-none-any.whl",
+      "size": 19054220,
+      "sha256": "f67073a1e637eb0dc3e46324d9d51e2fe76e9727c892dde64ddf1e1b51f29089"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/pybtex-0.26.1-py3-none-any.whl",
+      "size": 126134,
+      "sha256": "e26c0412cc54f5f21b2a6d9d175762a2d2af9ccf3a8f651cdb89ec035db77aa1"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/pymatgen-2024.5.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 4941164,
+      "sha256": "d77cc72459b54f1f6aaeca9b95fe536adb7b8d12b0d72c2f81a159a61b09fdda"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/pyparsing-3.2.0-py3-none-any.whl",
+      "size": 106921,
+      "sha256": "93d9577b88da0bbea8cc8334ee8b918ed014968fd2ec383e868fb8afb1ccef84"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/python_dateutil-2.9.0.post0-py2.py3-none-any.whl",
+      "size": 229892,
+      "sha256": "a8b2bc7bffae282281c8140a97d3aa9c14da0b136dfe83f850eea9a5f7470427"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/pytz-2024.1-py2.py3-none-any.whl",
+      "size": 505474,
+      "sha256": "328171f4e3623139da4983451950b28e95ac706e13f3f2630a879749e7a8b319"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/requests-2.32.3-py3-none-any.whl",
+      "size": 64928,
+      "sha256": "70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/ruamel.yaml-0.18.6-py3-none-any.whl",
+      "size": 117761,
+      "sha256": "57b53ba33def16c4f3d807c0ccbc00f8a6081827e81ba2491691b76882d0c636"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/ruamel.yaml.clib-0.2.8-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl",
+      "size": 544020,
+      "sha256": "25c515e350e5b739842fc3228d662413ef28f295791af5e5110b543cf0b57d9b"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/scipy-1.13.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 38569931,
+      "sha256": "a78b4b3345f1b6f68a763c6e25c0c9a23a9fd0f39f5f3d200efe8feda560a5fa"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/setuptools-75.1.0-py3-none-any.whl",
+      "size": 1248506,
+      "sha256": "35ab7fd3bcd95e6b7fd704e4a1539513edad446c097797f2985e0e4b960772f2"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/six-1.16.0-py2.py3-none-any.whl",
+      "size": 11053,
+      "sha256": "8abb2f1d86890a2dfb989f9a77cfcfd3e47c2a354b01111771326f8aa26e0254"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/spglib-2.6.0-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size": 809047,
+      "sha256": "ff6b2f21226f7ece7758eb1d320907168018aa0a30a57c2b0a24cbf8f6860211"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/symfc-1.6.0-py3-none-any.whl",
+      "size": 88823,
+      "sha256": "c16c3a32bdd9e062ab5065a8ba8cccd657753f12af100ab6b06fe1bccf49a8bc"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/sympy-1.13.3-py3-none-any.whl",
+      "size": 6189483,
+      "sha256": "54612cf55a62755ee71824ce692986f23c88ffa77207b30c1368eda4a7060f73"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/tabulate-0.9.0-py3-none-any.whl",
+      "size": 35252,
+      "sha256": "024ca478df22e9340661486f85298cff5f6dcdba14f3813e8830015b9ed1948f"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/tenacity-9.0.0-py3-none-any.whl",
+      "size": 28169,
+      "sha256": "93de0c98785b27fcf659856aa9f54bfbd399e29969b0621bc7f762bd441b4539"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/torch-2.4.1+cpu-cp311-cp311-linux_x86_64.whl.part-000",
+      "size": 50331648,
+      "sha256": "9cbb3d5bc46ec740c1c96cbb8ecfa9b114aa615ff87caa816eef169caf0da104"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/torch-2.4.1+cpu-cp311-cp311-linux_x86_64.whl.part-001",
+      "size": 50331648,
+      "sha256": "ed1ba69f9728db98c3f18099495176016877a833e7c64b2d9902b8a63d7c34ca"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/torch-2.4.1+cpu-cp311-cp311-linux_x86_64.whl.part-002",
+      "size": 50331648,
+      "sha256": "09018025c6f9268bd9a8fe5fde8a7430144970b00c74dd03fca16599c7fe9e9a"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/torch-2.4.1+cpu-cp311-cp311-linux_x86_64.whl.part-003",
+      "size": 43932040,
+      "sha256": "0b4d0850f2dd15526462ad8388897eb94b5973c021d168a1739951bfbb20c061"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/tqdm-4.67.1-py3-none-any.whl",
+      "size": 78540,
+      "sha256": "26445eca388f82e72884e0d580d5464cd801a3ea01e63e5601bdff9ba6a48de2"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/typing_extensions-4.12.2-py3-none-any.whl",
+      "size": 37438,
+      "sha256": "04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/tzdata-2023.3-py2.py3-none-any.whl",
+      "size": 341835,
+      "sha256": "7e65763eef3120314099b6939b5546db7adce1e7d6f2e179e3df563c70511eda"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/uncertainties-3.2.3-py3-none-any.whl",
+      "size": 60118,
+      "sha256": "313353900d8f88b283c9bad81e7d2b2d3d4bcc330cbace35403faaed7e78890a"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/urllib3-2.3.0-py3-none-any.whl",
+      "size": 128369,
+      "sha256": "1cee9ad369867bfdbbb48b7dd50374c0967a0bb7710050facf0dd6911440e3df"
+    },
+    {
+      "path": "tasks/thermal_conductivity/environment/wheelhouse/wheel-0.44.0-py3-none-any.whl",
+      "size": 67059,
+      "sha256": "2376a90c98cc337d18623527a97c31797bd02bad0033d41547043a1cbfbe448f"
+    },
+    {
+      "path": "tasks/thermal_conductivity/input/ATTRIBUTION.txt",
+      "size": 1380,
+      "sha256": "7507669b9ed47271cf0ff8c8fdf593f24e1d2aebc350ba268ba86d9502c26e4a"
+    },
+    {
+      "path": "tasks/thermal_conductivity/input/README.md",
+      "size": 4711,
+      "sha256": "19686158e1d2e244b230bde2462a8f15509b148071bcadb2c41e6ecac1ad0ce5"
+    },
+    {
+      "path": "tasks/thermal_conductivity/input/calculation_settings.json",
+      "size": 818,
+      "sha256": "ceb76645e98f1b81e51468636c81113bbe4201ab1a7128e41d3c06fb8f05c3c6"
+    },
+    {
+      "path": "tasks/thermal_conductivity/input/model_weights/LICENSE-CHGNet.txt",
+      "size": 2519,
+      "sha256": "a06789a2624485a9de5903d3d4cceeec6127a36042dd7364999ff994587a4a41"
+    },
+    {
+      "path": "tasks/thermal_conductivity/input/model_weights/chgnet_0.3.0_e29f68s314m37.pth.tar",
+      "size": 4863221,
+      "sha256": "d14ab7c0f093efe64b60a7bcd540bca10e74fb7f46c86108a079af60524659d1"
+    },
+    {
+      "path": "tasks/thermal_conductivity/input/model_weights/model_card.json",
+      "size": 990,
+      "sha256": "35f163fcabe21f39637cc42fd55e6b80ba16f0f4ccf938bbe02d0da53ae56bcc"
+    },
+    {
+      "path": "tasks/thermal_conductivity/input/structures.jsonl.gz",
+      "size": 8241,
+      "sha256": "c1ce6f33006865c33a19d18422c8aef8d04f3623397d29017268dcb8662991ee"
+    },
+    {
+      "path": "tasks/thermal_conductivity/input/submission.csv",
+      "size": 1465,
+      "sha256": "00e6b78cc3375b754b12edc0f3ce9fbdf301e2794ea7049f9d52f416681c8e45"
+    },
+    {
+      "path": "tasks/thermal_conductivity/instruction.json",
+      "size": 18426,
+      "sha256": "fe0c17a7576b5db8c145731170e56bd0d06711c7b2f8a03675bb2bcd044e9c75"
+    },
+    {
+      "path": "tasks/thermal_conductivity/meta.json",
+      "size": 1403,
+      "sha256": "d0f61ea489a7a4009ac1531eafb3014e5e4f922c79ffc32a9b6d35d8879e1467"
+    },
+    {
+      "path": "tasks/thermal_conductivity/verifier/common.py",
+      "size": 10697,
+      "sha256": "e959ff70aa46f7190cab467a44bde6b9d4752e14791334bda8f32560d3a29fe1"
+    },
+    {
+      "path": "tasks/thermal_conductivity/verifier/protocol.json",
+      "size": 456,
+      "sha256": "6368b3d0884c793d2aff2805ba72f9e584ee895cffbaa29c059a89fb74154c12"
+    },
+    {
+      "path": "tasks/thermal_conductivity/verifier/test/data/labels.csv",
+      "size": 2769,
+      "sha256": "75b703698dd6e84229e93fdc4ee4a903f51729f1cf9a0eee95ee88d7c3e78865"
+    },
+    {
+      "path": "tasks/thermal_conductivity/verifier/test/run/main.py",
+      "size": 172,
+      "sha256": "9e86fd3eeeae3d17c17dd5c20449ae67096d2649bf19ba306466f15efd34da47"
+    },
+    {
+      "path": "tasks/thermal_conductivity/verifier/validation/run/main.py",
+      "size": 182,
+      "sha256": "7e6c1f4db2edb942f676700fc64fc13598961aff232df67d5349cc280a5a9f44"
+    }
+  ]
+}

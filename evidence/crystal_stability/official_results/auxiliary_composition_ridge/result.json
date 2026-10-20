@@ -1,0 +1,44 @@
+{
+  "error": null,
+  "metrics": [
+    {
+      "name": "stability_f1",
+      "unit": null,
+      "value": 0.18702466142291088
+    },
+    {
+      "name": "n_samples",
+      "unit": "count",
+      "value": 215488
+    },
+    {
+      "name": "FN",
+      "unit": "count",
+      "value": 25036
+    },
+    {
+      "name": "FP",
+      "unit": "count",
+      "value": 43697
+    },
+    {
+      "name": "TN",
+      "unit": "count",
+      "value": 138849
+    },
+    {
+      "name": "TP",
+      "unit": "count",
+      "value": 7906
+    }
+  ],
+  "primary_metric": {
+    "direction": "maximize",
+    "name": "stability_f1",
+    "value": 0.18702466142291088
+  },
+  "schema_version": "1.0",
+  "status": "valid",
+  "task_id": "crystal_stability",
+  "valid": true
+}

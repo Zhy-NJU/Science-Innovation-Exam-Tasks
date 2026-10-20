@@ -1,135 +1,198 @@
-<div align="center">
+# Validation evidence for three Science Innovation Exam task packages
 
-# Science Innovation Exam · Tasks
+This is a small reviewer-evidence companion to `thermal_conductivity`,
+`crystal_stability` and `mof_adsorption`. It belongs on a separate evidence
+branch and is not part of any task PR or agent-visible task input.
 
-**面向研究 Agent 的动态科学基准 · 任务共建仓库**
+## What was tested
 
-[![官网](https://img.shields.io/badge/%E5%AE%98%E7%BD%91-Science%20Innovation%20Exam-333399?logo=googlechrome&logoColor=white)](https://prismax-team.github.io/Science-Innovation-Exam-Tasks/zh/)
-[![共建页面](https://img.shields.io/badge/%E5%85%B1%E5%BB%BA%E9%A1%B5%E9%9D%A2-%E5%8F%82%E4%B8%8E%E5%85%B1%E5%BB%BA-2ea44f?logo=googlechrome&logoColor=white)](https://prismax-team.github.io/Science-Innovation-Exam-Tasks/zh/contribute/)
+`final_package_manifest.json` identifies the original frozen task bytes:
+**203 files, 1,403,908,064 logical bytes** across all three tasks. Paths in that
+manifest are relative to a directory containing `tasks/`. The recorded
+scientific results apply to those bytes, not to arbitrary later revisions.
 
-**简体中文** | [English](README_EN.md)
+The original check run used official repository commit
+`e07dfbc595cadc42274788c8e8b69bb79eab2d64` and contract revision `2026-09-17`.
+The repository was subsequently renamed from
+`PrismaX-Team/LiveDiscoveryBench-Tasks` to
+`PrismaX-Team/Science-Innovation-Exam-Tasks`. The published schemas, package
+checker, structural checker and verifier contract did not change between that
+revision and submission base `969a824ab14ce1e549577e90a442fda1c5d9fb2e`.
 
-[什么是 SIE](#-什么是-science-innovation-exam) · [共建流程](#-共建流程) · [任务包](#-任务包) · [仓库导航](#%EF%B8%8F-仓库导航) · [交流群](#-共建者交流群)
+- All **99 independent local tests** passed, 33 per task, with zero failures,
+  errors or skips and unchanged before/after task hashes.
+- Official package/schema and structural checks passed. The published
+  fallback checker was used; this was not a private framework run.
+- Re-scoring the frozen baselines with Python 3.9.6 and 3.11.8 produced
+  byte-identical result files.
+- Offline wheel reconstruction, hashes, dependency closure and ELF metadata
+  were checked for the thermal/crystal research environment.
+- Real CPU smoke calculations exercised the supplied CHGNet checkpoint:
+  one MgO force-constant/transport workflow and one bounded crystal
+  relaxation/formation-energy workflow.
 
-</div>
+**The 99 tests, structure checks and static wheel audits do not establish
+Docker/OCI execution or integration with the private SIE runtime.** Neither
+was run. The one-structure smokes are not full-benchmark inference,
+convergence studies or accuracy evaluations.
 
----
+## Recorded baselines
 
-Science Innovation Exam（SIE）评测研究 Agent 能否面向**真实、尚未解决的前沿科学问题**，在开放环境中自主调研，提出并验证改进方案，取得可衡量的进展。
+| Task | Main reference | Raw result | Bottom reference |
+|---|---|---:|---:|
+| Thermal conductivity | Replay of published CHGNet-0.3.0 transport predictions; fixed zero fallback for 16 failed cases | mean SRE `1.6958708753402623`, lower better | All-zero: `2.0` |
+| Crystal stability | Replay of published relaxed, MP2020-corrected CHGNet-0.3.0 formation energies on 215,488 entries | F1 `0.611111789635673`, higher better | Constant `-1e6` eV/atom, all stable: `0.2652014652014652` |
+| MOF adsorption | Training-only energy medians by `(nco2, nh2o)` over all 162,224 training systems | Whole-system MAE `0.22528328096993902` eV, lower better | All-zero: `0.6565553732351735` eV |
 
-本仓库是 SIE 的**任务共建入口**：任务 Proposal 在这里公开讨论和审核，任务包通过 PR 进入基准，审核记录直接沉淀在 GitHub 上。一个 GitHub 账号就能提交、审核和署名。
+Thermal/crystal main results are **archive replays**, not newly executed full
+CHGNet runs. MOF is an actually fitted statistical baseline, not a reproduced
+state-of-the-art structure model. Auxiliary composition-ridge and external
+EquiformerV3 scores are retained separately and do not replace the main
+baseline.
 
-## 🔬 什么是 Science Innovation Exam
+For MOF, the scientific scope is the original ODAC23 `ood_big` split:
+162,224 training, 3,998 development and 1,768 test systems, with 85 test
+framework names and 66 derived parent names. The task retains the original
+whole-system `y_relaxed` labels and their documented empty-MOF reference-state
+limitations; it does not establish corrected ground-state energies or
+unseen-linker/topology generalization.
 
-大多数基准衡量模型**知道什么**；SIE 衡量 Agent 面对一个没有标准答案的科学问题时**能做到什么**。每个任务来自一个仍在推进的真实研究问题，Agent 拿到的是数据、环境和评分合同，而不是解题路径。
+## Contents and exclusions
 
-<table>
-<tr>
-<td width="50%">🧭 <b>Live Question</b><br>评测的不是解法明确的静态题目，而是仍未解决、值得不断推进的真实前沿问题。</td>
-<td width="50%">🌐 <b>Live Environment</b><br>Agent 在开放环境中可以检索前沿方法；公开知识是研究的起点，而不是需要隔离的信息。</td>
-</tr>
-<tr>
-<td>📏 <b>Live Metric</b><br>评分规则固定，比较坐标持续更新；每个结果都相对于其他 Agent 和当前前沿来衡量。</td>
-<td>🤝 <b>Live Community</b><br>基准不是一次性封闭发布的题库，而由研究者、领域专家等贡献者持续共同发现、构建和完善。</td>
-</tr>
-<tr>
-<td>🔒 <b>确定性验证</b><br>Verifier 在运行前冻结并离线评分；相同的冻结输入、Validation 历史、Context 和提交必须得到相同结果。</td>
-<td>🛡️ <b>受控评测</b><br>资源与网络边界预先固定，研究过程被完整记录与审计，防止 hacking、访问隐藏输入或绕过约束获得虚假高分。</td>
-</tr>
-</table>
+- `evidence/<task>/official_results/{baseline,bottom}/result.json` preserves
+  the result paths used by the package metadata.
+- `evidence/mof_adsorption/baseline.py` is the original training-only median
+  implementation.
+- `evidence/tests/` contains the original 99-test report and driver,
+  cross-version report/driver, structural check results and offline audits.
+- `evidence/construction/scoring_core.py` is an unchanged copy of the
+  scoring helper. Task entrypoints use their own packaged copy; this file
+  is provided for inspection, not as an alternative hidden-data location.
+- Scientific smoke scripts and their small JSON results are included.
+  Full arrays in these JSON files are actual one-structure model outputs,
+  not the withheld reference labels.
+- `copied_files_manifest.json` records each copied file's original
+  bundle-relative path, size and SHA256. Copied files are byte-for-byte
+  unchanged. Historical reports retain original interpreter/workspace
+  paths and historical repository names as execution provenance; reviewers
+  need not reproduce those directory names.
 
-科学标准与任务实例见[官网](https://prismax-team.github.io/Science-Innovation-Exam-Tasks/zh/)。
+This selection excludes per-sample archived prediction CSVs, source-ID mapping
+files, source target tables, scientific data shards, model weights, wheel
+archives, the large smoke force-constant NPZ, installation logs, proposal
+identity fields and account/login material. Some original manifests refer to
+omitted artifacts; their inclusion here does not imply that every listed
+artifact is present in this evidence branch. No original report was edited
+to hide an omission.
 
-## 🚀 共建流程
+`replay_baselines.py` and `reviewer_helper_replay.json` are explicitly new
+reviewer additions. They reproduce the original baseline CSV hashes and
+scores but do not replace or change the historical reports.
 
-一个任务分两步进入 SIE：先提交公开 **Proposal**，由一位领域专家审核；获批后再提交**任务 PR**，由一位领域专家和一位技术专家双审。全程在 GitHub 上完成，进度同步显示在[官网共建看板](https://prismax-team.github.io/Science-Innovation-Exam-Tasks/zh/contribute/#contribution-activity)。
+## Reproduce the independent tests
 
-```mermaid
-flowchart LR
-    A["1️⃣ 📝 提交 Proposal<br/>(Discussion)"] --> B["🧑‍🔬 领域专家审核"]
-    B -->|获批| C["2️⃣ 🧩 构建任务包<br/>模板 / AI Skill"]
-    C --> E["3️⃣ 🔀 提交任务 PR"]
-    E --> F["🤖 自动化检查"]
-    F --> G["👥 双审<br/>领域 + 技术"]
-    G -->|合并| H["🌐 官网上线并署名"]
+Prepare three local task directories matching `final_package_manifest.json`
+and a separate checkout of the official repository. The task PRs remain
+separate; combining their task directories in a local verification workspace
+does not imply a combined PR.
 
-    style A fill:#dcfce7,stroke:#16a34a,stroke-width:3px
-    style C fill:#dcfce7,stroke:#16a34a,stroke-width:3px
-    style E fill:#dcfce7,stroke:#16a34a,stroke-width:3px
-    style B fill:#fef3c7,stroke:#f59e0b,stroke-dasharray:4 3
-    style F fill:#f5f3ff,stroke:#8b5cf6,stroke-dasharray:4 3
-    style G fill:#fef3c7,stroke:#f59e0b,stroke-dasharray:4 3
-    style H fill:#e0f2fe,stroke:#0284c7,stroke-dasharray:4 3
+Use a Python environment with `jsonschema` for the test drivers and
+`packaging` for the offline-wheel audit. These are reviewer-harness
+dependencies, separate from the pinned scientific environment. Set explicit
+paths to override the scripts' historical build-layout defaults:
+
+```sh
+evidence_root=/absolute/path/to/evidence-checkout
+tasks_root=/absolute/path/to/verification-workspace/tasks
+official_root=/absolute/path/to/Science-Innovation-Exam-Tasks
+run_root=/absolute/path/to/separate-review-output
+mkdir -p "$run_root"
+
+python3 "$evidence_root/evidence/tests/test_packages.py" \
+  --official-repo "$official_root" --tasks-root "$tasks_root" \
+  --python "$(command -v python3)" \
+  --report "$run_root/independent_tests.json"
+
+python3 "$evidence_root/evidence/tests/test_offline_environment.py" \
+  --package "$tasks_root/thermal_conductivity" \
+  --report "$run_root/thermal_offline_environment.json"
+python3 "$evidence_root/evidence/tests/test_offline_environment.py" \
+  --package "$tasks_root/crystal_stability" \
+  --report "$run_root/crystal_offline_environment.json"
 ```
 
-> 带序号的绿色粗实框 1️⃣ 2️⃣ 3️⃣ 是**你需要做的三步**；虚框由维护者（黄）、CI（紫）与官网（蓝）完成，无需你操作。
+The 99-test driver makes isolated scoring/reference copies for destructive
+negative tests, reads large task files directly and hashes every original
+task file before and after. It does not need the omitted prediction CSVs or
+source-ID mappings. The offline audit temporarily reconstructs wheel files,
+so allow scratch disk space beyond the size of this evidence checkout.
 
-| 步骤 | 你要做的 | 入口 |
-| --- | --- | --- |
-| 1. 提出任务 | 描述科学问题、数据来源、指标与授权 | [提交 Proposal](https://github.com/PrismaX-Team/Science-Innovation-Exam-Tasks/discussions/new?category=proposals) |
-| 2. 构建任务包 | Fork 仓库，复制 `tasks/_template/`，或让 AI 编程助手按 Skill 生成，本地跑结构检查 | [共建指南](CONTRIBUTING.md) · [任务合同](https://prismax-team.github.io/Science-Innovation-Exam-Tasks/zh/contribute/task-contract/) |
-| 3. 提交 PR | 从 fork 向 `main` 发起 PR，正文带上 `Proposal:` 行；等待维护者打标签与双审 | [PR 模板](.github/PULL_REQUEST_TEMPLATE/new_task.md) |
+## Rebuild and re-score the baselines
 
-PR 按**改动用途**分类，由维护者确认唯一类型标签；标签确认前 Contribution gate 保持 pending 而非失败。
+The new `evidence/tests/replay_baselines.py` helper makes no network requests.
+For thermal/crystal replay, obtain these fixed public archives separately and
+place them under a local `source_root`. They are reviewer-only resources,
+forbidden as research-agent inputs.
 
-| 用途 | 标签 | 正文必需行 |
-| --- | --- | --- |
-| 新增任务 | `type:new-task` | `Proposal: https://github.com/PrismaX-Team/Science-Innovation-Exam-Tasks/discussions/NUMBER` |
-| 任务修复 | `type:task-fix` | `Task: EXISTING_TASK_ID` |
-| 仓库维护 | `type:maintenance` | 说明维护范围，无需 Proposal |
+| Relative local filename | Official download | Required SHA256 |
+|---|---|---|
+| `thermal/chgnet.json.gz` | [Thermal CHGNet archive](https://ndownloader.figshare.com/files/68221282) | `a9b23130992988c9541a62635c17ce4b8f4b8cb7da2dfbdcd67a44722d585505` |
+| `chgnet-crystal.csv.gz` | [Crystal CHGNet archive](https://ndownloader.figshare.com/files/66646268) | `b04ce3b031827fcd532e22058d06dc77fb4705ce8b12aea54652a14504e41f16` |
+| `wbm-summary.csv.gz` | [Frozen WBM subset definition](https://ndownloader.figshare.com/files/64706751) | `adbdd8b24086d4888195d8894c77f6d5fb29ce33bbb5d7d3898b4d79e964dc54` |
 
-分步说明见 [CONTRIBUTING.md](CONTRIBUTING.md)，维护者与审核者规则见 [MAINTAINERS.md](MAINTAINERS.md)。
+The helper reconstructs the original sorted source-ID ordering without
+shipping an ID-mapping file, verifies all source checksums, and requires each
+rebuilt baseline CSV to match the originally recorded SHA256. For MOF it
+executes the unchanged training-only baseline. It scores through the packaged
+test entrypoints and checks both main and bottom raw results.
 
-## 📦 任务包
+```sh
+source_root=/absolute/path/to/local-public-archives
+python3 "$evidence_root/evidence/tests/replay_baselines.py" \
+  --tasks-root "$tasks_root" --source-root "$source_root" \
+  --output-root "$run_root/baseline-replay"
 
-每个任务是一份**严格五部分**的任务包，Agent 读到的、能用的、被评分的东西都在合同里写清楚。
-
-```text
-tasks/<task-id>/
-├── instruction.json       Agent 开始前读到的任务说明、可见输入、最终产物、要求与上限
-├── input/                 仅 Agent 可见的数据与提交模板
-├── environment/
-│   └── environment.json   可执行环境合同（default 镜像或 Containerfile）
-├── verifier/
-│   ├── validation/run/main.py   研究期间的反馈入口（--input --request --response）
-│   └── test/run/main.py         冻结提交后的最终评分入口（--input --submission --result）
-└── meta.json              任务身份、任务来源、原始指标、可选转换与实测 baseline
+python3 "$evidence_root/evidence/tests/test_cross_version.py" \
+  --official-repo "$official_root" --tasks-root "$tasks_root" \
+  --evidence-root "$run_root/baseline-replay" \
+  --pythons /absolute/path/to/python3.9 /absolute/path/to/python3.11 \
+  --report "$run_root/cross_version_smoke.json"
 ```
 
-- 任务包内文本为英文；`<task-id>` 与 `meta.json.id` 一致。
-- `input/` 只放 Agent 可见内容；隐藏评分数据放在 `verifier/test/` 下，validation 与 test 自包含。
-- 双 verifier 入口均必需，须离线、确定性运行；旧的 `verifier/run/main.py` 不再使用。
-- 构建历史、baseline 实现与审核报告放在任务包之外。共享的 Run-local `VerifyContext` 由框架提供，本仓库不含评测运行时。
+To run only MOF, add `--tasks mof_adsorption` to the replay command; no public
+archive file is then needed. The required `--source-root` may point to an
+empty existing directory. The original cross-version driver expects all three
+rebuilt baselines.
 
-字段级说明与带注释的完整示例见官网[任务合同详情页](https://prismax-team.github.io/Science-Innovation-Exam-Tasks/zh/contribute/task-contract/)；英文工作副本见 [`contributor/build-sie-task-package/task-contract.md`](contributor/build-sie-task-package/task-contract.md)。
+For the auxiliary crystal composition-ridge calculation:
 
-## 🗂️ 仓库导航
+```sh
+python3 "$evidence_root/evidence/crystal_stability/run_composition_ridge_baseline.py" \
+  --input "$tasks_root/crystal_stability/input" \
+  --output "$run_root/composition_ridge.csv"
+```
 
-| 路径 | 内容 |
-| --- | --- |
-| [`tasks/`](tasks/) | 已合并的正式任务包，每个子目录一道任务 |
-| [`tasks/_template/`](tasks/_template/) | 结构合法的空任务包模板，复制后替换占位内容 |
-| [`contributor/build-sie-task-package/`](contributor/build-sie-task-package/) | 给 AI 编程助手（Cursor、Codex、Claude Code）的 Skill：合同说明、schema、Containerfile 示例与本地检查脚本 |
-| [`.github/workflows/`](.github/workflows/) | 结构校验、贡献治理与 Proposal 审核的 Actions；只检查格式与治理规则，不执行任务代码 |
-| [`.github/scripts/`](.github/scripts/) | Actions 使用的可信策略脚本及其测试 |
-| [`.github/PULL_REQUEST_TEMPLATE/`](.github/PULL_REQUEST_TEMPLATE/) | 新增任务、任务修复、仓库维护三种 PR 模板 |
-| [`attribution.json`](attribution.json) | 未经公开 PR 登记的任务的作者与审核者 |
-| [`CONTRIBUTING.md`](CONTRIBUTING.md) · [`CONTRIBUTING_EN.md`](CONTRIBUTING_EN.md) | 共建者指南 |
-| [`MAINTAINERS.md`](MAINTAINERS.md) · [`MAINTAINERS_EN.md`](MAINTAINERS_EN.md) | 维护者与审核者指南 |
+## Reproduce the scientific smokes
 
-## 📮 参与
+Use a scientific Python environment matching the package's pinned versions
+and the supplied checkpoint. `research_python` below is an explicit path to
+that environment; it is not a claim that a container was built. The original
+host smokes ran on macOS arm64. The Linux wheel audits are separate.
 
-- 想提出一道任务：[提交 Proposal](https://github.com/PrismaX-Team/Science-Innovation-Exam-Tasks/discussions/new?category=proposals)
-- 已有获批 Proposal：阅读 [CONTRIBUTING.md](CONTRIBUTING.md) 并提交任务 PR
-- 了解基准：[官网](https://prismax-team.github.io/Science-Innovation-Exam-Tasks/zh/) · [共建页面](https://prismax-team.github.io/Science-Innovation-Exam-Tasks/zh/contribute/)
-- 对现有任务的问题或修复建议：提交 `type:task-fix` PR，或在对应 Proposal 讨论串中留言
+```sh
+research_python=/absolute/path/to/scientific-environment/bin/python
+"$research_python" "$evidence_root/evidence/thermal_conductivity/run_chgnet_phonon_smoke.py" \
+  --input "$tasks_root/thermal_conductivity/input" \
+  --output "$run_root/thermal-smoke" --supercell 2 --qmesh 5
+"$research_python" "$evidence_root/evidence/crystal_stability/run_chgnet_relaxation_smoke.py" \
+  --input "$tasks_root/crystal_stability/input" \
+  --output "$run_root/crystal-smoke" --steps 10 --fmax 0.01
+```
 
-仓库、Proposal、PR 与审核记录均公开，请只提交可再分发的材料。
-
-## 💬 共建者交流群
-
-欢迎扫码加入 **SIE 共建者交流群**，与维护者和其他共建者讨论任务选题、任务包构建和审核中遇到的问题。
-
-<p align="center"><img src="community/wechat-group.jpg" alt="SIE 共建者交流群微信二维码" width="280"></p>
-
-微信群二维码会定期过期。如果扫码提示已失效，请发邮件至 **vaporhugz@gmail.com**，我们会发送最新的入群方式。
+The thermal smoke uses a coarse mesh and force-constant supercell; it is not
+the converged benchmark calculation. The crystal smoke is a bounded
+relaxation and elemental-reference subtraction on one eligible initial
+structure; it makes no full-convergence or benchmark-accuracy claim. Both
+scripts disable Python socket connection calls; this is not OS-level
+network isolation. Full research-environment and runtime validation remains
+part of technical review.

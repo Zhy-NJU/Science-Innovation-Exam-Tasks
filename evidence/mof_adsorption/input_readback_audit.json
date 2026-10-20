@@ -1,0 +1,69 @@
+{
+  "passed": true,
+  "counts": {
+    "train": 162224,
+    "development": 3998,
+    "test": 1768
+  },
+  "framework_counts": {
+    "train": 7815,
+    "development": 192,
+    "test": 85
+  },
+  "parent_counts": {
+    "train": 4536,
+    "development": 121,
+    "test": 66
+  },
+  "cross_split_overlap": {
+    "train__development": {
+      "framework_id": 0,
+      "parent_framework_id": 0
+    },
+    "train__test": {
+      "framework_id": 0,
+      "parent_framework_id": 0
+    },
+    "development__test": {
+      "framework_id": 0,
+      "parent_framework_id": 0
+    }
+  },
+  "guest_counts": {
+    "train": {
+      "1,2": 33121,
+      "1,0": 46274,
+      "1,1": 48373,
+      "0,1": 34456
+    },
+    "development": {
+      "1,2": 787,
+      "1,0": 1138,
+      "1,1": 1211,
+      "0,1": 862
+    },
+    "test": {
+      "1,2": 318,
+      "1,0": 533,
+      "1,1": 534,
+      "0,1": 383
+    }
+  },
+  "test_label_join_rechecked": 1768,
+  "test_input_fields": [
+    "atomic_numbers",
+    "cell_angstrom",
+    "framework_id",
+    "nco2",
+    "nh2o",
+    "parent_framework_id",
+    "pbc",
+    "positions_angstrom",
+    "source_atom_tags",
+    "system_id"
+  ],
+  "baseline_independently_identical": true,
+  "baseline_submission_sha256": "ee560463787d03bd17388ce368851642bf2695f0be268a793ba34aebd3027c5f",
+  "labels_sha256": "03dbbf0d29c3830f9839320d8361633975569cc4d5b52213c94af3eff528d3e5",
+  "baseline_mae_eV_divide_before_fsum": 0.22528328096993902
+}

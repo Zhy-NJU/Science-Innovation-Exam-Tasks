@@ -1,0 +1,17 @@
+{
+  "model_name": "CHGNet",
+  "checkpoint_version": "0.3.0",
+  "python_distribution": "chgnet==0.3.8",
+  "checkpoint_file": "chgnet_0.3.0_e29f68s314m37.pth.tar",
+  "checkpoint_bytes": 4863221,
+  "checkpoint_sha256": "d14ab7c0f093efe64b60a7bcd540bca10e74fb7f46c86108a079af60524659d1",
+  "source_git_commit": "b9a6c15860237297a5a5169660e83b2e61a78e76",
+  "source_url": "https://raw.githubusercontent.com/CederGroupHub/chgnet/b9a6c15860237297a5a5169660e83b2e61a78e76/chgnet/pretrained/0.3.0/chgnet_0.3.0_e29f68s314m37.pth.tar",
+  "license": "BSD-3-Clause",
+  "license_file": "LICENSE-CHGNet.txt",
+  "checkpoint_license_evidence": "https://github.com/janosh/matbench-discovery/blob/7a7a941d0667bd5d91497f7921d2ae6b2af2aab8/models/chgnet/chgnet-0.3.0.yml",
+  "license_scope": "The frozen Matbench model registry lists the checkpoint license as BSD-3-Clause; the upstream repository BSD notice is preserved. No assertion is made that the model code license licenses every underlying training-data record. The training corpus is not redistributed.",
+  "training_disclosure": "Pretrained on Materials Project GGA/GGA+U trajectories (about 1.5 million structures from 146,000 compounds), including energy, force, stress and magnetic-moment targets. Overlap with the benchmark materials is possible; this evaluates downstream thermal predictions, not wholly unseen materials.",
+  "offline_loading": "CHGNet.from_file(path, mlp_out_bias=False, version=\"0.3.0\").to(\"cpu\")",
+  "paper": "https://doi.org/10.1038/s42256-023-00716-3"
+}

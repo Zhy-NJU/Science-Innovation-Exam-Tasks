@@ -1,0 +1,72 @@
+{
+  "verification": "Actual CPU CHGNet force inference and finite-displacement Wigner RTA calculation succeeded. No withheld thermal labels or archive predictions were read.",
+  "execution_input_scope": "Final completed 103-row task input, selecting thermal_0019. Exact matching against the official source geometry is separately recorded.",
+  "actual_command": "research/thermal-research-venv/bin/python submission_bundle/evidence/thermal_conductivity/run_chgnet_phonon_smoke.py --input submission_bundle/tasks/thermal_conductivity/input --output submission_bundle/evidence/thermal_conductivity/real_smoke",
+  "reproduce_after_task_assembly": "python evidence/thermal_conductivity/run_chgnet_phonon_smoke.py --input tasks/thermal_conductivity/input --output evidence/thermal_conductivity/real_smoke",
+  "final_status": "passed_real_efs_fc2_fc3_wigner_rta",
+  "kappa_total_W_mK": 22.270357530025688,
+  "wall_seconds": 33.74171208310872,
+  "docker_image_built": false,
+  "files": {
+    "real_smoke/geometry_source_check.json": {
+      "bytes": 2226,
+      "sha256": "e947cddb266066b4dd991eb2561bb438307362bf43539652bbe2a70a8f4515cd"
+    },
+    "real_smoke/run.log": {
+      "bytes": 8534,
+      "sha256": "cbcd4f8c9bdce9ca924fae315d7ea4e311a386b1dacb9315324c658d0001bcb9"
+    },
+    "real_smoke/smoke_force_constants.npz": {
+      "bytes": 29330256,
+      "sha256": "6a0138dc409e63d6d97ab9bee8f708b4476de16dc4165b47ab23210ecee40d29"
+    },
+    "real_smoke/smoke_input.json": {
+      "bytes": 1364,
+      "sha256": "62728129d6eff74fef068b550eebcfef1cf75562ba0fcc1ca679b736aa9ef061"
+    },
+    "real_smoke/smoke_result.json": {
+      "bytes": 7980,
+      "sha256": "f93681c1bcddd1d21534d72cadc28b52c1a1efd7202ec621a0dbb24bf5421771"
+    },
+    "research_environment/Containerfile.proposed": {
+      "bytes": 877,
+      "sha256": "2904df1cbb3772de806997f4adbabe89fa9d1edbc5438f55abda5eb7c09f02c1"
+    },
+    "research_environment/README.md": {
+      "bytes": 2930,
+      "sha256": "66537fc07873b6ad60634e80e1b68e414cfcb8010f5a550e418d6f6bea36c00f"
+    },
+    "research_environment/agent_workflow_proposed.md": {
+      "bytes": 2830,
+      "sha256": "35d3f6b199fd6e47a858b0de77e6a1fc5acfd2475b7f784249869e91b5f2e753"
+    },
+    "research_environment/dependency_consistency.json": {
+      "bytes": 258,
+      "sha256": "e48a78054a7304b65d83ca53ea259c74b170abb5cdbd0700cc754c3aea4ccdf1"
+    },
+    "research_environment/host_dependency_closure.json": {
+      "bytes": 13993,
+      "sha256": "c0094e1b1d84b7997ef6674f68b703b11080eff60f7a8c342c908798c6e214c7"
+    },
+    "research_environment/linux_artifact_assembly.json": {
+      "bytes": 10425,
+      "sha256": "4674008fce2b99567269d7956df0253e9f6a0c6bccb89e0427cd7b1df542a2fd"
+    },
+    "research_environment/model_provenance.json": {
+      "bytes": 1524,
+      "sha256": "62acb5300a1ad94e57d8bdf748aa5240b61ea31d07f58d33cac3085f1857313c"
+    },
+    "research_environment/pip-install.log": {
+      "bytes": 11593,
+      "sha256": "908354716ba5baf0fef8ffdf39a46d01a6900db1f43e876595d3b125e7be4b2c"
+    },
+    "research_environment/requirements-research.lock": {
+      "bytes": 1069,
+      "sha256": "a8be65059a680e3932a8829d35918807ea4e474c6e6c714397ec910499fd8098"
+    },
+    "run_chgnet_phonon_smoke.py": {
+      "bytes": 9720,
+      "sha256": "7a0467fcd7c867b7b2ee2431dfcbf2426231d762bbe42e4bdde4e6929429e962"
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "scope": "Read-only official contract and local runtime audit. Package execution results are recorded separately.",
+  "repository": "https://github.com/PrismaX-Team/LiveDiscoveryBench-Tasks",
+  "commit": "e07dfbc595cadc42274788c8e8b69bb79eab2d64",
+  "contract_revision": "2026-09-17",
+  "official_files": [
+    {
+      "path": "contributor/build-sie-task-package/SKILL.md",
+      "sha256": "0cc74f263d0f568fd0f939d7e6a18d3dc145291ef2ed732e72e6bcb0e06ee878"
+    },
+    {
+      "path": "contributor/build-sie-task-package/task-contract.md",
+      "sha256": "b1028225a1b2d36583ac7c42600ba84d6bd79237190ccec7ee289f49e624d4f1"
+    },
+    {
+      "path": "contributor/build-sie-task-package/verifier-api.md",
+      "sha256": "499954ee74d30282dfea101010663cc93756b11f646e2731bf874130d4ec8779"
+    },
+    {
+      "path": "contributor/build-sie-task-package/base-images.md",
+      "sha256": "77b4f85cec82b01db5338bf2427124965d35108d42a85b180d622efe02a6fe03"
+    },
+    {
+      "path": ".github/scripts/task_structure.py",
+      "sha256": "f37809df874b7a25b04b927183451475e048debb554b6624604dcbf95db18032"
+    },
+    {
+      "path": "contributor/build-sie-task-package/schemas/environment.schema.json",
+      "sha256": "4aef77e59bc6ff60904713cba3b6232f6a5c5abbfd7e7339b6302da9a545554f"
+    },
+    {
+      "path": "contributor/build-sie-task-package/schemas/instruction.schema.json",
+      "sha256": "67a66e58638f1c031ddc4ff64255bb40e20f2232f047143cfb55914fc563c353"
+    },
+    {
+      "path": "contributor/build-sie-task-package/schemas/meta.schema.json",
+      "sha256": "4cf5a6217d1958654a2b86c9f4b24bf78df3d5c40a49eaba1a89565b105b12c2"
+    },
+    {
+      "path": "contributor/build-sie-task-package/schemas/verifier_result.schema.json",
+      "sha256": "5f7ad6df816dd8829973cff053bb63bb88a34aaf0690cc608a7c1a8b6af18fdb"
+    }
+  ],
+  "limitations": [
+    "The repository does not contain the private evaluation runtime or an installable VerifyContext SDK; official full-runtime execution is not certified.",
+    "The skill names a Chinese authoritative root contract that is not present at the pinned commit. Published working contract, schemas, and CI checks are used.",
+    "Container tools are absent locally; successful Python checks do not certify a container build.",
+    "Public reference sources permit label retrieval outside the intended isolated evaluation; mechanical input-isolation tests do not certify undisclosed or novel test data."
+  ],
+  "sdk": {
+    "import": "from science_innovation_exam.verify_context import VerifyContext",
+    "method": "VerifyContext.current()",
+    "environment": "SIE_VERIFY_CONTEXT",
+    "mocked": false
+  },
+  "python_versions": {
+    "/opt/anaconda3/bin/python": "Python 3.11.8",
+    "/usr/bin/python3": "Python 3.9.6"
+  },
+  "platform": "macOS-14.5-arm64-arm-64bit",
+  "container_commands": {
+    "docker": null,
+    "podman": null,
+    "colima": null,
+    "nerdctl": null,
+    "lima": null,
+    "limactl": null,
+    "qemu-system-aarch64": null,
+    "apptainer": null,
+    "singularity": null,
+    "buildah": null,
+    "nix": null
+  },
+  "official_upstream_self_checks": [
+    {
+      "command": [
+        "/opt/anaconda3/bin/python",
+        "-B",
+        "contributor/build-sie-task-package/scripts/check_package.py",
+        "tasks/_template"
+      ],
+      "returncode": 0,
+      "stdout": "{\n  \"task_id\": \"untitled_task\",\n  \"submission_paths\": [\n    \"submission.json\"\n  ],\n  \"status\": \"package_valid\",\n  \"checker\": \"bundled-fallback\",\n  \"contract_revision\": \"2026-09-17\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/anaconda3/bin/python",
+        "-I",
+        ".github/scripts/task_structure.py",
+        "."
+      ],
+      "returncode": 0,
+      "stdout": "Structure passed: tasks/_template\nStructure passed: tasks/protein_stability_campaign\nRead-only checks passed. Approval, identity, scientific validity and runtime remain manual review.\n",
+      "stderr": ""
+    }
+  ]
+}

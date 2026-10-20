@@ -1,0 +1,192 @@
+{
+  "crystal_stability": {
+    "baseline": {
+      "error": null,
+      "metrics": [
+        {
+          "name": "stability_f1",
+          "unit": null,
+          "value": 0.611111789635673
+        },
+        {
+          "name": "n_samples",
+          "unit": "count",
+          "value": 215488
+        },
+        {
+          "name": "FN",
+          "unit": "count",
+          "value": 7924
+        },
+        {
+          "name": "FP",
+          "unit": "count",
+          "value": 23917
+        },
+        {
+          "name": "TN",
+          "unit": "count",
+          "value": 158629
+        },
+        {
+          "name": "TP",
+          "unit": "count",
+          "value": 25018
+        }
+      ],
+      "primary_metric": {
+        "direction": "maximize",
+        "name": "stability_f1",
+        "value": 0.611111789635673
+      },
+      "schema_version": "1.0",
+      "status": "valid",
+      "task_id": "crystal_stability",
+      "valid": true
+    },
+    "bottom": {
+      "error": null,
+      "metrics": [
+        {
+          "name": "stability_f1",
+          "unit": null,
+          "value": 0.2652014652014652
+        },
+        {
+          "name": "n_samples",
+          "unit": "count",
+          "value": 215488
+        },
+        {
+          "name": "FN",
+          "unit": "count",
+          "value": 0
+        },
+        {
+          "name": "FP",
+          "unit": "count",
+          "value": 182546
+        },
+        {
+          "name": "TN",
+          "unit": "count",
+          "value": 0
+        },
+        {
+          "name": "TP",
+          "unit": "count",
+          "value": 32942
+        }
+      ],
+      "primary_metric": {
+        "direction": "maximize",
+        "name": "stability_f1",
+        "value": 0.2652014652014652
+      },
+      "schema_version": "1.0",
+      "status": "valid",
+      "task_id": "crystal_stability",
+      "valid": true
+    }
+  },
+  "mof_adsorption": {
+    "baseline": {
+      "error": null,
+      "metrics": [
+        {
+          "name": "mean_mae",
+          "unit": "eV",
+          "value": 0.22528328096993902
+        },
+        {
+          "name": "n_samples",
+          "unit": "count",
+          "value": 1768
+        }
+      ],
+      "primary_metric": {
+        "direction": "minimize",
+        "name": "mean_mae",
+        "value": 0.22528328096993902
+      },
+      "schema_version": "1.0",
+      "status": "valid",
+      "task_id": "mof_adsorption",
+      "valid": true
+    },
+    "bottom": {
+      "error": null,
+      "metrics": [
+        {
+          "name": "mean_mae",
+          "unit": "eV",
+          "value": 0.6565553732351735
+        },
+        {
+          "name": "n_samples",
+          "unit": "count",
+          "value": 1768
+        }
+      ],
+      "primary_metric": {
+        "direction": "minimize",
+        "name": "mean_mae",
+        "value": 0.6565553732351735
+      },
+      "schema_version": "1.0",
+      "status": "valid",
+      "task_id": "mof_adsorption",
+      "valid": true
+    }
+  },
+  "thermal_conductivity": {
+    "baseline": {
+      "error": null,
+      "metrics": [
+        {
+          "name": "mean_sre",
+          "unit": null,
+          "value": 1.6958708753402623
+        },
+        {
+          "name": "n_samples",
+          "unit": "count",
+          "value": 103
+        }
+      ],
+      "primary_metric": {
+        "direction": "minimize",
+        "name": "mean_sre",
+        "value": 1.6958708753402623
+      },
+      "schema_version": "1.0",
+      "status": "valid",
+      "task_id": "thermal_conductivity",
+      "valid": true
+    },
+    "bottom": {
+      "error": null,
+      "metrics": [
+        {
+          "name": "mean_sre",
+          "unit": null,
+          "value": 2.0
+        },
+        {
+          "name": "n_samples",
+          "unit": "count",
+          "value": 103
+        }
+      ],
+      "primary_metric": {
+        "direction": "minimize",
+        "name": "mean_sre",
+        "value": 2.0
+      },
+      "schema_version": "1.0",
+      "status": "valid",
+      "task_id": "thermal_conductivity",
+      "valid": true
+    }
+  }
+}

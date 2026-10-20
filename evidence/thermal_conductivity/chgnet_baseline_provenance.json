@@ -1,0 +1,27 @@
+{
+  "execution_scope": "No new 103-crystal CHGNet inference or converged phonon calculation was reproduced. Archive prediction replay only.",
+  "failed_source_ids": [
+    "mp-1342",
+    "mp-1541",
+    "mp-20012",
+    "mp-21276",
+    "mp-2172",
+    "mp-22899",
+    "mp-22922",
+    "mp-23259",
+    "mp-23703",
+    "mp-24084",
+    "mp-24721",
+    "mp-580941",
+    "mp-8880",
+    "mp-8883",
+    "mp-8884",
+    "no-mp-1"
+  ],
+  "failure_count": 16,
+  "method": "Re-score archived CHGNet-0.3.0 total Wigner-RTA conductivity. Average first three tensor diagonal entries. Broken-symmetry, imaginary-mode, absent or invalid conductivity records receive a fixed zero fallback.",
+  "n": 103,
+  "prediction_sha256": "74bc5657075478ba4aec20473db3bb90903d961b763ff2959612f5cf1ac6aad5",
+  "source": "https://ndownloader.figshare.com/files/68221282",
+  "source_sha256": "a9b23130992988c9541a62635c17ce4b8f4b8cb7da2dfbdcd67a44722d585505"
+}

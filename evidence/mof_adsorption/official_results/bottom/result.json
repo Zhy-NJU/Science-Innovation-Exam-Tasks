@@ -1,0 +1,24 @@
+{
+  "error": null,
+  "metrics": [
+    {
+      "name": "mean_mae",
+      "unit": "eV",
+      "value": 0.6565553732351735
+    },
+    {
+      "name": "n_samples",
+      "unit": "count",
+      "value": 1768
+    }
+  ],
+  "primary_metric": {
+    "direction": "minimize",
+    "name": "mean_mae",
+    "value": 0.6565553732351735
+  },
+  "schema_version": "1.0",
+  "status": "valid",
+  "task_id": "mof_adsorption",
+  "valid": true
+}

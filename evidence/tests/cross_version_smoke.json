@@ -1,0 +1,241 @@
+{
+  "scope": "Local stateless official-shape CLI re-scoring of frozen baseline CSVs; no model re-run, SDK mock, private runtime or container certification.",
+  "official_repository_commit": "e07dfbc595cadc42274788c8e8b69bb79eab2d64",
+  "contract_revision": "2026-09-17",
+  "passed": true,
+  "cross_version_byte_identical": true,
+  "runs": [
+    {
+      "task": "thermal_conductivity",
+      "python": "/usr/bin/python3",
+      "python_version": "Python 3.9.6",
+      "baseline_sha256": "74bc5657075478ba4aec20473db3bb90903d961b763ff2959612f5cf1ac6aad5",
+      "baseline_relative_path": "thermal_conductivity/chgnet_baseline.csv",
+      "result": {
+        "error": null,
+        "metrics": [
+          {
+            "name": "mean_sre",
+            "unit": null,
+            "value": 1.6958708753402623
+          },
+          {
+            "name": "n_samples",
+            "unit": "count",
+            "value": 103
+          }
+        ],
+        "primary_metric": {
+          "direction": "minimize",
+          "name": "mean_sre",
+          "value": 1.6958708753402623
+        },
+        "schema_version": "1.0",
+        "status": "valid",
+        "task_id": "thermal_conductivity",
+        "valid": true
+      },
+      "result_sha256": "57d9acc3614ba8ec666fbb2fa0f71c299b9d39eb8bb4a606be3f2563350dec0b"
+    },
+    {
+      "task": "thermal_conductivity",
+      "python": "/opt/anaconda3/bin/python",
+      "python_version": "Python 3.11.8",
+      "baseline_sha256": "74bc5657075478ba4aec20473db3bb90903d961b763ff2959612f5cf1ac6aad5",
+      "baseline_relative_path": "thermal_conductivity/chgnet_baseline.csv",
+      "result": {
+        "error": null,
+        "metrics": [
+          {
+            "name": "mean_sre",
+            "unit": null,
+            "value": 1.6958708753402623
+          },
+          {
+            "name": "n_samples",
+            "unit": "count",
+            "value": 103
+          }
+        ],
+        "primary_metric": {
+          "direction": "minimize",
+          "name": "mean_sre",
+          "value": 1.6958708753402623
+        },
+        "schema_version": "1.0",
+        "status": "valid",
+        "task_id": "thermal_conductivity",
+        "valid": true
+      },
+      "result_sha256": "57d9acc3614ba8ec666fbb2fa0f71c299b9d39eb8bb4a606be3f2563350dec0b"
+    },
+    {
+      "task": "crystal_stability",
+      "python": "/usr/bin/python3",
+      "python_version": "Python 3.9.6",
+      "baseline_sha256": "847a6984d68f69f3b8ee76a44b52889e481fe90d37285f2ef6be1f731f76b601",
+      "baseline_relative_path": "crystal_stability/chgnet_baseline.csv",
+      "result": {
+        "error": null,
+        "metrics": [
+          {
+            "name": "stability_f1",
+            "unit": null,
+            "value": 0.611111789635673
+          },
+          {
+            "name": "n_samples",
+            "unit": "count",
+            "value": 215488
+          },
+          {
+            "name": "FN",
+            "unit": "count",
+            "value": 7924
+          },
+          {
+            "name": "FP",
+            "unit": "count",
+            "value": 23917
+          },
+          {
+            "name": "TN",
+            "unit": "count",
+            "value": 158629
+          },
+          {
+            "name": "TP",
+            "unit": "count",
+            "value": 25018
+          }
+        ],
+        "primary_metric": {
+          "direction": "maximize",
+          "name": "stability_f1",
+          "value": 0.611111789635673
+        },
+        "schema_version": "1.0",
+        "status": "valid",
+        "task_id": "crystal_stability",
+        "valid": true
+      },
+      "result_sha256": "78a8447a6b465abd9877ebf53a2ceea612c783f0b34c5e40e83a4dcc64f45b93"
+    },
+    {
+      "task": "crystal_stability",
+      "python": "/opt/anaconda3/bin/python",
+      "python_version": "Python 3.11.8",
+      "baseline_sha256": "847a6984d68f69f3b8ee76a44b52889e481fe90d37285f2ef6be1f731f76b601",
+      "baseline_relative_path": "crystal_stability/chgnet_baseline.csv",
+      "result": {
+        "error": null,
+        "metrics": [
+          {
+            "name": "stability_f1",
+            "unit": null,
+            "value": 0.611111789635673
+          },
+          {
+            "name": "n_samples",
+            "unit": "count",
+            "value": 215488
+          },
+          {
+            "name": "FN",
+            "unit": "count",
+            "value": 7924
+          },
+          {
+            "name": "FP",
+            "unit": "count",
+            "value": 23917
+          },
+          {
+            "name": "TN",
+            "unit": "count",
+            "value": 158629
+          },
+          {
+            "name": "TP",
+            "unit": "count",
+            "value": 25018
+          }
+        ],
+        "primary_metric": {
+          "direction": "maximize",
+          "name": "stability_f1",
+          "value": 0.611111789635673
+        },
+        "schema_version": "1.0",
+        "status": "valid",
+        "task_id": "crystal_stability",
+        "valid": true
+      },
+      "result_sha256": "78a8447a6b465abd9877ebf53a2ceea612c783f0b34c5e40e83a4dcc64f45b93"
+    },
+    {
+      "task": "mof_adsorption",
+      "python": "/usr/bin/python3",
+      "python_version": "Python 3.9.6",
+      "baseline_sha256": "ee560463787d03bd17388ce368851642bf2695f0be268a793ba34aebd3027c5f",
+      "baseline_relative_path": "mof_adsorption/baseline_submission.csv",
+      "result": {
+        "error": null,
+        "metrics": [
+          {
+            "name": "mean_mae",
+            "unit": "eV",
+            "value": 0.22528328096993902
+          },
+          {
+            "name": "n_samples",
+            "unit": "count",
+            "value": 1768
+          }
+        ],
+        "primary_metric": {
+          "direction": "minimize",
+          "name": "mean_mae",
+          "value": 0.22528328096993902
+        },
+        "schema_version": "1.0",
+        "status": "valid",
+        "task_id": "mof_adsorption",
+        "valid": true
+      },
+      "result_sha256": "3684e0d41326847b128a6a21421aa9cd3e7068067f5430f89b6f4435f00a1009"
+    },
+    {
+      "task": "mof_adsorption",
+      "python": "/opt/anaconda3/bin/python",
+      "python_version": "Python 3.11.8",
+      "baseline_sha256": "ee560463787d03bd17388ce368851642bf2695f0be268a793ba34aebd3027c5f",
+      "baseline_relative_path": "mof_adsorption/baseline_submission.csv",
+      "result": {
+        "error": null,
+        "metrics": [
+          {
+            "name": "mean_mae",
+            "unit": "eV",
+            "value": 0.22528328096993902
+          },
+          {
+            "name": "n_samples",
+            "unit": "count",
+            "value": 1768
+          }
+        ],
+        "primary_metric": {
+          "direction": "minimize",
+          "name": "mean_mae",
+          "value": 0.22528328096993902
+        },
+        "schema_version": "1.0",
+        "status": "valid",
+        "task_id": "mof_adsorption",
+        "valid": true
+      },
+      "result_sha256": "3684e0d41326847b128a6a21421aa9cd3e7068067f5430f89b6f4435f00a1009"
+    }
+  ]
+}

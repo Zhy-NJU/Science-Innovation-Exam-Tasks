@@ -1,0 +1,32 @@
+{
+  "source_records": 256963,
+  "test_records": 215488,
+  "test_atoms": 1683439,
+  "atoms_per_structure_min_max": [
+    2,
+    100
+  ],
+  "max_fractional_cartesian_coordinate_discrepancy_angstrom": 8.189289246729459e-10,
+  "true_stable_count": 32942,
+  "training_records": 154718,
+  "training_elements": 89,
+  "training_test_released_prototype_string_overlap": 0,
+  "distinct_train_test_composition_fraction_overlap": 16501,
+  "test_input_allowed_fields": [
+    "material_id",
+    "atomic_numbers",
+    "positions_angstrom",
+    "cell_angstrom",
+    "pbc"
+  ],
+  "construction_checks": "Exact source hashes, record counts, unique ID sets, occupied species, geometry finiteness, atom counts, fractional-to-Cartesian consistency, all training labels finite, zero released prototype-string overlap, baseline ID alignment and exact expected F1 passed.",
+  "baseline_public_predictions": {
+    "n": 215488,
+    "TP": 30757,
+    "FP": 2389,
+    "FN": 2185,
+    "TN": 180157,
+    "F1": 0.9307892506960417,
+    "formation_energy_MAE_eV_per_atom": 0.017638071474977726
+  }
+}

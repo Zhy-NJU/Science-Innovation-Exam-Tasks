@@ -1,0 +1,17 @@
+ODAC23 data attribution
+
+Authors: Anuroop Sriram; Sihoon Choi; Xiaohan Yu; Logan M. Brabson; Abhishek Das; Zachary Ulissi; Matt Uyttendaele; Andrew J. Medford; David S. Sholl.
+Title: The Open DAC 2023 Dataset and Challenges for Sorbent Discovery in Direct Air Capture.
+Paper: https://doi.org/10.1021/acscentsci.3c01629
+Preprint: https://arxiv.org/abs/2311.00341
+Data license: Creative Commons Attribution 4.0 International.
+License terms: https://creativecommons.org/licenses/by/4.0/legalcode
+Official license statement: ODAC23_OFFICIAL_DATA_LICENSE_DOC.md, from https://raw.githubusercontent.com/facebookresearch/fairchem/41d36dc6bf8ced6348dc73e6aaf54d0527ebd8c9/docs/dac/datasets/odac23.md
+
+Changes made by this task construction: official train/validation/large-framework test subset selection; initial structure field extraction; ID hashing; removal of test energy and relaxed-structure fields; compressed JSONL/CSV conversion; label join to the authors' energy table. All original training/validation labels were compared exactly against that table. No physical reference-state correction has been applied.
+
+The original authors do not endorse this repackaging or any submitted model.
+
+The odac-data repository LICENSE at commit d829cfbfc962b318f5ac86d622f56ce405c9138b is MIT, copyright (c) 2023 Open-Catalyst-Project. Its full notice is reproduced as ODAC_CODE_LICENSE.txt. That repository license and the scientific data's CC BY 4.0 attribution are both preserved, without treating the repository code license as a replacement for the data license.
+
+Original data and public labels may have appeared in model training. ID hashing does not establish absence of contamination. Organizer must keep evidence and verifier labels outside the agent's mounted input.

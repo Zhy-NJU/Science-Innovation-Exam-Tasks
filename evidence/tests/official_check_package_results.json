@@ -1,0 +1,59 @@
+[
+  {
+    "command": [
+      "/opt/anaconda3/bin/python",
+      "-B",
+      "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/official-repo/contributor/build-sie-task-package/scripts/check_package.py",
+      "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/submission_bundle/tasks/crystal_stability"
+    ],
+    "returncode": 0,
+    "result": {
+      "task_id": "crystal_stability",
+      "submission_paths": [
+        "submission.csv"
+      ],
+      "status": "package_valid",
+      "checker": "bundled-fallback",
+      "contract_revision": "2026-09-17"
+    },
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/opt/anaconda3/bin/python",
+      "-B",
+      "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/official-repo/contributor/build-sie-task-package/scripts/check_package.py",
+      "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/submission_bundle/tasks/mof_adsorption"
+    ],
+    "returncode": 0,
+    "result": {
+      "task_id": "mof_adsorption",
+      "submission_paths": [
+        "submission.csv"
+      ],
+      "status": "package_valid",
+      "checker": "bundled-fallback",
+      "contract_revision": "2026-09-17"
+    },
+    "stderr": ""
+  },
+  {
+    "command": [
+      "/opt/anaconda3/bin/python",
+      "-B",
+      "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/official-repo/contributor/build-sie-task-package/scripts/check_package.py",
+      "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/submission_bundle/tasks/thermal_conductivity"
+    ],
+    "returncode": 0,
+    "result": {
+      "task_id": "thermal_conductivity",
+      "submission_paths": [
+        "submission.csv"
+      ],
+      "status": "package_valid",
+      "checker": "bundled-fallback",
+      "contract_revision": "2026-09-17"
+    },
+    "stderr": ""
+  }
+]

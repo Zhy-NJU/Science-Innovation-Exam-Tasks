@@ -1,0 +1,44 @@
+{
+  "dataset": "ODAC23 IS2RE",
+  "archive": {
+    "url": "https://dl.fbaipublicfiles.com/dac/datasets/odac23_is2r.tar.gz",
+    "bytes": 848157819,
+    "sha256": "13a26f00a6a26a95ab0706bf77b5dc1598cc689bda8846913bec0cc643152496",
+    "official_md5": "f7f2f58669a30abae8cb9ba1b7f2bcd2"
+  },
+  "target_table": {
+    "url": "https://raw.githubusercontent.com/Open-Catalyst-Project/odac-data/d829cfbfc962b318f5ac86d622f56ce405c9138b/promising_mof/promising_mof_energies/adsorption_energy.txt",
+    "commit": "d829cfbfc962b318f5ac86d622f56ce405c9138b",
+    "bytes": 7524103,
+    "sha256": "364e329845a6b900f4d5aa7677b9a17e0fac818c15554abdaacf11528a8c397e",
+    "git_blob_sha1": "190c245ed1862b9d497edb3bf8a7190d890237ed"
+  },
+  "split": {
+    "train": "official is2r/train, all 162224",
+    "development": "official is2r/val, all 3998",
+    "test": "official is2r/ood_big_no_targets, all 1768; target joined from author energy table"
+  },
+  "target": "Original ODAC23 y_relaxed, full-system relaxed adsorption energy in eV; not per atom or per guest.",
+  "source_target_validation": "All 166222 available training/development y_relaxed exactly equal the author energy-table values.",
+  "input_transforms": [
+    "Initial positions/cell/atomic numbers only; fixed periodic boundaries",
+    "Retain CO2/H2O counts and original atom tags: 0=framework, 1=CO2, 2=H2O",
+    "Hash system/source-framework/source-parent identifiers; raw mapping exists only in evidence",
+    "Strip source names, sid/fid, initial/total energies, relaxed positions, force and target fields from test",
+    "Lossless 15-way gzip JSONL training sharding: each compressed part below 50 MiB; 162224 per-row hashes and complete decompressed-stream hash verified unchanged."
+  ],
+  "important_limitations": [
+    "Freezes legacy ODAC23 targets; ODAC25 reports old empty-MOF reference-state artifacts. Not a corrected physical adsorption-energy task.",
+    "All sources are public. Hashing IDs does not remove pretraining contamination or structure-based source reidentification.",
+    "Source ood_big is based on source framework size; exported supercell atom counts overlap training. No additional atom-count filtering applied.",
+    "No shared raw framework, derived pristine-parent ID or exact exported geometry across splits; this is not proof of crystallographic topology uniqueness.",
+    "The executed simple median baseline is not a frontier or state-of-the-art result."
+  ],
+  "references": [
+    "https://doi.org/10.1021/acscentsci.3c01629",
+    "https://arxiv.org/html/2311.00341v2",
+    "https://arxiv.org/html/2508.03162v1"
+  ],
+  "data_license": "CC BY 4.0, per official dataset documentation",
+  "code_and_energy_table_repository_license": "MIT, fixed-commit repository LICENSE"
+}

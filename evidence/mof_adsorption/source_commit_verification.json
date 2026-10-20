@@ -1,0 +1,7 @@
+{
+  "commit": "d829cfbfc962b318f5ac86d622f56ce405c9138b",
+  "energy_table_url": "https://raw.githubusercontent.com/Open-Catalyst-Project/odac-data/d829cfbfc962b318f5ac86d622f56ce405c9138b/promising_mof/promising_mof_energies/adsorption_energy.txt",
+  "git_blob_sha1": "190c245ed1862b9d497edb3bf8a7190d890237ed",
+  "energy_table_sha256": "364e329845a6b900f4d5aa7677b9a17e0fac818c15554abdaacf11528a8c397e",
+  "method": "SHA256 equals independently recorded author source; Git blob header and contents hash equals fixed-commit blob."
+}

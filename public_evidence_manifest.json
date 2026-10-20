@@ -1,0 +1,325 @@
+{
+  "scope": "All public evidence files except this manifest; original reports preserved, new reviewer helper/report explicitly identified in README.",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 10588,
+      "sha256": "bc869a6457a4a672786fb7361a20c329fde7cba9ae9ce567e2ddd6e463ed8e24"
+    },
+    {
+      "path": "copied_files_manifest.json",
+      "bytes": 18454,
+      "sha256": "ce44ff1db445be5233a964bac941dba6b10a6dc5dd60c2396c867542803c30fc"
+    },
+    {
+      "path": "evidence/construction/scoring_core.py",
+      "bytes": 10697,
+      "sha256": "e959ff70aa46f7190cab467a44bde6b9d4752e14791334bda8f32560d3a29fe1"
+    },
+    {
+      "path": "evidence/crystal_stability/all_stable_diagnostic.json",
+      "bytes": 444,
+      "sha256": "9fde877075cfd06240951f3a053a75617d71c4df1b75b3e0bbd48630995e703c"
+    },
+    {
+      "path": "evidence/crystal_stability/chgnet_baseline_provenance.json",
+      "bytes": 774,
+      "sha256": "76e6cf4d7d3a239cd68b79fc31e2def7379c77dc94f6ed6d110ea8def5f4338a"
+    },
+    {
+      "path": "evidence/crystal_stability/composition_ridge_metrics.json",
+      "bytes": 150,
+      "sha256": "3443369cce949b6c0b8b2d67215a73a1381034922eafcdf8d2fa8ea310d1a0e4"
+    },
+    {
+      "path": "evidence/crystal_stability/data_validation.json",
+      "bytes": 1066,
+      "sha256": "d33e98e1af523e507aa1af8f630ec5322eb27950c0798b53ef6936bd3baa3379"
+    },
+    {
+      "path": "evidence/crystal_stability/official_results/auxiliary_composition_ridge/result.json",
+      "bytes": 746,
+      "sha256": "b6283107ecd8a643d76aad3e516d75857b5a8705c5927e19502900717c3b38dc"
+    },
+    {
+      "path": "evidence/crystal_stability/official_results/baseline/result.json",
+      "bytes": 742,
+      "sha256": "78a8447a6b465abd9877ebf53a2ceea612c783f0b34c5e40e83a4dcc64f45b93"
+    },
+    {
+      "path": "evidence/crystal_stability/official_results/bottom/result.json",
+      "bytes": 737,
+      "sha256": "caaaa4171cefa34c59f59b13ad2aedb079b9d53eff9cc72d23f90f81989679dc"
+    },
+    {
+      "path": "evidence/crystal_stability/official_results/external_equiformerv3/result.json",
+      "bytes": 743,
+      "sha256": "e586f0c071a3bca13b859425940d1d0a33944505d3a35e6b7ea434a3ea6acb87"
+    },
+    {
+      "path": "evidence/crystal_stability/provenance.json",
+      "bytes": 3770,
+      "sha256": "37fe242d46e8fa0010d841b4392d28272a733dbb940f3fa59c9cc5da80b6ce2c"
+    },
+    {
+      "path": "evidence/crystal_stability/real_chgnet_smoke/README.md",
+      "bytes": 2022,
+      "sha256": "a7cbd16358d6045ed876607e068a27a5d8f0108016b0013bd81ef6b9a5d37624"
+    },
+    {
+      "path": "evidence/crystal_stability/real_chgnet_smoke/smoke_result.json",
+      "bytes": 29685,
+      "sha256": "2dd0da668fbc6834c7668cbb92f9632781c2af3fc774b6a1940e4e720a4f427d"
+    },
+    {
+      "path": "evidence/crystal_stability/run_chgnet_relaxation_smoke.py",
+      "bytes": 9150,
+      "sha256": "7096d0e07a1b83a9c5287074d230d98963e2ceaad7b2ef433bdb82321b40b48f"
+    },
+    {
+      "path": "evidence/crystal_stability/run_composition_ridge_baseline.py",
+      "bytes": 4248,
+      "sha256": "efe39d1faef5b6054d405792adcdb7d0fb944e1c7eea3224e885bd8acacd5c83"
+    },
+    {
+      "path": "evidence/mof_adsorption/ATTRIBUTION.txt",
+      "bytes": 1767,
+      "sha256": "415830f4773610bb288da29698c1f2b7468ecaa8c2a0054427c2063ec17a6089"
+    },
+    {
+      "path": "evidence/mof_adsorption/BASELINE.md",
+      "bytes": 2575,
+      "sha256": "a0caca35f9edd6751f7cd761c8ad23531c9a8d1bbaaab786c70dbdc0e5e118a3"
+    },
+    {
+      "path": "evidence/mof_adsorption/BUILD.md",
+      "bytes": 4985,
+      "sha256": "cdd2e3d62177f566c6923766000766e3031e03ee45d2ec6a01dd74f2e1323b11"
+    },
+    {
+      "path": "evidence/mof_adsorption/ODAC23_OFFICIAL_DATA_LICENSE_DOC.md",
+      "bytes": 4184,
+      "sha256": "14c3bf15ca75839551d285eb3dcc8f07ca1c29663b00b9a4c98faf72f74e32ee"
+    },
+    {
+      "path": "evidence/mof_adsorption/ODAC_CODE_LICENSE.txt",
+      "bytes": 1078,
+      "sha256": "14fce52cb8bea313efd305dae9d905eb86b79bdeda7c6b7d043cb08a78af9811"
+    },
+    {
+      "path": "evidence/mof_adsorption/baseline.py",
+      "bytes": 2120,
+      "sha256": "6dc0dd32d34cb137c68be8b53cd4e8660cef6660d0a6200cf74be005e945b292"
+    },
+    {
+      "path": "evidence/mof_adsorption/baseline_execution.json",
+      "bytes": 378,
+      "sha256": "f156dddefa1a9ab86299656d6d0d4521c9b41812fec3ea9b2ad26df15dc93e7e"
+    },
+    {
+      "path": "evidence/mof_adsorption/build_report.json",
+      "bytes": 2984,
+      "sha256": "be6ae88bd01e83fb9904f69de23506f32dfaf4077a8685c91c4a9dccdb13a0be"
+    },
+    {
+      "path": "evidence/mof_adsorption/input_readback_audit.json",
+      "bytes": 1438,
+      "sha256": "00f385b9f77fe72264550b46a336e7fee8349ba0ba30706f0632be908cd7abc9"
+    },
+    {
+      "path": "evidence/mof_adsorption/official_results/baseline/result.json",
+      "bytes": 425,
+      "sha256": "3684e0d41326847b128a6a21421aa9cd3e7068067f5430f89b6f4435f00a1009"
+    },
+    {
+      "path": "evidence/mof_adsorption/official_results/bottom/result.json",
+      "bytes": 423,
+      "sha256": "b5613021e468a55ad49c2bbf853cee95eb9b9aa0dfc130cae449583c415bc7d7"
+    },
+    {
+      "path": "evidence/mof_adsorption/provenance.json",
+      "bytes": 2758,
+      "sha256": "0592399daf2c0c2e714c59f01e241b003da25efd807c18460ab65bd84d2f62d2"
+    },
+    {
+      "path": "evidence/mof_adsorption/source_commit_verification.json",
+      "bytes": 533,
+      "sha256": "313408a089f93f20c8d36b334363b68a03fcab42b4b2ead199f665cc0814fbcd"
+    },
+    {
+      "path": "evidence/mof_adsorption/train_sharding_audit.json",
+      "bytes": 3642,
+      "sha256": "3356a60d633085553e9662432aea6b78ea0bae926ab008a75a002ce961a27683"
+    },
+    {
+      "path": "evidence/tests/cross_version_smoke.json",
+      "bytes": 7024,
+      "sha256": "7b72bd802e113e304dbac516747fe877a46b1772daa2225f0c2b4ec42ad0fb40"
+    },
+    {
+      "path": "evidence/tests/crystal_offline_environment_audit.json",
+      "bytes": 26678,
+      "sha256": "f18f3224fcd80955b6b3d11bf4c90ce47bb24ccdeaa688ac2728ed48e78c969e"
+    },
+    {
+      "path": "evidence/tests/external_and_auxiliary_replays.json",
+      "bytes": 2287,
+      "sha256": "a2339137995cfb49fefad41a516cd073d21d4a19b0ead545c1784250c3c8cb4e"
+    },
+    {
+      "path": "evidence/tests/independent_tests.json",
+      "bytes": 97714,
+      "sha256": "c669747fc2d016046f0b736556fef6741dd8a9d90183ab54fe094f03a9af5dd8"
+    },
+    {
+      "path": "evidence/tests/independent_tests.log",
+      "bytes": 11539,
+      "sha256": "acb86f2efe88592dac3dfb3fc5b5540134af5c7a142649692e810f8eb19c4496"
+    },
+    {
+      "path": "evidence/tests/measured_baseline_summary.json",
+      "bytes": 4051,
+      "sha256": "cee0303e9c15f958e6869d5769b8fe0b13becb0025532afb985a10c6669716b6"
+    },
+    {
+      "path": "evidence/tests/official_check_package_results.json",
+      "bytes": 1845,
+      "sha256": "41233e8e46abbaddf3fb70809f5922a6fe1092e8a50aba9f2f7a75f43c3cf282"
+    },
+    {
+      "path": "evidence/tests/official_contract_audit.json",
+      "bytes": 3984,
+      "sha256": "1244ab11f5fac546f109d1264bbe8bf2a6e3cd150806df2bb4822ee2382297de"
+    },
+    {
+      "path": "evidence/tests/offline_environment_audit.json",
+      "bytes": 26678,
+      "sha256": "f18f3224fcd80955b6b3d11bf4c90ce47bb24ccdeaa688ac2728ed48e78c969e"
+    },
+    {
+      "path": "evidence/tests/replay_baselines.py",
+      "bytes": 8073,
+      "sha256": "fd90b892fb977e98284838c3ba1ac1e1e5f35274b3c577278c39d7b9bebad7d2"
+    },
+    {
+      "path": "evidence/tests/reviewer_helper_replay.json",
+      "bytes": 6501,
+      "sha256": "c5f03ff7f85937f38592892908d6f6276ae96777275eda576dc714bec2276339"
+    },
+    {
+      "path": "evidence/tests/test_cross_version.py",
+      "bytes": 4515,
+      "sha256": "3fe50ae8d49172dcd4d61522ee34332cdcc4297cc2fef1595b753e5ec7b7c193"
+    },
+    {
+      "path": "evidence/tests/test_offline_environment.py",
+      "bytes": 9412,
+      "sha256": "3f01fa9c2fcdd15f5dee8d4316ae967e13646dcb1fd86957569b092952ef6008"
+    },
+    {
+      "path": "evidence/tests/test_packages.py",
+      "bytes": 33751,
+      "sha256": "fe5ca1ae466dd9fb63875e07b0f10c014e7276b8a28b2902682cad05344e2f2f"
+    },
+    {
+      "path": "evidence/thermal_conductivity/LICENSE_SOURCES.txt",
+      "bytes": 1533,
+      "sha256": "067557c73e6d6c855da8c21e1a8f0cffd49f0cee4236741ed8a5c21decd114e1"
+    },
+    {
+      "path": "evidence/thermal_conductivity/chgnet_baseline_provenance.json",
+      "bytes": 923,
+      "sha256": "3ce5230ae7559850762bed5a329f16bd32ce513febc2dca8f4669c55f6afb103"
+    },
+    {
+      "path": "evidence/thermal_conductivity/official_results/baseline/result.json",
+      "bytes": 428,
+      "sha256": "57d9acc3614ba8ec666fbb2fa0f71c299b9d39eb8bb4a606be3f2563350dec0b"
+    },
+    {
+      "path": "evidence/thermal_conductivity/official_results/bottom/result.json",
+      "bytes": 398,
+      "sha256": "60d50daa6d83f5f2b9e7fd2e004dc02c0873b6ca9d058a010c1902bfc1db89f2"
+    },
+    {
+      "path": "evidence/thermal_conductivity/official_results/external_equiformerv3/result.json",
+      "bytes": 430,
+      "sha256": "5689eda08220428104240c1f69076c8abc99bf910be8b853a72a1348c9ab3a7b"
+    },
+    {
+      "path": "evidence/thermal_conductivity/provenance.json",
+      "bytes": 1993,
+      "sha256": "9adba251b35fa579053f97ce8e371297929e7dec59692ac4f86487963506ce19"
+    },
+    {
+      "path": "evidence/thermal_conductivity/real_smoke/geometry_source_check.json",
+      "bytes": 2226,
+      "sha256": "e947cddb266066b4dd991eb2561bb438307362bf43539652bbe2a70a8f4515cd"
+    },
+    {
+      "path": "evidence/thermal_conductivity/real_smoke/smoke_result.json",
+      "bytes": 7980,
+      "sha256": "f93681c1bcddd1d21534d72cadc28b52c1a1efd7202ec621a0dbb24bf5421771"
+    },
+    {
+      "path": "evidence/thermal_conductivity/research_environment/dependency_consistency.json",
+      "bytes": 258,
+      "sha256": "e48a78054a7304b65d83ca53ea259c74b170abb5cdbd0700cc754c3aea4ccdf1"
+    },
+    {
+      "path": "evidence/thermal_conductivity/research_environment/host_dependency_closure.json",
+      "bytes": 13993,
+      "sha256": "c0094e1b1d84b7997ef6674f68b703b11080eff60f7a8c342c908798c6e214c7"
+    },
+    {
+      "path": "evidence/thermal_conductivity/research_environment/linux_artifact_assembly.json",
+      "bytes": 10425,
+      "sha256": "4674008fce2b99567269d7956df0253e9f6a0c6bccb89e0427cd7b1df542a2fd"
+    },
+    {
+      "path": "evidence/thermal_conductivity/research_environment/model_provenance.json",
+      "bytes": 1524,
+      "sha256": "62acb5300a1ad94e57d8bdf748aa5240b61ea31d07f58d33cac3085f1857313c"
+    },
+    {
+      "path": "evidence/thermal_conductivity/research_environment/offline_linux_preparation/audit_linux_wheel_elf.py",
+      "bytes": 3691,
+      "sha256": "3aefa2007866caa114096f42206fb3f65e8989cdc12cb5f49e4108fe32b3f3a1"
+    },
+    {
+      "path": "evidence/thermal_conductivity/research_environment/offline_linux_preparation/dependency_validation.json",
+      "bytes": 59040,
+      "sha256": "398936dcc48a4d2ded06746a9c4cbffab5274c1830df7fc3e5b970820df7e6a8"
+    },
+    {
+      "path": "evidence/thermal_conductivity/research_environment/offline_linux_preparation/environment_file_manifest.json",
+      "bytes": 13015,
+      "sha256": "41475968b88753843b92b0f8abc10d94fac37d8b2bd266ef6babe0ed9a040b44"
+    },
+    {
+      "path": "evidence/thermal_conductivity/research_environment/offline_linux_preparation/native_library_validation.json",
+      "bytes": 139522,
+      "sha256": "faff87d20f81a7e1bebbe3b154bb75bc92c28e1b5cca3a348f70615c71f8ecfa"
+    },
+    {
+      "path": "evidence/thermal_conductivity/research_environment/offline_linux_preparation/offline_resolution_validation.json",
+      "bytes": 12611,
+      "sha256": "ded8ed607003984ce6c33abb0f6c649b764a8ae6d0e461011c31a4f40f28cc7b"
+    },
+    {
+      "path": "evidence/thermal_conductivity/research_environment/verification_manifest.json",
+      "bytes": 3369,
+      "sha256": "b1d440f7b414e8ada1fec3dd6d4c93f6b36422c21cf08975408f83a7cb179aeb"
+    },
+    {
+      "path": "evidence/thermal_conductivity/run_chgnet_phonon_smoke.py",
+      "bytes": 9720,
+      "sha256": "7a0467fcd7c867b7b2ee2431dfcbf2426231d762bbe42e4bdde4e6929429e962"
+    },
+    {
+      "path": "final_package_manifest.json",
+      "bytes": 43943,
+      "sha256": "804a9dd4a98b025cb92369af27c701418713e6b7145694a360805229124f249b"
+    }
+  ]
+}

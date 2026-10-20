@@ -1,0 +1,102 @@
+{
+  "construction_date": "2026-10-12",
+  "construction_stage_files_before_official_contract_adaptation": [
+    {
+      "bytes": 4885,
+      "md5": "4db6e84ad8aed286ac23c7b1dd502ad3",
+      "path": "input/README.md",
+      "sha256": "20bec8bedc80487387a8ac7b85d6e6f1ebc6bc437dee3e37651a632861871202"
+    },
+    {
+      "bytes": 9226,
+      "md5": "9e47986375431ebe3c800e5600613b87",
+      "path": "input/elemental_reference_energies.json",
+      "sha256": "7debab6d8b4ed70bc8a7cdc9124db2ab5832b0b8f63a9375de4321f918d5279d"
+    },
+    {
+      "bytes": 3447839,
+      "md5": "2798204bcb437230ed0419ec9df462da",
+      "path": "input/submission.csv",
+      "sha256": "707676d7cde13a8391a16f4c18abc34bddabc968b2a07157b3cf5db847a562bc"
+    },
+    {
+      "bytes": 21145166,
+      "md5": "ae717f1a49c729380d8be0cbcbd0b4dc",
+      "path": "input/test_structures.jsonl.gz",
+      "sha256": "bc3199686ed01f89d66be15adbbde24086c00b3711820d7d06f2d45743097f19"
+    },
+    {
+      "bytes": 2391451,
+      "md5": "c992b677621dc642627401c463f794e5",
+      "path": "input/training_compositions.jsonl.gz",
+      "sha256": "d9e0a1b237985b8ea3535ee827a54509b86527e4f110c064934007eda3bc2a3a"
+    },
+    {
+      "bytes": 3798,
+      "md5": "69901d650ec9279ccb95baa6879c8ef3",
+      "path": "instruction.json",
+      "sha256": "24bce5bf14acc3b66f6adde72fc3201ce18f6df49ed17e5bd06b4b8671742848"
+    },
+    {
+      "bytes": 1335,
+      "md5": "544420b6e244547554a2c332a9b93ce9",
+      "path": "meta.json",
+      "sha256": "07db1d4c1b836584ebb0e78d4102ca2f05f75cb08a7a9b1c2ea2a4d8c3caf064"
+    },
+    {
+      "bytes": 10103360,
+      "md5": "68dcd78e020a5a00beb51cec523105e7",
+      "path": "verifier/test/data/labels.csv",
+      "sha256": "defc68c874f94bee1c1411b73f51c233c31ac9863ea8442e275a1b61609ea77e"
+    }
+  ],
+  "final_package_manifest": "../tests/final_package_manifest.json (created after contract adaptation and independent verification)",
+  "license": "CC-BY-4.0 for source data; retain source and modification notice",
+  "sources": [
+    {
+      "bytes": 49537334,
+      "file_id": "53161835",
+      "local_source": "wbm-init-structs.jsonl.gz",
+      "md5": "b809f101dd42a745ec2baabe7eb16f11",
+      "role": "initial_structures",
+      "sha256": "98d545172c1ea9060f03f40cace6f8173a4ac06f1ee875ccd963765211519b58",
+      "url": "https://ndownloader.figshare.com/files/53161835"
+    },
+    {
+      "bytes": 12745623,
+      "file_id": "64706751",
+      "local_source": "wbm-summary.csv.gz",
+      "md5": "1555268d3aa59d20262cb9d01ce0994b",
+      "role": "test_reference",
+      "sha256": "adbdd8b24086d4888195d8894c77f6d5fb29ce33bbb5d7d3898b4d79e964dc54",
+      "url": "https://ndownloader.figshare.com/files/64706751"
+    },
+    {
+      "bytes": 1654051,
+      "file_id": "66646220",
+      "local_source": "wbm-equiformerv3.csv.gz",
+      "md5": "3df9f3ce50957dfc349c678fa4926616",
+      "role": "published_predictions",
+      "sha256": "f9b7990642deba60d6f9e09f315789c87fa8a649382408cf5c5c927b02423b59",
+      "url": "https://ndownloader.figshare.com/files/66646220"
+    },
+    {
+      "bytes": 8378779,
+      "file_id": "52080797",
+      "local_source": "mp-energies.csv.gz",
+      "md5": "7eb0c49fc169ba92783f2f6d0d19d741",
+      "role": "training_compositions",
+      "sha256": "f1d083a56cacb02cdcb556830f58216890f84503c6a19e1c53bf92939aaedb8e",
+      "url": "https://ndownloader.figshare.com/files/52080797"
+    },
+    {
+      "bytes": 6350,
+      "file_id": "40387775",
+      "local_source": "mp-elemental-reference-entries.json.gz",
+      "md5": "6e93b6f38d6e27d6c811d3cafb23a070",
+      "role": "elemental_references",
+      "sha256": "9fd6ef848a91c88840a0d1709b5856d0edb4af22095237e59db52f2acd6bbf79",
+      "url": "https://ndownloader.figshare.com/files/40387775"
+    }
+  ]
+}

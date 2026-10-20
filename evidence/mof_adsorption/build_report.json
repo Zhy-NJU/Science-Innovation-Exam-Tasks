@@ -1,0 +1,155 @@
+{
+  "counts": {
+    "train": 162224,
+    "development": 3998,
+    "test": 1768
+  },
+  "shards": {
+    "train": 200,
+    "development": 10,
+    "test": 10
+  },
+  "source_framework_counts": {
+    "train": 7815,
+    "development": 192,
+    "test": 85
+  },
+  "source_parent_counts": {
+    "train": 4536,
+    "development": 121,
+    "test": 66
+  },
+  "atom_count_ranges": {
+    "train": [
+      13,
+      856
+    ],
+    "development": [
+      29,
+      522
+    ],
+    "test": [
+      487,
+      857
+    ]
+  },
+  "guest_counts": {
+    "train": {
+      "0,1": 34456,
+      "1,0": 46274,
+      "1,1": 48373,
+      "1,2": 33121
+    },
+    "development": {
+      "0,1": 862,
+      "1,0": 1138,
+      "1,1": 1211,
+      "1,2": 787
+    },
+    "test": {
+      "0,1": 383,
+      "1,0": 533,
+      "1,1": 534,
+      "1,2": 318
+    }
+  },
+  "target_ranges_eV": {
+    "train": [
+      -5.992570019999903,
+      55.05843321000009
+    ],
+    "development": [
+      -5.376551980000386,
+      9.676317799999993
+    ],
+    "test": [
+      -3.77767170999914,
+      1.0391487700003381
+    ]
+  },
+  "cross_split_overlap": {
+    "train__development": {
+      "source_framework": 0,
+      "source_parent": 0,
+      "exact_initial_geometry": 0
+    },
+    "train__test": {
+      "source_framework": 0,
+      "source_parent": 0,
+      "exact_initial_geometry": 0
+    },
+    "development__test": {
+      "source_framework": 0,
+      "source_parent": 0,
+      "exact_initial_geometry": 0
+    }
+  },
+  "training_development_target_table_comparisons": 166222,
+  "max_absolute_target_table_difference_eV": 0.0,
+  "source_energy_table_entries": 172659,
+  "ood_big_target_join_count": 1768,
+  "baseline": {
+    "method": "training median by (nco2,nh2o), global training median fallback",
+    "medians_eV": {
+      "0,1": -0.33881262000022616,
+      "1,0": -0.26550814499989883,
+      "1,1": -0.6636977599998772,
+      "1,2": -1.196705639999891
+    },
+    "global_median_eV": -0.4855188149999776,
+    "build_time_mae_eV": {
+      "test": 0.22528328096993902,
+      "development": 0.2500706681215616
+    },
+    "test_predictions": 1768
+  },
+  "source_train_fields": [
+    "atomic_numbers",
+    "cell",
+    "defective",
+    "fid",
+    "fixed",
+    "nads",
+    "name",
+    "natoms",
+    "nco2",
+    "nh2o",
+    "oms",
+    "pos",
+    "pos_relaxed",
+    "raw_y",
+    "sid",
+    "supercell",
+    "tags",
+    "y_init",
+    "y_relaxed"
+  ],
+  "source_test_fields": [
+    "atomic_numbers",
+    "cell",
+    "defective",
+    "fid",
+    "fixed",
+    "nads",
+    "name",
+    "natoms",
+    "nco2",
+    "nh2o",
+    "oms",
+    "pos",
+    "raw_y",
+    "sid",
+    "supercell",
+    "tags",
+    "y_init"
+  ],
+  "input_gzip_bytes": {
+    "train": 621785835,
+    "development": 14399815,
+    "test": 22488506
+  },
+  "elapsed_seconds": 205.80016779899597,
+  "training_part_count": 15,
+  "training_decompressed_content_sha256": "27309ef80977edc7ddd912433c261d02cb3c1be02f46635845abd495afadee4b",
+  "training_intermediate_gzip_bytes": 621738116
+}

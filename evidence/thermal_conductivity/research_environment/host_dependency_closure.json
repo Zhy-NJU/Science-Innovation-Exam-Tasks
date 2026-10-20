@@ -1,0 +1,636 @@
+{
+  "platform": "macOS-14.5-arm64-arm-64bit",
+  "machine": "arm64",
+  "python": "3.11.8",
+  "marker_environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.11.8",
+    "os_name": "posix",
+    "platform_machine": "arm64",
+    "platform_release": "23.5.0",
+    "platform_system": "Darwin",
+    "platform_version": "Darwin Kernel Version 23.5.0: Wed May  1 20:14:59 PDT 2024; root:xnu-10063.121.3~5/RELEASE_ARM64_T8122",
+    "python_full_version": "3.11.8",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.11",
+    "sys_platform": "darwin",
+    "extra": ""
+  },
+  "roots": [
+    "chgnet",
+    "pymatgen",
+    "ase",
+    "phonopy",
+    "phono3py",
+    "spglib",
+    "symfc",
+    "numpy",
+    "torch",
+    "setuptools",
+    "wheel"
+  ],
+  "packages": {
+    "wheel": {
+      "name": "wheel",
+      "version": "0.44.0",
+      "requires": []
+    },
+    "setuptools": {
+      "name": "setuptools",
+      "version": "75.1.0",
+      "requires": []
+    },
+    "torch": {
+      "name": "torch",
+      "version": "2.4.1",
+      "requires": [
+        {
+          "requirement": "filelock",
+          "dependency": "filelock"
+        },
+        {
+          "requirement": "typing-extensions >=4.8.0",
+          "dependency": "typing-extensions"
+        },
+        {
+          "requirement": "sympy",
+          "dependency": "sympy"
+        },
+        {
+          "requirement": "networkx",
+          "dependency": "networkx"
+        },
+        {
+          "requirement": "jinja2",
+          "dependency": "jinja2"
+        },
+        {
+          "requirement": "fsspec",
+          "dependency": "fsspec"
+        }
+      ]
+    },
+    "fsspec": {
+      "name": "fsspec",
+      "version": "2024.12.0",
+      "requires": []
+    },
+    "jinja2": {
+      "name": "Jinja2",
+      "version": "3.1.5",
+      "requires": [
+        {
+          "requirement": "MarkupSafe>=2.0",
+          "dependency": "markupsafe"
+        }
+      ]
+    },
+    "markupsafe": {
+      "name": "MarkupSafe",
+      "version": "3.0.2",
+      "requires": []
+    },
+    "networkx": {
+      "name": "networkx",
+      "version": "3.4.2",
+      "requires": []
+    },
+    "sympy": {
+      "name": "sympy",
+      "version": "1.13.3",
+      "requires": [
+        {
+          "requirement": "mpmath<1.4,>=1.1.0",
+          "dependency": "mpmath"
+        }
+      ]
+    },
+    "mpmath": {
+      "name": "mpmath",
+      "version": "1.3.0",
+      "requires": []
+    },
+    "typing-extensions": {
+      "name": "typing_extensions",
+      "version": "4.12.2",
+      "requires": []
+    },
+    "filelock": {
+      "name": "filelock",
+      "version": "3.29.0",
+      "requires": []
+    },
+    "numpy": {
+      "name": "numpy",
+      "version": "1.26.4",
+      "requires": []
+    },
+    "symfc": {
+      "name": "symfc",
+      "version": "1.6.0",
+      "requires": [
+        {
+          "requirement": "numpy",
+          "dependency": "numpy"
+        },
+        {
+          "requirement": "scipy!=1.11.0,!=1.11.1,!=1.11.2",
+          "dependency": "scipy"
+        },
+        {
+          "requirement": "spglib>=2.5",
+          "dependency": "spglib"
+        }
+      ]
+    },
+    "spglib": {
+      "name": "spglib",
+      "version": "2.6.0",
+      "requires": [
+        {
+          "requirement": "numpy<3,>=1.20",
+          "dependency": "numpy"
+        },
+        {
+          "requirement": "typing-extensions>=4.9.0; python_version < \"3.13\"",
+          "dependency": "typing-extensions"
+        }
+      ]
+    },
+    "scipy": {
+      "name": "scipy",
+      "version": "1.13.1",
+      "requires": [
+        {
+          "requirement": "numpy<2.3,>=1.22.4",
+          "dependency": "numpy"
+        }
+      ]
+    },
+    "phono3py": {
+      "name": "phono3py",
+      "version": "3.30.0",
+      "requires": [
+        {
+          "requirement": "numpy",
+          "dependency": "numpy"
+        },
+        {
+          "requirement": "scipy",
+          "dependency": "scipy"
+        },
+        {
+          "requirement": "PyYAML",
+          "dependency": "pyyaml"
+        },
+        {
+          "requirement": "matplotlib",
+          "dependency": "matplotlib"
+        },
+        {
+          "requirement": "h5py",
+          "dependency": "h5py"
+        },
+        {
+          "requirement": "spglib>=2.5.0",
+          "dependency": "spglib"
+        },
+        {
+          "requirement": "phonopy<3.6.0,>=3.5.0",
+          "dependency": "phonopy"
+        }
+      ]
+    },
+    "phonopy": {
+      "name": "phonopy",
+      "version": "3.5.0",
+      "requires": [
+        {
+          "requirement": "numpy>=1.17.0",
+          "dependency": "numpy"
+        },
+        {
+          "requirement": "PyYAML>=5.3",
+          "dependency": "pyyaml"
+        },
+        {
+          "requirement": "matplotlib>=2.2.2",
+          "dependency": "matplotlib"
+        },
+        {
+          "requirement": "h5py>=3.0",
+          "dependency": "h5py"
+        },
+        {
+          "requirement": "spglib>=2.5",
+          "dependency": "spglib"
+        },
+        {
+          "requirement": "symfc>=1.5",
+          "dependency": "symfc"
+        }
+      ]
+    },
+    "h5py": {
+      "name": "h5py",
+      "version": "3.11.0",
+      "requires": [
+        {
+          "requirement": "numpy >=1.17.3",
+          "dependency": "numpy"
+        }
+      ]
+    },
+    "matplotlib": {
+      "name": "matplotlib",
+      "version": "3.10.0",
+      "requires": [
+        {
+          "requirement": "contourpy>=1.0.1",
+          "dependency": "contourpy"
+        },
+        {
+          "requirement": "cycler>=0.10",
+          "dependency": "cycler"
+        },
+        {
+          "requirement": "fonttools>=4.22.0",
+          "dependency": "fonttools"
+        },
+        {
+          "requirement": "kiwisolver>=1.3.1",
+          "dependency": "kiwisolver"
+        },
+        {
+          "requirement": "numpy>=1.23",
+          "dependency": "numpy"
+        },
+        {
+          "requirement": "packaging>=20.0",
+          "dependency": "packaging"
+        },
+        {
+          "requirement": "pillow>=8",
+          "dependency": "pillow"
+        },
+        {
+          "requirement": "pyparsing>=2.3.1",
+          "dependency": "pyparsing"
+        },
+        {
+          "requirement": "python-dateutil>=2.7",
+          "dependency": "python-dateutil"
+        }
+      ]
+    },
+    "python-dateutil": {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "requires": [
+        {
+          "requirement": "six >=1.5",
+          "dependency": "six"
+        }
+      ]
+    },
+    "six": {
+      "name": "six",
+      "version": "1.16.0",
+      "requires": []
+    },
+    "pyparsing": {
+      "name": "pyparsing",
+      "version": "3.2.0",
+      "requires": []
+    },
+    "pillow": {
+      "name": "pillow",
+      "version": "11.1.0",
+      "requires": []
+    },
+    "packaging": {
+      "name": "packaging",
+      "version": "24.2",
+      "requires": []
+    },
+    "kiwisolver": {
+      "name": "kiwisolver",
+      "version": "1.4.8",
+      "requires": []
+    },
+    "fonttools": {
+      "name": "fonttools",
+      "version": "4.55.3",
+      "requires": []
+    },
+    "cycler": {
+      "name": "cycler",
+      "version": "0.11.0",
+      "requires": []
+    },
+    "contourpy": {
+      "name": "contourpy",
+      "version": "1.3.1",
+      "requires": [
+        {
+          "requirement": "numpy>=1.23",
+          "dependency": "numpy"
+        }
+      ]
+    },
+    "pyyaml": {
+      "name": "PyYAML",
+      "version": "6.0.2",
+      "requires": []
+    },
+    "ase": {
+      "name": "ase",
+      "version": "3.23.0",
+      "requires": [
+        {
+          "requirement": "numpy >=1.18.5",
+          "dependency": "numpy"
+        },
+        {
+          "requirement": "scipy >=1.6.0",
+          "dependency": "scipy"
+        },
+        {
+          "requirement": "matplotlib >=3.3.4",
+          "dependency": "matplotlib"
+        }
+      ]
+    },
+    "pymatgen": {
+      "name": "pymatgen",
+      "version": "2024.5.1",
+      "requires": [
+        {
+          "requirement": "matplotlib >=1.5",
+          "dependency": "matplotlib"
+        },
+        {
+          "requirement": "monty >=2024.2.2",
+          "dependency": "monty"
+        },
+        {
+          "requirement": "networkx >=2.2",
+          "dependency": "networkx"
+        },
+        {
+          "requirement": "numpy >=1.25.0",
+          "dependency": "numpy"
+        },
+        {
+          "requirement": "palettable >=3.1.1",
+          "dependency": "palettable"
+        },
+        {
+          "requirement": "pandas",
+          "dependency": "pandas"
+        },
+        {
+          "requirement": "plotly >=4.5.0",
+          "dependency": "plotly"
+        },
+        {
+          "requirement": "pybtex",
+          "dependency": "pybtex"
+        },
+        {
+          "requirement": "requests",
+          "dependency": "requests"
+        },
+        {
+          "requirement": "ruamel.yaml >=0.17.0",
+          "dependency": "ruamel-yaml"
+        },
+        {
+          "requirement": "scipy >=1.5.0",
+          "dependency": "scipy"
+        },
+        {
+          "requirement": "spglib >=2.0.2",
+          "dependency": "spglib"
+        },
+        {
+          "requirement": "sympy",
+          "dependency": "sympy"
+        },
+        {
+          "requirement": "tabulate",
+          "dependency": "tabulate"
+        },
+        {
+          "requirement": "tqdm",
+          "dependency": "tqdm"
+        },
+        {
+          "requirement": "uncertainties >=3.1.4",
+          "dependency": "uncertainties"
+        },
+        {
+          "requirement": "joblib",
+          "dependency": "joblib"
+        }
+      ]
+    },
+    "joblib": {
+      "name": "joblib",
+      "version": "1.4.2",
+      "requires": []
+    },
+    "uncertainties": {
+      "name": "uncertainties",
+      "version": "3.2.3",
+      "requires": []
+    },
+    "tqdm": {
+      "name": "tqdm",
+      "version": "4.67.1",
+      "requires": []
+    },
+    "tabulate": {
+      "name": "tabulate",
+      "version": "0.9.0",
+      "requires": []
+    },
+    "ruamel-yaml": {
+      "name": "ruamel.yaml",
+      "version": "0.18.6",
+      "requires": [
+        {
+          "requirement": "ruamel.yaml.clib>=0.2.7; platform_python_implementation == \"CPython\" and python_version < \"3.13\"",
+          "dependency": "ruamel-yaml-clib"
+        }
+      ]
+    },
+    "ruamel-yaml-clib": {
+      "name": "ruamel.yaml.clib",
+      "version": "0.2.8",
+      "requires": []
+    },
+    "requests": {
+      "name": "requests",
+      "version": "2.32.3",
+      "requires": [
+        {
+          "requirement": "charset-normalizer<4,>=2",
+          "dependency": "charset-normalizer"
+        },
+        {
+          "requirement": "idna<4,>=2.5",
+          "dependency": "idna"
+        },
+        {
+          "requirement": "urllib3<3,>=1.21.1",
+          "dependency": "urllib3"
+        },
+        {
+          "requirement": "certifi>=2017.4.17",
+          "dependency": "certifi"
+        }
+      ]
+    },
+    "certifi": {
+      "name": "certifi",
+      "version": "2025.1.31",
+      "requires": []
+    },
+    "urllib3": {
+      "name": "urllib3",
+      "version": "2.3.0",
+      "requires": []
+    },
+    "idna": {
+      "name": "idna",
+      "version": "3.7",
+      "requires": []
+    },
+    "charset-normalizer": {
+      "name": "charset-normalizer",
+      "version": "3.3.2",
+      "requires": []
+    },
+    "pybtex": {
+      "name": "pybtex",
+      "version": "0.26.1",
+      "requires": [
+        {
+          "requirement": "latexcodec>=1.0.4",
+          "dependency": "latexcodec"
+        },
+        {
+          "requirement": "pyyaml>=3.01",
+          "dependency": "pyyaml"
+        }
+      ]
+    },
+    "latexcodec": {
+      "name": "latexcodec",
+      "version": "3.0.1",
+      "requires": []
+    },
+    "plotly": {
+      "name": "plotly",
+      "version": "5.24.1",
+      "requires": [
+        {
+          "requirement": "tenacity>=6.2.0",
+          "dependency": "tenacity"
+        },
+        {
+          "requirement": "packaging",
+          "dependency": "packaging"
+        }
+      ]
+    },
+    "tenacity": {
+      "name": "tenacity",
+      "version": "9.0.0",
+      "requires": []
+    },
+    "pandas": {
+      "name": "pandas",
+      "version": "2.2.3",
+      "requires": [
+        {
+          "requirement": "numpy>=1.23.2; python_version == \"3.11\"",
+          "dependency": "numpy"
+        },
+        {
+          "requirement": "python-dateutil>=2.8.2",
+          "dependency": "python-dateutil"
+        },
+        {
+          "requirement": "pytz>=2020.1",
+          "dependency": "pytz"
+        },
+        {
+          "requirement": "tzdata>=2022.7",
+          "dependency": "tzdata"
+        }
+      ]
+    },
+    "tzdata": {
+      "name": "tzdata",
+      "version": "2023.3",
+      "requires": []
+    },
+    "pytz": {
+      "name": "pytz",
+      "version": "2024.1",
+      "requires": []
+    },
+    "palettable": {
+      "name": "palettable",
+      "version": "3.3.3",
+      "requires": []
+    },
+    "monty": {
+      "name": "monty",
+      "version": "2024.5.24",
+      "requires": []
+    },
+    "chgnet": {
+      "name": "chgnet",
+      "version": "0.3.8",
+      "requires": [
+        {
+          "requirement": "ase >=3.23.0",
+          "dependency": "ase"
+        },
+        {
+          "requirement": "cython >=3",
+          "dependency": "cython"
+        },
+        {
+          "requirement": "numpy >=1.26",
+          "dependency": "numpy"
+        },
+        {
+          "requirement": "nvidia-ml-py3 >=7.352.0",
+          "dependency": "nvidia-ml-py3"
+        },
+        {
+          "requirement": "pymatgen >=2023.10.11",
+          "dependency": "pymatgen"
+        },
+        {
+          "requirement": "torch >=1.11.0",
+          "dependency": "torch"
+        }
+      ]
+    },
+    "nvidia-ml-py3": {
+      "name": "nvidia-ml-py3",
+      "version": "7.352.0",
+      "requires": []
+    },
+    "cython": {
+      "name": "Cython",
+      "version": "3.0.11",
+      "requires": []
+    }
+  }
+}

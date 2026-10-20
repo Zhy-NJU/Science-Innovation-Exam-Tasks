@@ -1,0 +1,46 @@
+{
+  "baseline_kind": "Re-score published predictions; not reconstructed model inference.",
+  "clean_fields": [
+    "atomic_numbers",
+    "cell_angstrom",
+    "fc2_supercell",
+    "fc3_supercell",
+    "material_id",
+    "pbc",
+    "positions_angstrom",
+    "primitive_matrix",
+    "q_point_mesh",
+    "temperature_K"
+  ],
+  "data_split": "All frozen 103 references are final evaluation; no thermal-label train/dev data are provided.",
+  "license": "CC BY 4.0 (Matbench Discovery deposited data); preserve original authors and source URLs. See LICENSE_SOURCES.txt.",
+  "n_samples": 103,
+  "resource_estimate": {
+    "agent_research": "Algorithm-dependent; full finite-displacement E/F calculations may require GPUs, substantial memory/time. No operational limit invented; instruction.limitation is empty pending operator confirmation.",
+    "verifier": "Python standard library, one CPU, <50 MB peak memory, seconds; measured timing recorded in test report"
+  },
+  "source_id_mapping": "source_id_mapping.csv is construction evidence, not Agent input. Anonymous IDs reduce direct lookup but do not remove public-data/pretraining contamination.",
+  "sources": [
+    {
+      "bytes": 76121,
+      "md5": "0b149802835e260aa3ab0c7e3c88625b",
+      "name": "structures.extxyz",
+      "sha256": "8a7340c66233430211c51de23bffcbc490f21de47414f8ce06613553134fcc3a",
+      "url": "https://ndownloader.figshare.com/files/52179965"
+    },
+    {
+      "bytes": 3776952,
+      "md5": "e9a0addbe4d0c163fd66736e40f0408a",
+      "name": "kappa-reference-audit.json.gz",
+      "sha256": "d11d53243fd1586ce5d8bd68f073f94b04d719edb10c3d3f67591f919f86aa2f",
+      "url": "https://ndownloader.figshare.com/files/68221426"
+    },
+    {
+      "bytes": 8209738,
+      "md5": "2feb8c8ac271122d03c0c2aa59ea689c",
+      "name": "kappa-equiformerv3-audit.json.gz",
+      "sha256": "ba649c1b2e03ae0bc7e19b40965467d8e1fac83c72fdf117eebd8f162d29213d",
+      "url": "https://ndownloader.figshare.com/files/68221330"
+    }
+  ]
+}

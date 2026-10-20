@@ -1,0 +1,24 @@
+{
+  "error": null,
+  "metrics": [
+    {
+      "name": "mean_sre",
+      "unit": null,
+      "value": 1.6958708753402623
+    },
+    {
+      "name": "n_samples",
+      "unit": "count",
+      "value": 103
+    }
+  ],
+  "primary_metric": {
+    "direction": "minimize",
+    "name": "mean_sre",
+    "value": 1.6958708753402623
+  },
+  "schema_version": "1.0",
+  "status": "valid",
+  "task_id": "thermal_conductivity",
+  "valid": true
+}

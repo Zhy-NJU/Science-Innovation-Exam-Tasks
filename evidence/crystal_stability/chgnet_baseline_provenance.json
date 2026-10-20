@@ -1,0 +1,10 @@
+{
+  "execution_scope": "No new full WBM model inference or relaxation was reproduced. Archive prediction replay only.",
+  "method": "Re-score frozen CHGNet-0.3.0 relaxed MP2020-corrected formation-energy predictions on all released unique-prototype entries. No rounding, filtering or further MP2020 correction.",
+  "model_metadata_source": "https://github.com/janosh/matbench-discovery/blob/7a7a941d0667bd5d91497f7921d2ae6b2af2aab8/models/chgnet/chgnet-0.3.0.yml",
+  "n": 215488,
+  "prediction_sha256": "847a6984d68f69f3b8ee76a44b52889e481fe90d37285f2ef6be1f731f76b601",
+  "source": "https://ndownloader.figshare.com/files/66646268",
+  "source_md5": "fd7cd3781a24be465aaeadf97663ce58",
+  "source_sha256": "b04ce3b031827fcd532e22058d06dc77fb4705ce8b12aea54652a14504e41f16"
+}

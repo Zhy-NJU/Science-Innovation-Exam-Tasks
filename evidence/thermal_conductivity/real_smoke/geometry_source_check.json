@@ -1,0 +1,146 @@
+{
+  "source_file": "sources/thermal/structures.extxyz",
+  "source_sha256": "8a7340c66233430211c51de23bffcbc490f21de47414f8ce06613553134fcc3a",
+  "source_material_id": "mp-1265",
+  "task_material_id": "thermal_0019",
+  "comparison": "exact floating-point array equality for atom numbers, Cartesian positions, cell, pbc, primitive matrix, FC2/FC3 supercells, q mesh",
+  "reconstructed_input_matches_source": true,
+  "source_frame_count": 103,
+  "input_values": {
+    "material_id": "thermal_0019",
+    "atomic_numbers": [
+      12,
+      12,
+      12,
+      12,
+      8,
+      8,
+      8,
+      8
+    ],
+    "positions_angstrom": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2.12782844,
+        2.12782844
+      ],
+      [
+        2.12782844,
+        0,
+        2.12782844
+      ],
+      [
+        2.12782844,
+        2.12782844,
+        0
+      ],
+      [
+        2.12782844,
+        2.12782844,
+        2.12782844
+      ],
+      [
+        2.12782844,
+        0,
+        0
+      ],
+      [
+        0,
+        2.12782844,
+        0
+      ],
+      [
+        0,
+        0,
+        2.12782844
+      ]
+    ],
+    "cell_angstrom": [
+      [
+        4.255656884758435,
+        0,
+        0
+      ],
+      [
+        0,
+        4.255656884758435,
+        0
+      ],
+      [
+        0,
+        0,
+        4.255656884758435
+      ]
+    ],
+    "pbc": [
+      true,
+      true,
+      true
+    ],
+    "temperature_K": 300,
+    "fc2_supercell": [
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        4,
+        0
+      ],
+      [
+        0,
+        0,
+        4
+      ]
+    ],
+    "fc3_supercell": [
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        2
+      ]
+    ],
+    "primitive_matrix": [
+      [
+        0,
+        0.5,
+        0.5
+      ],
+      [
+        0.5,
+        0,
+        0.5
+      ],
+      [
+        0.5,
+        0.5,
+        0
+      ]
+    ],
+    "q_point_mesh": [
+      19,
+      19,
+      19
+    ]
+  },
+  "final_task_input_exactly_matches_smoke": true,
+  "final_task_input_rows": 103,
+  "final_task_input_sha256": "c1ce6f33006865c33a19d18422c8aef8d04f3623397d29017268dcb8662991ee"
+}

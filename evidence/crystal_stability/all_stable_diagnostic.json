@@ -1,0 +1,11 @@
+{
+  "name": "all-stable classification reference",
+  "true_stable": 32942,
+  "total": 215488,
+  "TP": 32942,
+  "FP": 182546,
+  "FN": 0,
+  "TN": 0,
+  "F1": 0.2652014652014652,
+  "scope": "Classification diagnostic only. The submission contract predicts finite formation energies, not binary stable labels. This diagnostic exposes weak formation-energy baselines that fail to improve the stable-class F1 over predicting every material stable."
+}

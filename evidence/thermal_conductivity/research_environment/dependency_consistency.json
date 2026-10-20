@@ -1,0 +1,8 @@
+{
+  "scope": "Only the relevant scientific dependency closure; unrelated Anaconda packages are excluded.",
+  "packages": 54,
+  "active_requirement_edges_checked": 78,
+  "python": "3.11.8",
+  "all_required_versions_satisfy_specifiers": true,
+  "errors": []
+}
