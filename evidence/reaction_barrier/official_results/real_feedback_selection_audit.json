@@ -1,0 +1,40 @@
+{
+  "aggregate_feedback": [
+    {
+      "feedback_sha256": "1645e5e609f907df21d098ad65b2802e162d013d96588c6b5db91e889cfe6bce",
+      "n_samples": 225,
+      "name": "mae_eV",
+      "remaining": 19,
+      "round": 1,
+      "value": 0.41622476723437213
+    },
+    {
+      "feedback_sha256": "01332a5f237be75662d2ee5bb6ec30fd9f79115ff7f244a7be0af2cf3e703be8",
+      "n_samples": 225,
+      "name": "mae_eV",
+      "remaining": 18,
+      "round": 2,
+      "value": 0.4140104770301981
+    }
+  ],
+  "bottom_feedback": {
+    "feedback_sha256": "5df57f460dff2e8b42c8abae01689ac72fa2718dcc22cc5fefa7f269d21c36bb",
+    "n_samples": 225,
+    "name": "mae_eV",
+    "remaining": 17,
+    "round": 3,
+    "value": 0.8102523945783389
+  },
+  "builder_oracle_mae_absolute_differences": [
+    0.0,
+    5.551115123125783e-17,
+    1.1102230246251565e-16
+  ],
+  "feedback_count": 3,
+  "frozen_selection_sha256": "f807f58c13d24e51117fc1fb4d5402a56153ad1c8ae6217e579e63992ff65589",
+  "model_or_predictions_modified": false,
+  "private_labels_read": false,
+  "selected_candidate": "et_leaf3",
+  "staged_script_sha256": "8bbdbf2ed5e0951beeb489f6ef89a065f741b812014cdca9e8f5d550a9764b05",
+  "status": "passed"
+}

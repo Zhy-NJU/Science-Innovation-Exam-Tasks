@@ -1,0 +1,314 @@
+{
+  "source": {
+    "bytes": 6623929000,
+    "md5": "faab0413cf6b042b6d50e6272dea9a8c",
+    "sha256": "6a20f8a3f49c50d462270d10d4c44ca102e788072e2096a91d70b5a0f598b629"
+  },
+  "source_data_group_reactions": 10073,
+  "source_root_attrs": {},
+  "source_final_state_schema": {
+    "reactant": {
+      "positions_dtype": "float64",
+      "energy_dtype": "float64",
+      "keys": [
+        "atomic_numbers",
+        "hash",
+        "positions",
+        "wB97x_6-31G(d).energy",
+        "wB97x_6-31G(d).forces"
+      ],
+      "attrs": {}
+    },
+    "product": {
+      "positions_dtype": "float64",
+      "energy_dtype": "float64",
+      "keys": [
+        "atomic_numbers",
+        "hash",
+        "positions",
+        "wB97x_6-31G(d).energy",
+        "wB97x_6-31G(d).forces"
+      ],
+      "attrs": {}
+    },
+    "transition_state": {
+      "positions_dtype": "float64",
+      "energy_dtype": "float64",
+      "keys": [
+        "atomic_numbers",
+        "hash",
+        "positions",
+        "wB97x_6-31G(d).energy",
+        "wB97x_6-31G(d).forces"
+      ],
+      "attrs": {}
+    }
+  },
+  "counts": {
+    "train": 9561,
+    "val": 225,
+    "test": 287
+  },
+  "private_reference_statistics": {
+    "train": {
+      "min_eV": 0.8232116784347454,
+      "max_eV": 22.21389351758262,
+      "negative_count": 0,
+      "median_eV": 3.9035128126706695
+    },
+    "val": {
+      "min_eV": 0.8802097024254181,
+      "max_eV": 7.493691458575086,
+      "negative_count": 0,
+      "median_eV": 3.856019949716938
+    },
+    "test": {
+      "min_eV": 0.7790153282840038,
+      "max_eV": 7.6086854100121855,
+      "negative_count": 0,
+      "median_eV": 3.728990146455544
+    }
+  },
+  "source_path_frame_counts": {
+    "train": 9072666,
+    "val": 269186,
+    "test": 282742
+  },
+  "formula_counts": {
+    "train": 155,
+    "val": 8,
+    "test": 8
+  },
+  "split_formulas": {
+    "train": [
+      "C2H2N2O2",
+      "C2H2N4",
+      "C2H2O2",
+      "C2H3N",
+      "C2H3N3",
+      "C2H3N3O",
+      "C2H3N5",
+      "C2H3NO",
+      "C2H3NO2",
+      "C2H4N2",
+      "C2H4N2O",
+      "C2H4N2O2",
+      "C2H4N4",
+      "C2H4N4O",
+      "C2H4O",
+      "C2H4O2",
+      "C2H5N3O",
+      "C2H5NO",
+      "C2H6O",
+      "C2H6O2",
+      "C2N2",
+      "C3H2N2",
+      "C3H2N2O",
+      "C3H2N2O2",
+      "C3H2N4",
+      "C3H2O",
+      "C3H2O3",
+      "C3H3N3",
+      "C3H3N3O",
+      "C3H3NO",
+      "C3H3NO2",
+      "C3H3NO3",
+      "C3H4",
+      "C3H4N2",
+      "C3H4N2O",
+      "C3H4N2O2",
+      "C3H4N4",
+      "C3H4O",
+      "C3H4O2",
+      "C3H4O3",
+      "C3H5N",
+      "C3H5N3",
+      "C3H5N3O",
+      "C3H5NO",
+      "C3H5NO3",
+      "C3H6N2",
+      "C3H6N2O2",
+      "C3H6O",
+      "C3H6O2",
+      "C3H6O3",
+      "C3H7N",
+      "C3H7N3",
+      "C3H7N3O",
+      "C3H7NO",
+      "C3H7NO2",
+      "C3H8",
+      "C3H8N2O2",
+      "C3H8O",
+      "C3H8O2",
+      "C3H8O3",
+      "C3HN",
+      "C3HN3O",
+      "C4H10",
+      "C4H10O",
+      "C4H10O2",
+      "C4H10O3",
+      "C4H2",
+      "C4H2N2O",
+      "C4H2O2",
+      "C4H3N",
+      "C4H3N3",
+      "C4H3NO",
+      "C4H3NO2",
+      "C4H4N2",
+      "C4H4N2O",
+      "C4H4O",
+      "C4H4O2",
+      "C4H4O3",
+      "C4H5N",
+      "C4H5N3",
+      "C4H5NO",
+      "C4H5NO2",
+      "C4H6",
+      "C4H6N2",
+      "C4H6N2O",
+      "C4H6O",
+      "C4H6O2",
+      "C4H6O3",
+      "C4H7N",
+      "C4H7N3",
+      "C4H7NO",
+      "C4H7NO2",
+      "C4H8",
+      "C4H8N2",
+      "C4H8N2O",
+      "C4H8O",
+      "C4H8O2",
+      "C4H8O3",
+      "C4H9N",
+      "C4H9NO",
+      "C4HNO",
+      "C4N2",
+      "C5H10",
+      "C5H10N2",
+      "C5H10O",
+      "C5H10O2",
+      "C5H11N",
+      "C5H11NO",
+      "C5H12",
+      "C5H12O",
+      "C5H12O2",
+      "C5H2O",
+      "C5H3NO",
+      "C5H4",
+      "C5H4N2",
+      "C5H4O",
+      "C5H4O2",
+      "C5H5N",
+      "C5H6",
+      "C5H6N2",
+      "C5H6O",
+      "C5H6O2",
+      "C5H7N",
+      "C5H7NO",
+      "C5H8",
+      "C5H8N2",
+      "C5H8O",
+      "C5H8O2",
+      "C5H9N",
+      "C5H9NO",
+      "C6H10",
+      "C6H10O",
+      "C6H11N",
+      "C6H12",
+      "C6H12O",
+      "C6H13N",
+      "C6H14",
+      "C6H14O",
+      "C6H4O",
+      "C6H5N",
+      "C6H6",
+      "C6H6O",
+      "C6H7N",
+      "C6H8",
+      "C6H8O",
+      "C6H9N",
+      "C7H10",
+      "C7H12",
+      "C7H14",
+      "C7H16",
+      "C7H8",
+      "CH2N4O",
+      "CH3N5",
+      "CH4N2O",
+      "CHN3O2"
+    ],
+    "val": [
+      "C2H2N2O",
+      "C2H6N2O",
+      "C3H6N2O",
+      "C3N2O",
+      "C4H10N2O",
+      "C4H9NO2",
+      "CHN3O",
+      "CN2O3"
+    ],
+    "test": [
+      "C2H3N3O2",
+      "C2H5NO2",
+      "C2HNO",
+      "C2HNO3",
+      "C3H5NO2",
+      "C3H8N2O",
+      "C3HNO2",
+      "C5H5NO"
+    ]
+  },
+  "actual_composition_counts": {
+    "train": 155,
+    "val": 8,
+    "test": 8
+  },
+  "split_composition_overlap": [
+    {
+      "splits": [
+        "train",
+        "val"
+      ],
+      "source_formula_intersection": [],
+      "actual_element_count_intersection": []
+    },
+    {
+      "splits": [
+        "train",
+        "test"
+      ],
+      "source_formula_intersection": [],
+      "actual_element_count_intersection": []
+    },
+    {
+      "splits": [
+        "val",
+        "test"
+      ],
+      "source_formula_intersection": [],
+      "actual_element_count_intersection": []
+    }
+  ],
+  "cross_split_matches": {
+    "raw_source_hash": [],
+    "exact_geometry": [],
+    "distance_candidate": [],
+    "reaction_object": [],
+    "directed_pair": [],
+    "unordered_pair": []
+  },
+  "within_split_exact_endpoint_pair_duplicates": {
+    "directed_pair": [],
+    "unordered_pair": []
+  },
+  "exclusions": [],
+  "hash_warning": "Source hash is SHA1(str(positions)+formula) modulo 10**8; collisions alone do not prove molecular identity.",
+  "invariant_signature_scope": "Element-pair sorted distances rounded to 1e-8 angstrom, invariant to rotation, translation and same-element permutation. Candidate identifier, not a unique molecular graph; exact composition disjointness separately establishes cross-split separation.",
+  "path_frame_isolation": "All source frames in a reaction use its parent atomic_numbers. Composition-disjoint splits exclude identical whole-system frames even after atom permutation; no trajectory frames are exported.",
+  "convergence_scope": "Use the author-released dataset of converged CINEB paths. No independent per-record convergence, Hessian or IRC certification is fabricated.",
+  "environment": {
+    "python": "3.11.8",
+    "h5py": "3.12.1",
+    "numpy": "1.26.4"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "dataset_doi": "10.6084/m9.figshare.19614657.v4",
+  "license": "MIT",
+  "license_authority": "https://api.figshare.com/v2/articles/19614657/versions/4",
+  "copyright_notice_scope": "No dataset-specific copyright line supplied by source; no holder or year invented. Full permission/warranty notice plus depositor/paper attribution retained.",
+  "upstream_commit": "08f728925d76e22ce04ec1ab3b75770d32e617ca",
+  "scientific_sources": [
+    {
+      "url": "https://gitlab.com/matschreiner/Transition1x/-/blob/08f728925d76e22ce04ec1ab3b75770d32e617ca/README.md",
+      "supports": [
+        "positions in angstrom",
+        "total energies in eV",
+        "activation energy = TS energy minus reactant energy",
+        "combine only converged reaction directories"
+      ]
+    },
+    {
+      "url": "https://gitlab.com/matschreiner/Transition1x/-/blob/08f728925d76e22ce04ec1ab3b75770d32e617ca/transition1x/dataloader.py",
+      "supports": [
+        "official data/train/val/test groups",
+        "only_final yields reactant/product/transition_state records",
+        "one stored final configuration per state"
+      ]
+    },
+    {
+      "url": "https://gitlab.com/matschreiner/Transition1x/-/blob/08f728925d76e22ce04ec1ab3b75770d32e617ca/scripts/combine_dbs.py",
+      "supports": [
+        "official formula-level softlink splitting",
+        "all frames use parent atom ordering",
+        "source short hashes are not collision-free"
+      ]
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9789978/#Sec2",
+      "supports": [
+        "omegaB97X/6-31G(d) electronic-structure target",
+        "published CINEB convergence criterion 0.05 eV/angstrom",
+        "10073 released converged reactions",
+        "no subsequent TS refinement; no independent Hessian/IRC certification",
+        "formula-disjoint official splits"
+      ]
+    }
+  ],
+  "interpretation": "The task preserves the publisher-released converged-path collection. It does not invent per-reaction convergence flags or charge/spin metadata. Explicit completeness/finiteness and split-isolation audits are performed independently.",
+  "cached_sources": [
+    {
+      "path": "materials/upstream_README.md",
+      "sha256": "7a42aa9a7e6aefb1241d9f3525c79049eac57d35759264cdeee34b9a6ae857a4"
+    },
+    {
+      "path": "materials/upstream_commit.json",
+      "sha256": "2c6dedc1f0c0d53e7dfa1d0812952fb33865e5977d7d1f38c34831ff68421588"
+    },
+    {
+      "path": "materials/upstream_scripts_combine_dbs.py",
+      "sha256": "925771b19eaed388c70207cf556202e6a1c7fc022bb053f5777ac7d38b525e4e"
+    },
+    {
+      "path": "materials/upstream_scripts_neb.py",
+      "sha256": "e80c23406c8d7bdc27e76e17f551e89930b429e1730ce877dd5278699f6382ac"
+    },
+    {
+      "path": "materials/upstream_setup.py",
+      "sha256": "3b8af394b44e720c8db8048df9e5fadf2d773bb3f47cc4de96e630d060d76afb"
+    },
+    {
+      "path": "materials/upstream_transition1x_dataloader.py",
+      "sha256": "08475accd6fab868d8042a204fdaa9060fc5637499c8efb108c11dbf4cc06c1f"
+    }
+  ]
+}

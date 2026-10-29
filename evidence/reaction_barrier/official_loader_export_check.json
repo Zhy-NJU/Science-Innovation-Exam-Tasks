@@ -1,0 +1,24 @@
+{
+  "official_loader_sha256": "08475accd6fab868d8042a204fdaa9060fc5637499c8efb108c11dbf4cc06c1f",
+  "split_checks": {
+    "train": {
+      "count": 9561,
+      "all_fields_exactly_match_official_only_final_loader": true,
+      "input_field_allowlist_passed": true,
+      "full_id_coverage": true
+    },
+    "val": {
+      "count": 225,
+      "all_fields_exactly_match_official_only_final_loader": true,
+      "input_field_allowlist_passed": true,
+      "full_id_coverage": true
+    },
+    "test": {
+      "count": 287,
+      "all_fields_exactly_match_official_only_final_loader": true,
+      "input_field_allowlist_passed": true,
+      "full_id_coverage": true
+    }
+  },
+  "passed": true
+}

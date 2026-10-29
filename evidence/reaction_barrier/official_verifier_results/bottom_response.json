@@ -1,0 +1,12 @@
+{
+  "metrics": {
+    "mae_eV": 0.8102523945783389,
+    "p95_absolute_error_eV": 1.8043002679822164,
+    "rmse_eV": 1.03639396114732,
+    "within_1_kcal_per_mol_fraction": 0.035555555555555556
+  },
+  "n_samples": 225,
+  "remaining": 17,
+  "round": 3,
+  "status": "ok"
+}

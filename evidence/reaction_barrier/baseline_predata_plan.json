@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-10-29T16:13:17.112963+00:00",
+  "status": "frozen_before_real_train_or_validation_data_are_read",
+  "script_sha256": "56d9208238098cd1c59ead466f806d4dd0ea6677fac9a19d3358f2f6c0dac8a2",
+  "feature_count": 671,
+  "candidate_configurations": [
+    {
+      "name": "et_leaf1",
+      "n_estimators": 320,
+      "min_samples_leaf": 1,
+      "max_features": 1.0,
+      "random_state": 20261030,
+      "n_jobs": 2
+    },
+    {
+      "name": "et_leaf3",
+      "n_estimators": 320,
+      "min_samples_leaf": 3,
+      "max_features": 1.0,
+      "random_state": 20261030,
+      "n_jobs": 2
+    }
+  ],
+  "candidate_selection": "lowest validation MAE; first candidate wins exact tie",
+  "training": "official train only; do not refit on validation",
+  "reference": "training global median",
+  "development_metric_evaluations_planned": 3,
+  "test_policy": "predict all fixed test IDs once after model/selection freeze, then score; no post-test tuning"
+}

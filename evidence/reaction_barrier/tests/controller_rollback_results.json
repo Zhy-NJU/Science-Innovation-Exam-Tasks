@@ -1,0 +1,9 @@
+{
+  "scope": "Official Verifier.invoke controller unit tests with actual SQLite VerifyContext; container service and Linux chown are explicit test doubles. Not real container execution, actual timeout enforcement, or full task integration.",
+  "framework_commit": "746dc2d7c0c7c4b979c5c7371edf2e0ad15c7607",
+  "verifier_sha256": "144293c9071410fd09a6c8ac0c194909d5f8972802b368ed2d411612bdf76d88",
+  "tests_run": 5,
+  "failures": 0,
+  "errors": 0,
+  "passed": true
+}

@@ -1,0 +1,83 @@
+{
+  "bottom": "Global median of training barriers; no validation fitting",
+  "bottom_validation_mae_eV": 0.8102523945783388,
+  "configurations": [
+    {
+      "max_features": 1.0,
+      "min_samples_leaf": 1,
+      "n_estimators": 320,
+      "n_jobs": 2,
+      "name": "et_leaf1",
+      "random_state": 20261030
+    },
+    {
+      "max_features": 1.0,
+      "min_samples_leaf": 3,
+      "n_estimators": 320,
+      "n_jobs": 2,
+      "name": "et_leaf3",
+      "random_state": 20261030
+    }
+  ],
+  "feature_schema": "endpoint-pair-statistics-v1",
+  "inputs": {
+    "task_package/input/train.jsonl.gz": "70f46da1439b24aa623d32584e526a896c409ff66815c5b63b2c0df336080c3f",
+    "task_package/input/validation.jsonl.gz": "0a6bbfe90f66d97bc308f8fe50e92e83b3a601f0d83915eab4d46a61f3b5d777",
+    "task_package/verifier/test/data/validation_labels.csv": "2aa6f46d8c53b370ca368761c05d33a65d2eb030731877073bd476855f8be6cf"
+  },
+  "model_sha256": "a9752f33716b06429da5e88a4f0446e2ac392cb1f4e4ce866646ae02313ef3eb",
+  "n_features": 671,
+  "peak_process_rss_bytes": 595738624,
+  "read_feature_seconds": 24.189115834000404,
+  "runs": [
+    {
+      "fit_predict_seconds": 168.64074116600386,
+      "max_features": 1.0,
+      "min_samples_leaf": 1,
+      "n_estimators": 320,
+      "n_jobs": 2,
+      "name": "et_leaf1",
+      "random_state": 20261030,
+      "validation_mae_eV": 0.41622476723437213
+    },
+    {
+      "fit_predict_seconds": 105.97165841700917,
+      "max_features": 1.0,
+      "min_samples_leaf": 3,
+      "n_estimators": 320,
+      "n_jobs": 2,
+      "name": "et_leaf3",
+      "random_state": 20261030,
+      "validation_mae_eV": 0.41401047703019805
+    }
+  ],
+  "script_sha256": "56d9208238098cd1c59ead466f806d4dd0ea6677fac9a19d3358f2f6c0dac8a2",
+  "selected": {
+    "fit_predict_seconds": 105.97165841700917,
+    "max_features": 1.0,
+    "min_samples_leaf": 3,
+    "n_estimators": 320,
+    "n_jobs": 2,
+    "name": "et_leaf3",
+    "random_state": 20261030,
+    "validation_mae_eV": 0.41401047703019805
+  },
+  "selection": "Lowest validation MAE; tie goes to first configuration",
+  "test_labels_read": false,
+  "test_policy": "No test file or test label is read by fit",
+  "train_count": 9561,
+  "training": "Train split only; no train+validation refit",
+  "training_median_eV": 3.9035128126706695,
+  "validation_candidate_evaluations": 2,
+  "validation_count": 225,
+  "validation_metric_evaluations_including_bottom": 3,
+  "versions": {
+    "joblib": "1.6.0",
+    "numpy": "2.3.2",
+    "platform": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.8",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.17.1"
+  },
+  "wall_seconds": 300.2119745839882
+}

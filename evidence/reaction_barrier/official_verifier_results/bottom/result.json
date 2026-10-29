@@ -1,0 +1,44 @@
+{
+  "error": null,
+  "metrics": [
+    {
+      "name": "forward_barrier_mae",
+      "unit": "eV",
+      "value": 0.8001934932388185
+    },
+    {
+      "name": "n_samples",
+      "unit": "count",
+      "value": 287
+    },
+    {
+      "name": "validation_calls",
+      "unit": "count",
+      "value": 3
+    },
+    {
+      "name": "forward_barrier_rmse",
+      "unit": "eV",
+      "value": 1.035739445532968
+    },
+    {
+      "name": "absolute_error_p95",
+      "unit": "eV",
+      "value": 2.00276454026407
+    },
+    {
+      "name": "within_1_kcal_per_mol_fraction",
+      "unit": null,
+      "value": 0.03832752613240418
+    }
+  ],
+  "primary_metric": {
+    "direction": "minimize",
+    "name": "forward_barrier_mae",
+    "value": 0.8001934932388185
+  },
+  "schema_version": "1.0",
+  "status": "valid",
+  "task_id": "reaction_barrier",
+  "valid": true
+}

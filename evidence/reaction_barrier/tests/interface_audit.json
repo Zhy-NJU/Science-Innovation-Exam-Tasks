@@ -1,0 +1,42 @@
+{
+  "official_framework_repository": "https://github.com/PrismaX-Team/Science-Innovation-Exam-Framework",
+  "framework_commit": "746dc2d7c0c7c4b979c5c7371edf2e0ad15c7607",
+  "task_contract_commit": "be168b96e556ea33939285b68987eb329dfe57b0",
+  "contract_revision": "2026-09-17",
+  "real_sdk_found": true,
+  "local_sdk_test_report": "real_sdk_results.json",
+  "upstream_sdk_unit_tests": {
+    "count": 5,
+    "passed": true
+  },
+  "validation_receives": "The task-defined JSON payload alone; the action envelope is removed by Actions.handle before Verifier.invoke writes request.json.",
+  "validation_submission_mount": false,
+  "same_request_id_replayed_by_framework": true,
+  "same_payload_new_request_id_invokes_validation_again": true,
+  "scientific_payload_status": "Frozen during authorized task construction as the exact one-key object predictions_csv:string, preserving the approved CSV scientific columns and complete development set.",
+  "container_runtime_executed": false,
+  "files": [
+    {
+      "path": "src/science_innovation_exam/verify_context.py",
+      "sha256": "48f7cfa1caf6b6e71b0d7c800e1391ef9e2da0550e875cdc8d8a5b4796d36af3"
+    },
+    {
+      "path": "src/science_innovation_exam/actions.py",
+      "sha256": "88e7903614924ebc19b3c59c87be62adfd89c5d4ad1d30310ca5bd761baab028"
+    },
+    {
+      "path": "src/science_innovation_exam/action_client.py",
+      "sha256": "18ea5902767367d8f9b5bcb57e403c6636b66e1a95b19c61da70e32ed113678a"
+    },
+    {
+      "path": "src/science_innovation_exam/verifier.py",
+      "sha256": "144293c9071410fd09a6c8ac0c194909d5f8972802b368ed2d411612bdf76d88"
+    },
+    {
+      "path": "src/science_innovation_exam/prompts/general.json",
+      "sha256": "778c013a6110b782d4477661208b48acd8e6ee8334fd4e869205b1f84b95b505"
+    }
+  ],
+  "encoding_decision": "../validation_encoding_decision.md",
+  "task_encoding_is_an_existing_official_reaction_schema": false
+}

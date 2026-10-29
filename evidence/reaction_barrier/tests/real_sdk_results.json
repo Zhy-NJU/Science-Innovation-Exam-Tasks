@@ -1,0 +1,12 @@
+{
+  "scope": "Unchanged official VerifyContext SDK in local Python subprocesses. No mock SDK; no Docker, complete runner rollback or scientific package integration is claimed.",
+  "framework_repository": "https://github.com/PrismaX-Team/Science-Innovation-Exam-Framework",
+  "framework_commit": "746dc2d7c0c7c4b979c5c7371edf2e0ad15c7607",
+  "sdk_file": "src/science_innovation_exam/verify_context.py",
+  "sdk_sha256": "48f7cfa1caf6b6e71b0d7c800e1391ef9e2da0550e875cdc8d8a5b4796d36af3",
+  "python_version": "3.11.8",
+  "tests_run": 6,
+  "failures": 0,
+  "errors": 0,
+  "passed": true
+}

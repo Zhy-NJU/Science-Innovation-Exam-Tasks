@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "evaluated_at_utc": "2026-10-29T16:31:00.042095+00:00",
+  "scope": "Independent arithmetic audit of the frozen full-test predictions; no model or hyperparameter update",
+  "test_id_count": 287,
+  "test_label_sha256": "8b05503d621a34e4e1e4e7e452bb4dfd63e352f54e9d62ae57b52e10f454d37e",
+  "prediction_provenance_sha256": "710eca4d020fdc09fc98a4521ec430de58f929e18479506e9ba26f3280cca452",
+  "selection_sha256": "f807f58c13d24e51117fc1fb4d5402a56153ad1c8ae6217e579e63992ff65589",
+  "metrics": {
+    "baseline": {
+      "n_samples": 287,
+      "mae_eV": 0.41108395831066713,
+      "rmse_eV": 0.6048654308975404,
+      "p95_absolute_error_eV": 1.4043683891082166,
+      "within_1_kcal_per_mol_fraction": 0.1254355400696864,
+      "within_1_kcal_per_mol_count": 36,
+      "threshold_eV": 0.0433641,
+      "prediction_sha256": "e743e35c3bf499f77e12641326eb2b4eb79eb55fc3779a6c01604f88fc6a1fe1",
+      "independent_numpy_mae_eV": 0.41108395831066713,
+      "high_precision_float_input_mae_eV": 0.41108395831066713,
+      "numpy_mae_abs_difference": 0.0,
+      "decimal_mae_abs_difference": 0.0
+    },
+    "bottom": {
+      "n_samples": 287,
+      "mae_eV": 0.8001934932388185,
+      "rmse_eV": 1.035739445532968,
+      "p95_absolute_error_eV": 2.00276454026407,
+      "within_1_kcal_per_mol_fraction": 0.03832752613240418,
+      "within_1_kcal_per_mol_count": 11,
+      "threshold_eV": 0.0433641,
+      "prediction_sha256": "2b7ceb636ca97de5e5c7dc56084bd5b3afdfe12f180ac4e7172daf7bb2cf45ad",
+      "independent_numpy_mae_eV": 0.8001934932388185,
+      "high_precision_float_input_mae_eV": 0.8001934932388185,
+      "numpy_mae_abs_difference": 0.0,
+      "decimal_mae_abs_difference": 0.0
+    }
+  },
+  "relative_mae_reduction_vs_training_median": 0.486269306381402,
+  "selected_model_beats_training_median": true,
+  "numeric_convention": "Float64 target/prediction subtraction, canonical test input ID order, math.fsum; p95 linear interpolation; inclusive 0.0433641 eV threshold",
+  "test_labels_first_read_by_baseline_worker_after_prediction_hash_freeze": true,
+  "formal_entrypoint_crosscheck": {
+    "status": "passed",
+    "framework_commit": "746dc2d7c0c7c4b979c5c7371edf2e0ad15c7607",
+    "summary_sha256": "d8f4fa83e05031e1f0a3d075fc4687b4a00daebe2edd56265ad84101024c87fa",
+    "results": {
+      "baseline": {
+        "official_result_sha256": "49c77db31d26d064962539d976b9a1541d00e1c7edc2e665132fee924f9c2e3d",
+        "metric_absolute_differences": {
+          "mae_eV": 0.0,
+          "rmse_eV": 0.0,
+          "p95_absolute_error_eV": 0.0,
+          "within_1_kcal_per_mol_fraction": 0.0
+        },
+        "n_samples": 287,
+        "validation_calls": 3,
+        "frozen_prediction_bytes_match_official_submission": true
+      },
+      "bottom": {
+        "official_result_sha256": "2e2c9cd35bfa40ae4e3c8e61e35a56fd17e0d5640d94bc3309966bd766c14173",
+        "metric_absolute_differences": {
+          "mae_eV": 0.0,
+          "rmse_eV": 0.0,
+          "p95_absolute_error_eV": 0.0,
+          "within_1_kcal_per_mol_fraction": 0.0
+        },
+        "n_samples": 287,
+        "validation_calls": 3,
+        "frozen_prediction_bytes_match_official_submission": true
+      }
+    },
+    "scope": "Actual real-SDK host entrypoint execution reported by the package builder; not a Linux OCI execution claim"
+  }
+}
