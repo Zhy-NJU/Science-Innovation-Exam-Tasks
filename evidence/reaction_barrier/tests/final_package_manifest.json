@@ -1,0 +1,129 @@
+{
+  "schema_version": "reaction-barrier-evidence-manifest.v1",
+  "task_id": "reaction_barrier",
+  "path_base": "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/reaction_barrier_2026-10-29/task_package",
+  "file_count": 24,
+  "total_bytes": 12121884,
+  "files": [
+    {
+      "path": "environment/environment.json",
+      "bytes": 42,
+      "sha256": "49afd0038a23763b1b98590e8d500882ecedc96fb5af06e0b34c4cb7c3521c4d"
+    },
+    {
+      "path": "input/ATTRIBUTION.txt",
+      "bytes": 1484,
+      "sha256": "546488ed4554ff51aff4961d6f5633de3a5092920ea3bf9da23b4be431616562"
+    },
+    {
+      "path": "input/LICENSE-DATA.txt",
+      "bytes": 1243,
+      "sha256": "99e4e5554d5d73a6d5b55386b9bd42e11b882c03d5f74f4acb2ee693ba024d34"
+    },
+    {
+      "path": "input/README.md",
+      "bytes": 8507,
+      "sha256": "32ef867826d72e1cf76e5f6dd0ca00dfea06a3253de1447a8113f793fb76d6cd"
+    },
+    {
+      "path": "input/method.md",
+      "bytes": 212,
+      "sha256": "50144c384568dc604d6f5baac90037ca23b392554c1fe72573372990f16d5925"
+    },
+    {
+      "path": "input/predictions.csv",
+      "bytes": 4623,
+      "sha256": "22a8cc4e7873f52a21eadfee78631bed62703fd91f23380f312531c8ddc07a69"
+    },
+    {
+      "path": "input/schemas/validation_request.schema.json",
+      "bytes": 508,
+      "sha256": "944b2639e17cd579ef9f883e35c880cf6db8a356df945acf3a0d2f23f0ba8302"
+    },
+    {
+      "path": "input/sources.json",
+      "bytes": 217,
+      "sha256": "c7c01a7caa204798447ef7d2c0414dc94817d4d8a5d657b4e5b380680f7e3b97"
+    },
+    {
+      "path": "input/target_convention.json",
+      "bytes": 568,
+      "sha256": "535eb905bc4baf3a574359cf0ed09f48f1cf0530abf89a0ef5adc6939fee5304"
+    },
+    {
+      "path": "input/test.jsonl.gz",
+      "bytes": 154962,
+      "sha256": "7aa133a498029f18f6c18b53b81e63a5f2476446a14c1cef3b1a2ac6fa7c2b29"
+    },
+    {
+      "path": "input/train.jsonl.gz",
+      "bytes": 11547713,
+      "sha256": "70f46da1439b24aa623d32584e526a896c409ff66815c5b63b2c0df336080c3f"
+    },
+    {
+      "path": "input/validation.jsonl.gz",
+      "bytes": 143078,
+      "sha256": "0a6bbfe90f66d97bc308f8fe50e92e83b3a601f0d83915eab4d46a61f3b5d777"
+    },
+    {
+      "path": "input/validation_predictions.csv",
+      "bytes": 4981,
+      "sha256": "d8b9db83ca8e8e46be978720aa79110b5acca0057e9460dab5d3b52d74775307"
+    },
+    {
+      "path": "input/validation_request.json",
+      "bytes": 5235,
+      "sha256": "5d98717cdd377807c2a2332f293911dd4bd4419e625501bf8e1b16fbf9626afb"
+    },
+    {
+      "path": "instruction.json",
+      "bytes": 7055,
+      "sha256": "e4dec743290c7f46f45d588b91f3709015a7293cc3ce0a4649d32cd2dd5ef817"
+    },
+    {
+      "path": "meta.json",
+      "bytes": 1502,
+      "sha256": "cfcdd8c4a5c64f55f9b8835bbf476f236411a1a0a1f05d62059fb68ba1c6e602"
+    },
+    {
+      "path": "verifier/core.py",
+      "bytes": 14456,
+      "sha256": "90a6d130f4ec2dbe9bf2e4bad14451cf7ceff59fff67d1937f276ff1cffe2e0b"
+    },
+    {
+      "path": "verifier/io_utils.py",
+      "bytes": 4484,
+      "sha256": "c9502f204d4fc538988cc687c24d65feaf0ab6b78be799aff3d6d6595b634610"
+    },
+    {
+      "path": "verifier/protocol.json",
+      "bytes": 784,
+      "sha256": "6a8c1113af1554c42e70177d1a1fd302935eca7ee31fbf071762484d98220e0b"
+    },
+    {
+      "path": "verifier/test/data/reference_states.jsonl.gz",
+      "bytes": 201350,
+      "sha256": "ccece16248bcc6988b02b790f84c5d73f9d85d7a1130afba90c50e1118720ef5"
+    },
+    {
+      "path": "verifier/test/data/test_labels.csv",
+      "bytes": 9600,
+      "sha256": "8b05503d621a34e4e1e4e7e452bb4dfd63e352f54e9d62ae57b52e10f454d37e"
+    },
+    {
+      "path": "verifier/test/data/validation_labels.csv",
+      "bytes": 8868,
+      "sha256": "2aa6f46d8c53b370ca368761c05d33a65d2eb030731877073bd476855f8be6cf"
+    },
+    {
+      "path": "verifier/test/run/main.py",
+      "bytes": 201,
+      "sha256": "9cb5f226b2dfd0d7070397eaf258dcc5f2b95553f984d36112f1f4f2082c5122"
+    },
+    {
+      "path": "verifier/validation/run/main.py",
+      "bytes": 211,
+      "sha256": "d8c00ef8f60841dd27b13fff9546441ac260f69e7c8a6ec427c2ad47bc21b800"
+    }
+  ]
+}

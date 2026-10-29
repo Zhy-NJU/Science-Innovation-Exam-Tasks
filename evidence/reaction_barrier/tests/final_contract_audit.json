@@ -1,0 +1,112 @@
+{
+  "passed": true,
+  "scope": "Final official schemas/structure and two real-SDK final-entry re-executions; no Docker or full agent run.",
+  "python_version": "3.11.8 | packaged by conda-forge | (main, Feb 16 2024, 20:49:36) [Clang 16.0.6 ]",
+  "framework_commit": "746dc2d7c0c7c4b979c5c7371edf2e0ad15c7607",
+  "official_checker_sha256": "374278f53365bef86de523afbe72143bc4d2fef126b36dc79907e8a78afb1794",
+  "bundled_fallback_check": {
+    "task_id": "reaction_barrier",
+    "submission_paths": [
+      "predictions.csv",
+      "method.md",
+      "sources.json",
+      "research_code.zip"
+    ],
+    "status": "package_valid",
+    "checker": "bundled-fallback",
+    "contract_revision": "2026-09-17"
+  },
+  "real_framework_loader": {
+    "status": "package_valid",
+    "class": "science_innovation_exam.task.TaskPackage",
+    "task_id": "reaction_barrier",
+    "fingerprint": "8075d3bb2b727bf10e582f682a8b679cb43a68148eaaca1520865a720c59f323"
+  },
+  "prior_full_suite": {
+    "report": "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/reaction_barrier_2026-10-29/build/tests/independent_package_tests.json",
+    "sha256": "a088a881916d4e97bbbe5508cc1215b016203bb11dd7e787341a5f6bcd37272f",
+    "passed": true,
+    "tests_run": 33,
+    "historical_file_count": 26,
+    "same_verifier_code_protocol_and_scientific_data": true,
+    "metadata_or_document_changes_after_suite": [
+      "input/README.md",
+      "instruction.json",
+      "meta.json"
+    ],
+    "removed_generated_bytecode_after_suite": [
+      "verifier/__pycache__/core.cpython-311.pyc",
+      "verifier/__pycache__/io_utils.cpython-311.pyc"
+    ],
+    "added_files": []
+  },
+  "current_file_count": 24,
+  "current_total_bytes": 12121884,
+  "no_bytecode_or_cache_directories": true,
+  "no_undeclared_input": true,
+  "source_unchanged_during_final_audit": true,
+  "trusted_context_unchanged": true,
+  "formal_result_checks": {
+    "baseline": {
+      "official_schema_valid": true,
+      "raw_score": 0.41108395831066713,
+      "same_context_repeat_byte_identical": true,
+      "result_sha256": "49c77db31d26d064962539d976b9a1541d00e1c7edc2e665132fee924f9c2e3d",
+      "frozen_submission_files": [
+        {
+          "path": "method.md",
+          "bytes": 7613,
+          "sha256": "fc4cbd3e29e56f83cce433d7290de012a0da803d2d36bf5d463b647a548ae9c4"
+        },
+        {
+          "path": "predictions.csv",
+          "bytes": 9747,
+          "sha256": "e743e35c3bf499f77e12641326eb2b4eb79eb55fc3779a6c01604f88fc6a1fe1"
+        },
+        {
+          "path": "research_code.zip",
+          "bytes": 10546,
+          "sha256": "ea4dee0cd0f42a4eb68cef59e0921f9405bc397bed842f640136ec4155633bb8"
+        },
+        {
+          "path": "sources.json",
+          "bytes": 254,
+          "sha256": "01a84c5659bc297582c076977290f629958eb982daab3757785657082063945e"
+        }
+      ],
+      "validation_calls": 3,
+      "n_samples": 287
+    },
+    "bottom": {
+      "official_schema_valid": true,
+      "raw_score": 0.8001934932388185,
+      "same_context_repeat_byte_identical": true,
+      "result_sha256": "2e2c9cd35bfa40ae4e3c8e61e35a56fd17e0d5640d94bc3309966bd766c14173",
+      "frozen_submission_files": [
+        {
+          "path": "method.md",
+          "bytes": 7613,
+          "sha256": "fc4cbd3e29e56f83cce433d7290de012a0da803d2d36bf5d463b647a548ae9c4"
+        },
+        {
+          "path": "predictions.csv",
+          "bytes": 9789,
+          "sha256": "2b7ceb636ca97de5e5c7dc56084bd5b3afdfe12f180ac4e7172daf7bb2cf45ad"
+        },
+        {
+          "path": "research_code.zip",
+          "bytes": 10546,
+          "sha256": "ea4dee0cd0f42a4eb68cef59e0921f9405bc397bed842f640136ec4155633bb8"
+        },
+        {
+          "path": "sources.json",
+          "bytes": 254,
+          "sha256": "01a84c5659bc297582c076977290f629958eb982daab3757785657082063945e"
+        }
+      ],
+      "validation_calls": 3,
+      "n_samples": 287
+    }
+  },
+  "container_execution_performed": false
+}
