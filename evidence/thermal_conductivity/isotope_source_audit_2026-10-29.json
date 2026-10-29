@@ -1,0 +1,300 @@
+{
+  "audit_date": "2026-10-29",
+  "task": "thermal_conductivity",
+  "scope": "Read-only provenance and exact data-equivalence audit. No DFT, phonon or transport calculation was rerun. No task data, algorithm, proposal or PR was modified.",
+  "conclusion": {
+    "reference_includes_natural_abundance_isotope_scattering": true,
+    "basis": "The frozen reference matches all 103 rows and all 11 fields of the author's published no-NAC dataset after only orientation/field-name conversion. Its published generation path enables isotope scattering without a custom mass-variance override; official Phono3py documentation identifies that default as natural abundance.",
+    "not_inferred_from_local_smoke": true,
+    "paper_table_numeric_equality_not_used": true
+  },
+  "data_equivalence": {
+    "upstream_representation": "column-oriented JSON",
+    "frozen_representation": "record-oriented JSON",
+    "field_mapping": {
+      "mp_id": "material_id",
+      "frequencies": "ph_freqs",
+      "qpoints": "q_points",
+      "temperatures": "temperatures",
+      "weights": "weights",
+      "heat_capacity": "heat_capacity",
+      "q_mesh": "q_mesh",
+      "name": "name",
+      "symm.no": "init_spg_num",
+      "kappa_TOT_ave": "kappa_tot_avg",
+      "mode_kappa_TOT_ave": "mode_kappa_tot_avg"
+    },
+    "source_row_count": 103,
+    "frozen_row_count": 103,
+    "material_id_sets_exactly_equal": true,
+    "all_rows_all_fields_exactly_equal": true,
+    "tolerance_used": false,
+    "per_field_results": {
+      "mp_id": {
+        "frozen_field": "material_id",
+        "exact_equal_rows": 103,
+        "total_rows": 103
+      },
+      "frequencies": {
+        "frozen_field": "ph_freqs",
+        "exact_equal_rows": 103,
+        "total_rows": 103
+      },
+      "qpoints": {
+        "frozen_field": "q_points",
+        "exact_equal_rows": 103,
+        "total_rows": 103
+      },
+      "temperatures": {
+        "frozen_field": "temperatures",
+        "exact_equal_rows": 103,
+        "total_rows": 103
+      },
+      "weights": {
+        "frozen_field": "weights",
+        "exact_equal_rows": 103,
+        "total_rows": 103
+      },
+      "heat_capacity": {
+        "frozen_field": "heat_capacity",
+        "exact_equal_rows": 103,
+        "total_rows": 103
+      },
+      "q_mesh": {
+        "frozen_field": "q_mesh",
+        "exact_equal_rows": 103,
+        "total_rows": 103
+      },
+      "name": {
+        "frozen_field": "name",
+        "exact_equal_rows": 103,
+        "total_rows": 103
+      },
+      "symm.no": {
+        "frozen_field": "init_spg_num",
+        "exact_equal_rows": 103,
+        "total_rows": 103
+      },
+      "kappa_TOT_ave": {
+        "frozen_field": "kappa_tot_avg",
+        "exact_equal_rows": 103,
+        "total_rows": 103
+      },
+      "mode_kappa_TOT_ave": {
+        "frozen_field": "mode_kappa_tot_avg",
+        "exact_equal_rows": 103,
+        "total_rows": 103
+      }
+    },
+    "canonicalization": "Rename the 11 columns, convert to records, sort by material_id, then json.dumps(sort_keys=True,separators=(',',':')).encode().",
+    "upstream_normalized_sha256": "8aaa4ba5f33405f0ffc6b34e9ec70800f1b3f9885b260fd891623684258e566c",
+    "frozen_normalized_sha256": "8aaa4ba5f33405f0ffc6b34e9ec70800f1b3f9885b260fd891623684258e566c",
+    "autowte_and_ksrme_compressed_files_byte_identical": true,
+    "fresh_figshare_download_matches_frozen_local_file_byte_for_byte": true
+  },
+  "downloaded_sources": [
+    {
+      "local_cache": "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/pr_build/thermal_conductivity/sources/figshare_68221426.json.gz",
+      "url": "https://ndownloader.figshare.com/files/68221426",
+      "bytes": 3776952,
+      "sha256": "d11d53243fd1586ce5d8bd68f073f94b04d719edb10c3d3f67591f919f86aa2f"
+    },
+    {
+      "local_cache": "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/pr_build/thermal_conductivity/sources/autowte_noNAC.json.gz",
+      "url": "https://raw.githubusercontent.com/MPA2suite/autoWTE/0c3101595daf180b59033b17c2b9ec90cd5a2ad1/data/kappas_phononDB_PBE_noNAC.json.gz",
+      "bytes": 3513271,
+      "sha256": "442f651d3272e8a104baab3e53241220bf66afc90559f593fb3d7697874506ea"
+    },
+    {
+      "local_cache": "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/pr_build/thermal_conductivity/sources/ksrme_noNAC.json.gz",
+      "url": "https://raw.githubusercontent.com/MPA2suite/k_SRME/6ff4c867f254437931df833a98eba1429dfbb147/data/kappas_phononDB_PBE_noNAC.json.gz",
+      "bytes": 3513271,
+      "sha256": "442f651d3272e8a104baab3e53241220bf66afc90559f593fb3d7697874506ea"
+    },
+    {
+      "local_cache": "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/pr_build/thermal_conductivity/sources/autowte_generate_DFT_kappa.py",
+      "url": "https://raw.githubusercontent.com/MPA2suite/autoWTE/0c3101595daf180b59033b17c2b9ec90cd5a2ad1/data/generate_DFT_kappa.py",
+      "bytes": 5510,
+      "sha256": "57b2cf960bf079289cef0764cf1d06a8d0b2dcbb6abf03a3e1b4a6d05ecc7ffb"
+    },
+    {
+      "local_cache": "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/pr_build/thermal_conductivity/sources/autowte_tc_calc.py",
+      "url": "https://raw.githubusercontent.com/MPA2suite/autoWTE/0c3101595daf180b59033b17c2b9ec90cd5a2ad1/autoWTE/tc_calc.py",
+      "bytes": 10568,
+      "sha256": "f07a4ed02e0d1c3b4b94ba4a1a92a556b6af4ec02c248cb525f3433149d1e073"
+    },
+    {
+      "local_cache": "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/pr_build/thermal_conductivity/sources/autowte_init.py",
+      "url": "https://raw.githubusercontent.com/MPA2suite/autoWTE/0c3101595daf180b59033b17c2b9ec90cd5a2ad1/autoWTE/__init__.py",
+      "bytes": 984,
+      "sha256": "acbf85aa9926db5694e6c8466c72ef25344abb2717b706411d1defca74fa7ec6"
+    },
+    {
+      "local_cache": "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/pr_build/thermal_conductivity/sources/matbench_data-files.yml",
+      "url": "https://raw.githubusercontent.com/janosh/matbench-discovery/7a7a941d0667bd5d91497f7921d2ae6b2af2aab8/matbench_discovery/data-files.yml",
+      "bytes": 9188,
+      "sha256": "5933dfe7598ac79794ff05da8ad9d4be9a4b47bd7f201e73b2f92dbf2accf84e"
+    },
+    {
+      "local_cache": "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/pr_build/thermal_conductivity/sources/ksrme_conductivity.py",
+      "url": "https://raw.githubusercontent.com/MPA2suite/k_SRME/6ff4c867f254437931df833a98eba1429dfbb147/k_srme/conductivity.py",
+      "bytes": 7429,
+      "sha256": "6173cfed3f577638d12dd094c2f8cd911c59eb99197367636d3c656b05fbc14a"
+    },
+    {
+      "local_cache": "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/pr_build/thermal_conductivity/sources/phono3py_v3.6.0_command-options.md",
+      "url": "https://raw.githubusercontent.com/phonopy/phono3py/64593151fc9c036242528016364b54dc81d514a0/doc/command-options.md",
+      "bytes": 47461,
+      "sha256": "fe37be3a99082370f4fc0e51dd8a033ccf6ffac8d8cffe6a0b8b422cc516393b"
+    },
+    {
+      "local_cache": "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/pr_build/thermal_conductivity/sources/phono3py_v3.6.0_api.py",
+      "url": "https://raw.githubusercontent.com/phonopy/phono3py/64593151fc9c036242528016364b54dc81d514a0/phono3py/api_phono3py.py",
+      "bytes": 105755,
+      "sha256": "bc322e15be01392a6aed684179b30ad5f06df17c6949357228dd0353c416896d"
+    },
+    {
+      "local_cache": "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/pr_build/thermal_conductivity/sources/phono3py_v3.30.0_command-options.md",
+      "url": "https://raw.githubusercontent.com/phonopy/phono3py/7b47c7813a312a6ea1115ee6cc1e04ddfd47b7b1/doc/command-options.md",
+      "bytes": 42685,
+      "sha256": "316cc0c691fba86323cdae91dddebbb49716d38bcfa21ec2bdfd8d5d21922141"
+    },
+    {
+      "local_cache": "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/pr_build/thermal_conductivity/sources/phono3py_v3.30.0_api.py",
+      "url": "https://raw.githubusercontent.com/phonopy/phono3py/7b47c7813a312a6ea1115ee6cc1e04ddfd47b7b1/phono3py/api_phono3py.py",
+      "bytes": 125428,
+      "sha256": "6834e56b701e756a5b6d4c89d6a5ec1c7a514be43d70482b26a6cf439a2734dd"
+    }
+  ],
+  "generation_call_chain": [
+    {
+      "url": "https://github.com/janosh/matbench-discovery/blob/7a7a941d0667bd5d91497f7921d2ae6b2af2aab8/matbench_discovery/data-files.yml#L92-L96",
+      "commit": "7a7a941d0667bd5d91497f7921d2ae6b2af2aab8",
+      "path": "matbench_discovery/data-files.yml",
+      "lines": [
+        92,
+        96
+      ],
+      "line_number_basis": "Physical UTF-8 source lines, one-based; blank lines retained.",
+      "claim": "The pinned manifest identifies file 68221426 as the phononDB PBE 103-crystal no-NAC reference and records the matching MD5."
+    },
+    {
+      "url": "https://github.com/MPA2suite/autoWTE/blob/0c3101595daf180b59033b17c2b9ec90cd5a2ad1/autoWTE/__init__.py#L15-L29",
+      "commit": "0c3101595daf180b59033b17c2b9ec90cd5a2ad1",
+      "path": "autoWTE/__init__.py",
+      "lines": [
+        15,
+        29
+      ],
+      "line_number_basis": "Physical UTF-8 source lines, one-based; blank lines retained.",
+      "claim": "The module identifies the shipped no-NAC reference filename, sets benchmark temperatures to 300 K, and imports the conductivity implementation."
+    },
+    {
+      "url": "https://github.com/MPA2suite/autoWTE/blob/0c3101595daf180b59033b17c2b9ec90cd5a2ad1/data/generate_DFT_kappa.py#L132-L140",
+      "commit": "0c3101595daf180b59033b17c2b9ec90cd5a2ad1",
+      "path": "data/generate_DFT_kappa.py",
+      "lines": [
+        132,
+        140
+      ],
+      "line_number_basis": "Physical UTF-8 source lines, one-based; blank lines retained.",
+      "claim": "The DFT no-NAC branch removes NAC and invokes the shared conductivity routine without an isotope or mass-variance override.",
+      "short_quote": "ph3.nac_params = None"
+    },
+    {
+      "url": "https://github.com/MPA2suite/autoWTE/blob/0c3101595daf180b59033b17c2b9ec90cd5a2ad1/autoWTE/tc_calc.py#L34-L38",
+      "commit": "0c3101595daf180b59033b17c2b9ec90cd5a2ad1",
+      "path": "autoWTE/tc_calc.py",
+      "lines": [
+        34,
+        38
+      ],
+      "line_number_basis": "Physical UTF-8 source lines, one-based; blank lines retained.",
+      "claim": "The generation routine defaults to isotope scattering and Wigner transport.",
+      "short_quote": "'is_isotope' : True"
+    },
+    {
+      "url": "https://github.com/MPA2suite/autoWTE/blob/0c3101595daf180b59033b17c2b9ec90cd5a2ad1/autoWTE/tc_calc.py#L79-L92",
+      "commit": "0c3101595daf180b59033b17c2b9ec90cd5a2ad1",
+      "path": "autoWTE/tc_calc.py",
+      "lines": [
+        79,
+        92
+      ],
+      "line_number_basis": "Physical UTF-8 source lines, one-based; blank lines retained.",
+      "claim": "Absent keyword options are filled from these defaults and passed to ph3.run_thermal_conductivity."
+    },
+    {
+      "url": "https://github.com/MPA2suite/k_SRME/blob/6ff4c867f254437931df833a98eba1429dfbb147/k_srme/conductivity.py#L223-L231",
+      "commit": "6ff4c867f254437931df833a98eba1429dfbb147",
+      "path": "k_srme/conductivity.py",
+      "lines": [
+        223,
+        231
+      ],
+      "line_number_basis": "Physical UTF-8 source lines, one-based; blank lines retained.",
+      "claim": "The renamed successor implementation explicitly enables isotope scattering and Wigner transport; its shipped no-NAC data are byte-identical to autoWTE's."
+    },
+    {
+      "url": "https://github.com/phonopy/phono3py/blob/64593151fc9c036242528016364b54dc81d514a0/doc/command-options.md#L680-L685",
+      "commit": "64593151fc9c036242528016364b54dc81d514a0",
+      "path": "doc/command-options.md",
+      "lines": [
+        680,
+        685
+      ],
+      "line_number_basis": "Physical UTF-8 source lines, one-based; blank lines retained.",
+      "claim": "The official v3.6.0 documentation identifies the default isotope mass variance database as natural abundance.",
+      "short_quote": "database of the natural abundance data for elements"
+    },
+    {
+      "url": "https://github.com/phonopy/phono3py/blob/64593151fc9c036242528016364b54dc81d514a0/phono3py/api_phono3py.py#L1917-L1924",
+      "commit": "64593151fc9c036242528016364b54dc81d514a0",
+      "path": "phono3py/api_phono3py.py",
+      "lines": [
+        1917,
+        1924
+      ],
+      "line_number_basis": "Physical UTF-8 source lines, one-based; blank lines retained.",
+      "claim": "The API defaults mass_variances to None and uses RTA unless is_LBTE is enabled."
+    },
+    {
+      "url": "https://github.com/phonopy/phono3py/blob/64593151fc9c036242528016364b54dc81d514a0/phono3py/api_phono3py.py#L1962-L1967",
+      "commit": "64593151fc9c036242528016364b54dc81d514a0",
+      "path": "phono3py/api_phono3py.py",
+      "lines": [
+        1962,
+        1967
+      ],
+      "line_number_basis": "Physical UTF-8 source lines, one-based; blank lines retained.",
+      "claim": "With is_isotope=True and mass_variances=None, Phono3py uses its stored default isotope mass variances."
+    },
+    {
+      "url": "https://github.com/phonopy/phono3py/blob/7b47c7813a312a6ea1115ee6cc1e04ddfd47b7b1/doc/command-options.md#L691-L696",
+      "commit": "7b47c7813a312a6ea1115ee6cc1e04ddfd47b7b1",
+      "path": "doc/command-options.md",
+      "lines": [
+        691,
+        696
+      ],
+      "line_number_basis": "Physical UTF-8 source lines, one-based; blank lines retained.",
+      "claim": "The task's pinned v3.30.0 also documents natural-abundance isotope defaults."
+    },
+    {
+      "url": "https://github.com/phonopy/phono3py/blob/7b47c7813a312a6ea1115ee6cc1e04ddfd47b7b1/phono3py/api_phono3py.py#L2282-L2287",
+      "commit": "7b47c7813a312a6ea1115ee6cc1e04ddfd47b7b1",
+      "path": "phono3py/api_phono3py.py",
+      "lines": [
+        2282,
+        2287
+      ],
+      "line_number_basis": "Physical UTF-8 source lines, one-based; blank lines retained.",
+      "claim": "The task's pinned v3.30.0 preserves the API behavior for omitted mass_variances."
+    }
+  ],
+  "remaining_limits": [
+    "The reduced JSON reference does not itself retain an explicit isotope flag or mass-variance vector; the convention is established by exact dataset identity plus the author's generation code and Phono3py defaults.",
+    "No complete original execution log or exact producer Phono3py patch-version pin was located. The v3.6.0 and task v3.30.0 documentation/source agree on the relevant default; this is not a claim that either was the original producer version.",
+    "This audit does not assert bitwise reproduction of force constants or conductivity from the original DFT inputs."
+  ]
+}

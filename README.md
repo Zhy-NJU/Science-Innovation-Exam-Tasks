@@ -196,3 +196,13 @@ structure; it makes no full-convergence or benchmark-accuracy claim. Both
 scripts disable Python socket connection calls; this is not OS-level
 network isolation. Full research-environment and runtime validation remains
 part of technical review.
+
+## 2026-10-29 reference-setting clarification
+
+PR #36 now explicitly documents natural-abundance isotope scattering and the upstream boundary mean free path of 1e6 micrometres (1 m). These clarify the existing reference conditions; no labels were recomputed or replaced.
+
+The source audit in `evidence/thermal_conductivity/isotope_source_audit_2026-10-29.json` matches the frozen reference against all 103 systems and all 11 fields of the author's no-NAC dataset and records the generation-code and Phono3py-default evidence. It does not infer the reference conditions from our local smoke example, claim access to original per-run logs, or identify an unrecorded exact producer patch version.
+
+Only three target-description files changed relative to task commit `9c21c06160a7ee43e379d7dfe281b4381e29c85b`. The other 85 task files, including scorer, protocol, labels, geometries and weights, remain byte-identical. The revised task commit is `a647fdd0abb9979fdde7b415174fc2ff913e6540`. The original contract checker and unchanged read-only structure checker pass; the archived CHGNet and all-zero submissions still score 1.6958708753402623 and 2.0. See `evidence/thermal_conductivity/isotope_clarification_validation_2026-10-29/report.json`.
+
+The original 203-file manifest and 99-test report remain historical records of the original frozen snapshot. They are not represented as new runs or a full-byte manifest of the documentation revision.

@@ -1,0 +1,51 @@
+{
+  "base_commit": "9c21c06160a7ee43e379d7dfe281b4381e29c85b",
+  "scope": "Clarify existing reference conditions only; no recomputation or target change",
+  "changed_files": [
+    {
+      "path": "tasks/thermal_conductivity/input/README.md",
+      "original_sha256": "19686158e1d2e244b230bde2462a8f15509b148071bcadb2c41e6ecac1ad0ce5",
+      "current_sha256": "c4c0889293f45c03488574f574727a3440427ebc8dff2e538f1b8d73c09bf8e5"
+    },
+    {
+      "path": "tasks/thermal_conductivity/input/calculation_settings.json",
+      "original_sha256": "ceb76645e98f1b81e51468636c81113bbe4201ab1a7128e41d3c06fb8f05c3c6",
+      "current_sha256": "430d3a9a44b0bb975b6a2f07b1b802ab7a6c2db7e8e629aeef8ce605e41f9287"
+    },
+    {
+      "path": "tasks/thermal_conductivity/instruction.json",
+      "original_sha256": "fe0c17a7576b5db8c145731170e56bd0d06711c7b2f8a03675bb2bcd044e9c75",
+      "current_sha256": "fe7e658982eac8669a6636a5982d77bacd6806bf7e8fe1797f0cd138519f1783"
+    }
+  ],
+  "unchanged_file_count": 85,
+  "checks": [
+    {
+      "command": [
+        "/opt/anaconda3/bin/python",
+        "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/official-repo/contributor/build-sie-task-package/scripts/check_package.py",
+        "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/pr-worktrees/thermal_conductivity/tasks/thermal_conductivity"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"task_id\": \"thermal_conductivity\",\n  \"submission_paths\": [\n    \"submission.csv\"\n  ],\n  \"status\": \"package_valid\",\n  \"checker\": \"bundled-fallback\",\n  \"contract_revision\": \"2026-09-17\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/anaconda3/bin/python",
+        "-I",
+        "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/official-repo/.github/scripts/task_structure.py",
+        "/Users/daemon1/.codex/artifacts/scienceinnovationexam-2026-10-12/pr-worktrees/thermal_conductivity"
+      ],
+      "exit_code": 0,
+      "stdout": "Structure passed: tasks/_template\nStructure passed: tasks/eeg_mi_selective_gating\nStructure passed: tasks/pocket-conditioned-synthesizable-ligand-design\nStructure passed: tasks/protein_stability_campaign\nStructure passed: tasks/thermal_conductivity\nRead-only checks passed. Approval, identity, scientific validity and runtime remain manual review.\n",
+      "stderr": ""
+    }
+  ],
+  "raw_scores": {
+    "baseline": 1.6958708753402623,
+    "bottom": 2.0
+  },
+  "historical_tests": "Original 33 thermal verifier checks remain historical; not claimed as rerun on revised documentation.",
+  "revised_commit": "a647fdd0abb9979fdde7b415174fc2ff913e6540"
+}
